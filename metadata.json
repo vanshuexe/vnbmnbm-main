@@ -1,0 +1,8 @@
+{
+  "name": "Center Aesthetics",
+  "description": "Premium aesthetic facial plastic surgery center website hero section.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
