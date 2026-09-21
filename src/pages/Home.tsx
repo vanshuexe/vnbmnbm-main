@@ -75,11 +75,6 @@ return (
               <p className="text-gray-700 text-sm leading-relaxed font-light mb-10 md:mb-12 max-w-lg">
                 I am a Maxillofacial surgeon specialised in Facial Aesthetics and Cosmetic Surgery. My primary background is in treating the complex structures of the face, jaw, and neck. Following that, I completed an advanced post-doctoral fellowship in Cosmetic Surgery at DY Patil University under the mentorship of the legendary pioneer Dr. Mohan Thomas.<br/><br/>This gives me a unique dual expertise. My practice bridges the gap between maxillofacial surgery and advanced aesthetic surgery. I specialize in full-face surgical and non-surgical rejuvenation, rhinoplasty, and facial contouring.
               </p>
-              <div>
-                <button className="bg-[#d6c9be] text-[#1a1a1a] px-8 py-4 rounded-full text-[10px] font-semibold tracking-[0.2em] hover:bg-[#c4b5a8] transition-colors uppercase">
-                  LEARN MORE
-                </button>
-              </div>
             </div>
             
             {/* Right Image */}
