@@ -46,11 +46,11 @@ return (
           {/* Eyebrow */}
           <div className="flex items-center justify-center md:justify-start mb-4">
             <div className="hidden md:block h-[12px] w-[2px] bg-white mr-3"></div>
-            <p className="text-sm tracking-wider font-light">Rootwise Aesthetic Clinic</p>
+            <p className="text-sm tracking-wider font-light">Skin Lab</p>
           </div>
           
           {/* Heading */}
-          <h1 className="text-[40px] leading-[1.1] md:text-5xl lg:text-6xl mb-6 md:mb-8 font-light tracking-tight">
+          <h1 className="text-[40px] leading-[1.1] md:text-5xl lg:text-6xl mb-6 md:mb-8 font-bold tracking-tight">
             Dr. Shruthilaya Ganesan
           </h1>
           
@@ -85,6 +85,42 @@ return (
                 className="h-[92%] w-auto object-contain object-bottom drop-shadow-md transition-transform duration-700 hover:scale-105"
               />
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Renowned Results Section */}
+      <section id="qualifications" className="relative z-10 w-full py-24 px-8 md:px-12 lg:px-24 bg-[#ebe9e4]">
+        <div className="max-w-7xl mx-auto">
+          <div className="bg-[#f7f6f2] rounded-3xl overflow-hidden flex flex-col md:flex-row shadow-sm text-[#1a1a1a]">
+            
+            {/* Left Image */}
+            <div className="w-full md:w-[50%] h-[400px] md:h-auto min-h-[500px]">
+              <img 
+                src="https://ik.imagekit.io/fdhgiehjz/nav.PNG" 
+                alt="Qualifications and Experience" 
+                className="w-full h-full object-cover object-left"
+              />
+            </div>
+
+            {/* Right Content */}
+            <div className="w-full md:w-[50%] p-12 lg:p-16 xl:p-24 flex flex-col justify-center">
+              <h2 className="text-3xl md:text-4xl font-light mb-8">Qualifications & Experience</h2>
+              <ul className="text-gray-700 text-sm leading-relaxed font-light mb-12 max-w-lg space-y-3 list-disc pl-4">
+                <li>Maxillofacial surgeon (MAHER University, Chennai)</li>
+                <li>Advanced institutional fellowship training in Cosmetic surgery (AFCS, DY Patil University, Mumbai)</li>
+                <li>Member of American Academy of Cosmetic Surgery (AACS)</li>
+                <li>Member of Society of Hair Transplant Surgeons (SHTS)</li>
+                <li>Association of Oral and Maxillofacial Surgeons of India (AOMSI)</li>
+                <li>Specialised in Surgical and Non-surgical Facial Aesthetics</li>
+              </ul>
+              <div>
+                <button className="bg-[#d6c9be] text-[#1a1a1a] px-8 py-4 rounded-full text-[10px] font-semibold tracking-[0.2em] hover:bg-[#c4b5a8] transition-colors uppercase">
+                  LEARN MORE
+                </button>
+              </div>
+            </div>
+            
           </div>
         </div>
       </section>
@@ -136,42 +172,6 @@ return (
                 LEARN MORE
               </Link>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Renowned Results Section */}
-      <section id="qualifications" className="relative z-10 w-full py-24 px-8 md:px-12 lg:px-24 bg-[#ebe9e4]">
-        <div className="max-w-7xl mx-auto">
-          <div className="bg-[#f7f6f2] rounded-3xl overflow-hidden flex flex-col md:flex-row shadow-sm text-[#1a1a1a]">
-            
-            {/* Left Image */}
-            <div className="w-full md:w-[50%] h-[400px] md:h-auto min-h-[500px]">
-              <img 
-                src="https://ik.imagekit.io/fdhgiehjz/nav.PNG" 
-                alt="Qualifications and Experience" 
-                className="w-full h-full object-cover"
-              />
-            </div>
-
-            {/* Right Content */}
-            <div className="w-full md:w-[50%] p-12 lg:p-16 xl:p-24 flex flex-col justify-center">
-              <h2 className="text-3xl md:text-4xl font-light mb-8">Qualifications & Experience</h2>
-              <ul className="text-gray-700 text-sm leading-relaxed font-light mb-12 max-w-lg space-y-3 list-disc pl-4">
-                <li>Maxillofacial surgeon (MAHER University, Chennai)</li>
-                <li>Advanced institutional fellowship training in Cosmetic surgery (AFCS, DY Patil University, Mumbai)</li>
-                <li>Member of American Academy of Cosmetic Surgery (AACS)</li>
-                <li>Member of Society of Hair Transplant Surgeons (SHTS)</li>
-                <li>Association of Oral and Maxillofacial Surgeons of India (AOMSI)</li>
-                <li>Specialised in Surgical and Non-surgical Facial Aesthetics</li>
-              </ul>
-              <div>
-                <button className="bg-[#d6c9be] text-[#1a1a1a] px-8 py-4 rounded-full text-[10px] font-semibold tracking-[0.2em] hover:bg-[#c4b5a8] transition-colors uppercase">
-                  LEARN MORE
-                </button>
-              </div>
-            </div>
-            
           </div>
         </div>
       </section>

@@ -941,6 +941,417 @@ export default function Surgical() {
           </div>
         </section>
 
+              {/* Forehead Lift Section */}
+        <section id="forehead-lift" className="py-24 px-6 md:px-12 lg:px-24 bg-white">
+          <div className="max-w-7xl mx-auto flex flex-col-reverse lg:flex-row gap-12 lg:gap-20 items-center">
+            {/* Content */}
+            <div className="w-full lg:w-1/2 flex flex-col">
+              <p className="text-[#6e5038] tracking-widest text-sm font-semibold uppercase mb-4">Face</p>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-light text-[#1a1a1a] mb-6 tracking-tight leading-tight">
+                Forehead Lift <br/>
+                <span className="text-gray-500 italic text-2xl md:text-3xl">(Upper Face Rejuvenation)</span>
+              </h2>
+              <div className="h-[1px] w-12 bg-[#1a1a1a] mb-8"></div>
+              <p className="text-gray-700 font-light leading-relaxed mb-8 text-lg">A surgical forehead lift addresses deep horizontal wrinkles and significant sagging in the upper face. By lifting the skin and repositioning underlying muscles, this procedure restores a smooth, serene, and youthful appearance to the forehead.</p>
+              <ul className="space-y-6 mb-12">
+                <li className="flex items-start">
+                  <div className="w-1.5 h-1.5 rounded-full bg-[#6e5038] mr-4 mt-2.5 flex-shrink-0"></div>
+                  <p className="text-gray-800 font-light leading-relaxed">
+                    <strong className="font-medium text-[#1a1a1a]">Smooths Deep Lines:</strong> Effectively eliminates stubborn horizontal forehead creases.
+                  </p>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-1.5 h-1.5 rounded-full bg-[#6e5038] mr-4 mt-2.5 flex-shrink-0"></div>
+                  <p className="text-gray-800 font-light leading-relaxed">
+                    <strong className="font-medium text-[#1a1a1a]">Long-Lasting Results:</strong> Provides durable, permanent improvement compared to temporary injectables.
+                  </p>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-1.5 h-1.5 rounded-full bg-[#6e5038] mr-4 mt-2.5 flex-shrink-0"></div>
+                  <p className="text-gray-800 font-light leading-relaxed">
+                    <strong className="font-medium text-[#1a1a1a]">Refreshed Look:</strong> Alleviates a heavy or 'angry' appearance, making you look approachable and rested.
+                  </p>
+                </li>
+              </ul>
+              <a href="/book" className="inline-block border border-[#1a1a1a] text-[#1a1a1a] hover:bg-[#1a1a1a] hover:text-white transition-colors duration-300 px-8 py-3.5 text-sm tracking-widest uppercase text-center w-max">Book Consultation</a>
+            </div>
+            {/* Image */}
+            <div className="w-full lg:w-1/2 relative rounded-2xl overflow-hidden group shadow-sm">
+              <img src="https://ik.imagekit.io/fdhgiehjz/667677765.jpeg" alt="Forehead Lift" className="w-full h-[500px] md:h-[650px] object-cover object-center transition-transform duration-700 group-hover:scale-105"/>
+            </div>
+          </div>
+        </section>
+
+        {/* Brow Lift Section */}
+        <section id="surgical-brow-lift" className="py-24 px-6 md:px-12 lg:px-24 bg-[#fcfbf9]">
+          <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-12 lg:gap-20 items-center">
+            {/* Image */}
+            <div className="w-full lg:w-1/2 relative rounded-2xl overflow-hidden group shadow-sm">
+              <img src="https://ik.imagekit.io/fdhgiehjz/65545443.jpeg" alt="Brow Lift" className="w-full h-[500px] md:h-[650px] object-cover object-center transition-transform duration-700 group-hover:scale-105"/>
+            </div>
+            {/* Content */}
+            <div className="w-full lg:w-1/2 flex flex-col">
+              <p className="text-[#6e5038] tracking-widest text-sm font-semibold uppercase mb-4">Face</p>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-light text-[#1a1a1a] mb-6 tracking-tight leading-tight">
+                Brow Lift <br/>
+                <span className="text-gray-500 italic text-2xl md:text-3xl">(Surgical Elevation)</span>
+              </h2>
+              <div className="h-[1px] w-12 bg-[#1a1a1a] mb-8"></div>
+              <p className="text-gray-700 font-light leading-relaxed mb-8 text-lg">A surgical brow lift permanently corrects heavy, drooping eyebrows that can hood the upper eyelids. It lifts the brow arch to its ideal aesthetic position, harmonizing the upper face and opening up the eyes for a bright, awake look.</p>
+              <ul className="space-y-6 mb-12">
+                <li className="flex items-start">
+                  <div className="w-1.5 h-1.5 rounded-full bg-[#6e5038] mr-4 mt-2.5 flex-shrink-0"></div>
+                  <p className="text-gray-800 font-light leading-relaxed">
+                    <strong className="font-medium text-[#1a1a1a]">Permanent Elevation:</strong> Surgically secures the brow at an optimal, youthful height.
+                  </p>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-1.5 h-1.5 rounded-full bg-[#6e5038] mr-4 mt-2.5 flex-shrink-0"></div>
+                  <p className="text-gray-800 font-light leading-relaxed">
+                    <strong className="font-medium text-[#1a1a1a]">Improves Eyelid Hooding:</strong> Reduces the weight of the brow on the upper eyelids, often complementing blepharoplasty.
+                  </p>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-1.5 h-1.5 rounded-full bg-[#6e5038] mr-4 mt-2.5 flex-shrink-0"></div>
+                  <p className="text-gray-800 font-light leading-relaxed">
+                    <strong className="font-medium text-[#1a1a1a]">Customized Arch:</strong> Tailors the shape and peak of the brow to perfectly suit your facial structure.
+                  </p>
+                </li>
+              </ul>
+              <a href="/book" className="inline-block border border-[#1a1a1a] text-[#1a1a1a] hover:bg-[#1a1a1a] hover:text-white transition-colors duration-300 px-8 py-3.5 text-sm tracking-widest uppercase text-center w-max">Book Consultation</a>
+            </div>
+          </div>
+        </section>
+
+        {/* Mid-Face Lift Section */}
+        <section id="surgical-mid-face-lift" className="py-24 px-6 md:px-12 lg:px-24 bg-white">
+          <div className="max-w-7xl mx-auto flex flex-col-reverse lg:flex-row gap-12 lg:gap-20 items-center">
+            {/* Content */}
+            <div className="w-full lg:w-1/2 flex flex-col">
+              <p className="text-[#6e5038] tracking-widest text-sm font-semibold uppercase mb-4">Face</p>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-light text-[#1a1a1a] mb-6 tracking-tight leading-tight">
+                Mid-Face Lift <br/>
+                <span className="text-gray-500 italic text-2xl md:text-3xl">(Cheek Elevation)</span>
+              </h2>
+              <div className="h-[1px] w-12 bg-[#1a1a1a] mb-8"></div>
+              <p className="text-gray-700 font-light leading-relaxed mb-8 text-lg">A surgical mid-face lift specifically targets sagging cheeks and deep nasolabial folds. By elevating the fat pads of the cheeks vertically, it restores full, youthful cheekbones and smooths the transition between the lower eyelids and the cheeks.</p>
+              <ul className="space-y-6 mb-12">
+                <li className="flex items-start">
+                  <div className="w-1.5 h-1.5 rounded-full bg-[#6e5038] mr-4 mt-2.5 flex-shrink-0"></div>
+                  <p className="text-gray-800 font-light leading-relaxed">
+                    <strong className="font-medium text-[#1a1a1a]">Restores Cheek Volume:</strong> Lifts descended fat back to the upper cheeks for natural, youthful volume.
+                  </p>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-1.5 h-1.5 rounded-full bg-[#6e5038] mr-4 mt-2.5 flex-shrink-0"></div>
+                  <p className="text-gray-800 font-light leading-relaxed">
+                    <strong className="font-medium text-[#1a1a1a]">Smooths Nasolabial Folds:</strong> Significantly reduces the depth of the smile lines running from the nose to mouth.
+                  </p>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-1.5 h-1.5 rounded-full bg-[#6e5038] mr-4 mt-2.5 flex-shrink-0"></div>
+                  <p className="text-gray-800 font-light leading-relaxed">
+                    <strong className="font-medium text-[#1a1a1a]">Natural Rejuvenation:</strong> Avoids a 'pulled' look by lifting vertically rather than horizontally.
+                  </p>
+                </li>
+              </ul>
+              <a href="/book" className="inline-block border border-[#1a1a1a] text-[#1a1a1a] hover:bg-[#1a1a1a] hover:text-white transition-colors duration-300 px-8 py-3.5 text-sm tracking-widest uppercase text-center w-max">Book Consultation</a>
+            </div>
+            {/* Image */}
+            <div className="w-full lg:w-1/2 relative rounded-2xl overflow-hidden group shadow-sm">
+              <img src="https://ik.imagekit.io/fdhgiehjz/88888.jpeg" alt="Mid-Face Lift" className="w-full h-[500px] md:h-[650px] object-cover object-center transition-transform duration-700 group-hover:scale-105"/>
+            </div>
+          </div>
+        </section>
+
+        {/* Orthognathic Surgery Section */}
+        <section id="orthognathic-surgery" className="py-24 px-6 md:px-12 lg:px-24 bg-[#fcfbf9]">
+          <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-12 lg:gap-20 items-center">
+            {/* Image */}
+            <div className="w-full lg:w-1/2 relative rounded-2xl overflow-hidden group shadow-sm">
+              <img src="https://ik.imagekit.io/fdhgiehjz/4344343.jpeg" alt="Orthognathic Surgery" className="w-full h-[500px] md:h-[650px] object-cover object-center transition-transform duration-700 group-hover:scale-105"/>
+            </div>
+            {/* Content */}
+            <div className="w-full lg:w-1/2 flex flex-col">
+              <p className="text-[#6e5038] tracking-widest text-sm font-semibold uppercase mb-4">Face</p>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-light text-[#1a1a1a] mb-6 tracking-tight leading-tight">
+                Orthognathic Surgery <br/>
+                <span className="text-gray-500 italic text-2xl md:text-3xl">(Corrective Jaw Surgery)</span>
+              </h2>
+              <div className="h-[1px] w-12 bg-[#1a1a1a] mb-8"></div>
+              <p className="text-gray-700 font-light leading-relaxed mb-8 text-lg">Orthognathic surgery corrects severe jaw discrepancies and bite issues that cannot be resolved with orthodontics alone. It improves breathing, chewing function, and facial symmetry by surgically realigning the upper and lower jaws.</p>
+              <ul className="space-y-6 mb-12">
+                <li className="flex items-start">
+                  <div className="w-1.5 h-1.5 rounded-full bg-[#6e5038] mr-4 mt-2.5 flex-shrink-0"></div>
+                  <p className="text-gray-800 font-light leading-relaxed">
+                    <strong className="font-medium text-[#1a1a1a]">Functional Improvement:</strong> Resolves difficulties with chewing, swallowing, and speech.
+                  </p>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-1.5 h-1.5 rounded-full bg-[#6e5038] mr-4 mt-2.5 flex-shrink-0"></div>
+                  <p className="text-gray-800 font-light leading-relaxed">
+                    <strong className="font-medium text-[#1a1a1a]">Facial Harmony:</strong> Dramatically improves lower facial proportions, symmetry, and profile.
+                  </p>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-1.5 h-1.5 rounded-full bg-[#6e5038] mr-4 mt-2.5 flex-shrink-0"></div>
+                  <p className="text-gray-800 font-light leading-relaxed">
+                    <strong className="font-medium text-[#1a1a1a]">Airway Expansion:</strong> Can effectively treat obstructive sleep apnea by opening the airway.
+                  </p>
+                </li>
+              </ul>
+              <a href="/book" className="inline-block border border-[#1a1a1a] text-[#1a1a1a] hover:bg-[#1a1a1a] hover:text-white transition-colors duration-300 px-8 py-3.5 text-sm tracking-widest uppercase text-center w-max">Book Consultation</a>
+            </div>
+          </div>
+        </section>
+
+        {/* Dimple Creation Section */}
+        <section id="dimple-creation" className="py-24 px-6 md:px-12 lg:px-24 bg-white">
+          <div className="max-w-7xl mx-auto flex flex-col-reverse lg:flex-row gap-12 lg:gap-20 items-center">
+            {/* Content */}
+            <div className="w-full lg:w-1/2 flex flex-col">
+              <p className="text-[#6e5038] tracking-widest text-sm font-semibold uppercase mb-4">Cheek & Implants</p>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-light text-[#1a1a1a] mb-6 tracking-tight leading-tight">
+                Dimple Creation <br/>
+                <span className="text-gray-500 italic text-2xl md:text-3xl">(Dimpleplasty)</span>
+              </h2>
+              <div className="h-[1px] w-12 bg-[#1a1a1a] mb-8"></div>
+              <p className="text-gray-700 font-light leading-relaxed mb-8 text-lg">Dimpleplasty is a quick, minimally invasive surgical procedure designed to create natural-looking dimples on the cheeks or chin. The procedure involves a small incision inside the mouth, leaving no external scars, to tether the skin to the underlying muscle.</p>
+              <ul className="space-y-6 mb-12">
+                <li className="flex items-start">
+                  <div className="w-1.5 h-1.5 rounded-full bg-[#6e5038] mr-4 mt-2.5 flex-shrink-0"></div>
+                  <p className="text-gray-800 font-light leading-relaxed">
+                    <strong className="font-medium text-[#1a1a1a]">Enhances Smile:</strong> Adds a charming, youthful characteristic to your smile.
+                  </p>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-1.5 h-1.5 rounded-full bg-[#6e5038] mr-4 mt-2.5 flex-shrink-0"></div>
+                  <p className="text-gray-800 font-light leading-relaxed">
+                    <strong className="font-medium text-[#1a1a1a]">No External Scars:</strong> Performed entirely from within the mouth for a flawless exterior.
+                  </p>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-1.5 h-1.5 rounded-full bg-[#6e5038] mr-4 mt-2.5 flex-shrink-0"></div>
+                  <p className="text-gray-800 font-light leading-relaxed">
+                    <strong className="font-medium text-[#1a1a1a]">Quick Procedure:</strong> Typically performed under local anesthesia in under an hour.
+                  </p>
+                </li>
+              </ul>
+              <a href="/book" className="inline-block border border-[#1a1a1a] text-[#1a1a1a] hover:bg-[#1a1a1a] hover:text-white transition-colors duration-300 px-8 py-3.5 text-sm tracking-widest uppercase text-center w-max">Book Consultation</a>
+            </div>
+            {/* Image */}
+            <div className="w-full lg:w-1/2 relative rounded-2xl overflow-hidden group shadow-sm">
+              <img src="https://ik.imagekit.io/fdhgiehjz/4544.jpeg" alt="Dimple Creation" className="w-full h-[500px] md:h-[650px] object-cover object-center transition-transform duration-700 group-hover:scale-105"/>
+            </div>
+          </div>
+        </section>
+
+        {/* Facial Implants Section */}
+        <section id="silicon-facial-implants" className="py-24 px-6 md:px-12 lg:px-24 bg-[#fcfbf9]">
+          <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-12 lg:gap-20 items-center">
+            {/* Image */}
+            <div className="w-full lg:w-1/2 relative rounded-2xl overflow-hidden group shadow-sm">
+              <img src="https://ik.imagekit.io/fdhgiehjz/8899.jpeg" alt="Facial Implants" className="w-full h-[500px] md:h-[650px] object-cover object-center transition-transform duration-700 group-hover:scale-105"/>
+            </div>
+            {/* Content */}
+            <div className="w-full lg:w-1/2 flex flex-col">
+              <p className="text-[#6e5038] tracking-widest text-sm font-semibold uppercase mb-4">Cheek & Implants</p>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-light text-[#1a1a1a] mb-6 tracking-tight leading-tight">
+                Facial Implants <br/>
+                <span className="text-gray-500 italic text-2xl md:text-3xl">(Chin, Nose, Cheek)</span>
+              </h2>
+              <div className="h-[1px] w-12 bg-[#1a1a1a] mb-8"></div>
+              <p className="text-gray-700 font-light leading-relaxed mb-8 text-lg">Custom silicone facial implants are used to enhance the fundamental bone structure of the face. Whether building a weak chin, augmenting flat cheekbones, or refining nasal contours, implants provide permanent, striking, and balanced facial definition.</p>
+              <ul className="space-y-6 mb-12">
+                <li className="flex items-start">
+                  <div className="w-1.5 h-1.5 rounded-full bg-[#6e5038] mr-4 mt-2.5 flex-shrink-0"></div>
+                  <p className="text-gray-800 font-light leading-relaxed">
+                    <strong className="font-medium text-[#1a1a1a]">Permanent Volume:</strong> Offers a lifelong solution to structural volume deficiencies.
+                  </p>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-1.5 h-1.5 rounded-full bg-[#6e5038] mr-4 mt-2.5 flex-shrink-0"></div>
+                  <p className="text-gray-800 font-light leading-relaxed">
+                    <strong className="font-medium text-[#1a1a1a]">Custom Contouring:</strong> Implants are meticulously selected and shaped to fit your unique anatomy.
+                  </p>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-1.5 h-1.5 rounded-full bg-[#6e5038] mr-4 mt-2.5 flex-shrink-0"></div>
+                  <p className="text-gray-800 font-light leading-relaxed">
+                    <strong className="font-medium text-[#1a1a1a]">Balanced Proportions:</strong> Brings harmony to facial features, such as balancing a prominent nose with a stronger chin.
+                  </p>
+                </li>
+              </ul>
+              <a href="/book" className="inline-block border border-[#1a1a1a] text-[#1a1a1a] hover:bg-[#1a1a1a] hover:text-white transition-colors duration-300 px-8 py-3.5 text-sm tracking-widest uppercase text-center w-max">Book Consultation</a>
+            </div>
+          </div>
+        </section>
+
+        {/* Canthoplasty Section */}
+        <section id="canthoplasty" className="py-24 px-6 md:px-12 lg:px-24 bg-white">
+          <div className="max-w-7xl mx-auto flex flex-col-reverse lg:flex-row gap-12 lg:gap-20 items-center">
+            {/* Content */}
+            <div className="w-full lg:w-1/2 flex flex-col">
+              <p className="text-[#6e5038] tracking-widest text-sm font-semibold uppercase mb-4">Eyes</p>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-light text-[#1a1a1a] mb-6 tracking-tight leading-tight">
+                Canthoplasty <br/>
+                <span className="text-gray-500 italic text-2xl md:text-3xl">(Eye Shape Refinement)</span>
+              </h2>
+              <div className="h-[1px] w-12 bg-[#1a1a1a] mb-8"></div>
+              <p className="text-gray-700 font-light leading-relaxed mb-8 text-lg">Canthoplasty is a specialized surgical procedure that reshapes and tightens the outer corner of the eye (the lateral canthus). It is used to correct drooping, create a more almond-shaped or 'fox eye' appearance, and provide essential support to the lower eyelid.</p>
+              <ul className="space-y-6 mb-12">
+                <li className="flex items-start">
+                  <div className="w-1.5 h-1.5 rounded-full bg-[#6e5038] mr-4 mt-2.5 flex-shrink-0"></div>
+                  <p className="text-gray-800 font-light leading-relaxed">
+                    <strong className="font-medium text-[#1a1a1a]">Almond Eye Shape:</strong> Elongates and slightly elevates the outer corners of the eyes.
+                  </p>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-1.5 h-1.5 rounded-full bg-[#6e5038] mr-4 mt-2.5 flex-shrink-0"></div>
+                  <p className="text-gray-800 font-light leading-relaxed">
+                    <strong className="font-medium text-[#1a1a1a]">Lower Lid Support:</strong> Corrects lower eyelid laxity or 'ectropion', restoring functional integrity.
+                  </p>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-1.5 h-1.5 rounded-full bg-[#6e5038] mr-4 mt-2.5 flex-shrink-0"></div>
+                  <p className="text-gray-800 font-light leading-relaxed">
+                    <strong className="font-medium text-[#1a1a1a]">Refined Aesthetics:</strong> Adds an elegant, exotic, and youthful contour to the eyes.
+                  </p>
+                </li>
+              </ul>
+              <a href="/book" className="inline-block border border-[#1a1a1a] text-[#1a1a1a] hover:bg-[#1a1a1a] hover:text-white transition-colors duration-300 px-8 py-3.5 text-sm tracking-widest uppercase text-center w-max">Book Consultation</a>
+            </div>
+            {/* Image */}
+            <div className="w-full lg:w-1/2 relative rounded-2xl overflow-hidden group shadow-sm">
+              <img src="https://ik.imagekit.io/fdhgiehjz/667677765.jpeg" alt="Canthoplasty" className="w-full h-[500px] md:h-[650px] object-cover object-center transition-transform duration-700 group-hover:scale-105"/>
+            </div>
+          </div>
+        </section>
+
+        {/* Alarplasty Section */}
+        <section id="alarplasty" className="py-24 px-6 md:px-12 lg:px-24 bg-[#fcfbf9]">
+          <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-12 lg:gap-20 items-center">
+            {/* Image */}
+            <div className="w-full lg:w-1/2 relative rounded-2xl overflow-hidden group shadow-sm">
+              <img src="https://ik.imagekit.io/fdhgiehjz/65545443.jpeg" alt="Alarplasty" className="w-full h-[500px] md:h-[650px] object-cover object-center transition-transform duration-700 group-hover:scale-105"/>
+            </div>
+            {/* Content */}
+            <div className="w-full lg:w-1/2 flex flex-col">
+              <p className="text-[#6e5038] tracking-widest text-sm font-semibold uppercase mb-4">Nose</p>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-light text-[#1a1a1a] mb-6 tracking-tight leading-tight">
+                Alarplasty <br/>
+                <span className="text-gray-500 italic text-2xl md:text-3xl">(Nostril Reduction)</span>
+              </h2>
+              <div className="h-[1px] w-12 bg-[#1a1a1a] mb-8"></div>
+              <p className="text-gray-700 font-light leading-relaxed mb-8 text-lg">Alarplasty is a delicate surgical procedure aimed specifically at narrowing wide or flared nostrils. Often performed alongside rhinoplasty or on its own, it refines the nasal base to bring the nose into perfect proportion with the rest of the face.</p>
+              <ul className="space-y-6 mb-12">
+                <li className="flex items-start">
+                  <div className="w-1.5 h-1.5 rounded-full bg-[#6e5038] mr-4 mt-2.5 flex-shrink-0"></div>
+                  <p className="text-gray-800 font-light leading-relaxed">
+                    <strong className="font-medium text-[#1a1a1a]">Narrows Nostrils:</strong> Reduces nostril flaring and decreases the width of the nasal base.
+                  </p>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-1.5 h-1.5 rounded-full bg-[#6e5038] mr-4 mt-2.5 flex-shrink-0"></div>
+                  <p className="text-gray-800 font-light leading-relaxed">
+                    <strong className="font-medium text-[#1a1a1a]">Hidden Incisions:</strong> Scars are concealed within the natural crease where the nostril meets the cheek.
+                  </p>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-1.5 h-1.5 rounded-full bg-[#6e5038] mr-4 mt-2.5 flex-shrink-0"></div>
+                  <p className="text-gray-800 font-light leading-relaxed">
+                    <strong className="font-medium text-[#1a1a1a]">Preserves Natural Look:</strong> Meticulously planned to ensure the nose looks naturally proportionate, not 'pinched'.
+                  </p>
+                </li>
+              </ul>
+              <a href="/book" className="inline-block border border-[#1a1a1a] text-[#1a1a1a] hover:bg-[#1a1a1a] hover:text-white transition-colors duration-300 px-8 py-3.5 text-sm tracking-widest uppercase text-center w-max">Book Consultation</a>
+            </div>
+          </div>
+        </section>
+
+        {/* Scar Revision Section */}
+        <section id="surgical-scar-revision" className="py-24 px-6 md:px-12 lg:px-24 bg-white">
+          <div className="max-w-7xl mx-auto flex flex-col-reverse lg:flex-row gap-12 lg:gap-20 items-center">
+            {/* Content */}
+            <div className="w-full lg:w-1/2 flex flex-col">
+              <p className="text-[#6e5038] tracking-widest text-sm font-semibold uppercase mb-4">Hair & Misc</p>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-light text-[#1a1a1a] mb-6 tracking-tight leading-tight">
+                Scar Revision <br/>
+                <span className="text-gray-500 italic text-2xl md:text-3xl">(Surgical Refinement)</span>
+              </h2>
+              <div className="h-[1px] w-12 bg-[#1a1a1a] mb-8"></div>
+              <p className="text-gray-700 font-light leading-relaxed mb-8 text-lg">Surgical scar revision aims to minimize the appearance of prominent, thick, or restrictive scars. Through precise excision and meticulous re-closure using advanced plastic surgery techniques, the scar is blended closely with surrounding healthy skin.</p>
+              <ul className="space-y-6 mb-12">
+                <li className="flex items-start">
+                  <div className="w-1.5 h-1.5 rounded-full bg-[#6e5038] mr-4 mt-2.5 flex-shrink-0"></div>
+                  <p className="text-gray-800 font-light leading-relaxed">
+                    <strong className="font-medium text-[#1a1a1a]">Improves Appearance:</strong> Transforms wide, raised, or jagged scars into thin, neat lines.
+                  </p>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-1.5 h-1.5 rounded-full bg-[#6e5038] mr-4 mt-2.5 flex-shrink-0"></div>
+                  <p className="text-gray-800 font-light leading-relaxed">
+                    <strong className="font-medium text-[#1a1a1a]">Restores Function:</strong> Releases tight scar tissue (contractures) that may be restricting movement.
+                  </p>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-1.5 h-1.5 rounded-full bg-[#6e5038] mr-4 mt-2.5 flex-shrink-0"></div>
+                  <p className="text-gray-800 font-light leading-relaxed">
+                    <strong className="font-medium text-[#1a1a1a]">Advanced Closure:</strong> Utilizes multi-layered suturing to minimize tension and optimize healing.
+                  </p>
+                </li>
+              </ul>
+              <a href="/book" className="inline-block border border-[#1a1a1a] text-[#1a1a1a] hover:bg-[#1a1a1a] hover:text-white transition-colors duration-300 px-8 py-3.5 text-sm tracking-widest uppercase text-center w-max">Book Consultation</a>
+            </div>
+            {/* Image */}
+            <div className="w-full lg:w-1/2 relative rounded-2xl overflow-hidden group shadow-sm">
+              <img src="https://ik.imagekit.io/fdhgiehjz/88888.jpeg" alt="Scar Revision" className="w-full h-[500px] md:h-[650px] object-cover object-center transition-transform duration-700 group-hover:scale-105"/>
+            </div>
+          </div>
+        </section>
+
+        {/* Wart & Tongue Tie Removal Section */}
+        <section id="wart-tongue-tie-removal" className="py-24 px-6 md:px-12 lg:px-24 bg-[#fcfbf9]">
+          <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-12 lg:gap-20 items-center">
+            {/* Image */}
+            <div className="w-full lg:w-1/2 relative rounded-2xl overflow-hidden group shadow-sm">
+              <img src="https://ik.imagekit.io/fdhgiehjz/4344343.jpeg" alt="Wart & Tongue Tie Removal" className="w-full h-[500px] md:h-[650px] object-cover object-center transition-transform duration-700 group-hover:scale-105"/>
+            </div>
+            {/* Content */}
+            <div className="w-full lg:w-1/2 flex flex-col">
+              <p className="text-[#6e5038] tracking-widest text-sm font-semibold uppercase mb-4">Hair & Misc</p>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-light text-[#1a1a1a] mb-6 tracking-tight leading-tight">
+                Wart & Tongue Tie Removal <br/>
+                <span className="text-gray-500 italic text-2xl md:text-3xl">(Minor Surgical Procedures)</span>
+              </h2>
+              <div className="h-[1px] w-12 bg-[#1a1a1a] mb-8"></div>
+              <p className="text-gray-700 font-light leading-relaxed mb-8 text-lg">We perform minor, precise surgical procedures for the complete removal of stubborn facial warts, skin tags, and the release of tongue ties (ankyloglossia). These procedures are fast, virtually painless, and highly effective.</p>
+              <ul className="space-y-6 mb-12">
+                <li className="flex items-start">
+                  <div className="w-1.5 h-1.5 rounded-full bg-[#6e5038] mr-4 mt-2.5 flex-shrink-0"></div>
+                  <p className="text-gray-800 font-light leading-relaxed">
+                    <strong className="font-medium text-[#1a1a1a]">Complete Removal:</strong> Surgically excises stubborn warts to prevent recurrence.
+                  </p>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-1.5 h-1.5 rounded-full bg-[#6e5038] mr-4 mt-2.5 flex-shrink-0"></div>
+                  <p className="text-gray-800 font-light leading-relaxed">
+                    <strong className="font-medium text-[#1a1a1a]">Improves Function:</strong> Tongue tie release instantly improves speech, eating, and oral mobility.
+                  </p>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-1.5 h-1.5 rounded-full bg-[#6e5038] mr-4 mt-2.5 flex-shrink-0"></div>
+                  <p className="text-gray-800 font-light leading-relaxed">
+                    <strong className="font-medium text-[#1a1a1a]">Minimal Downtime:</strong> Fast outpatient procedures with rapid, straightforward recovery.
+                  </p>
+                </li>
+              </ul>
+              <a href="/book" className="inline-block border border-[#1a1a1a] text-[#1a1a1a] hover:bg-[#1a1a1a] hover:text-white transition-colors duration-300 px-8 py-3.5 text-sm tracking-widest uppercase text-center w-max">Book Consultation</a>
+            </div>
+          </div>
+        </section>
+
+
       </main>
       
       <CTA />

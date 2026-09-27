@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Search, User, Phone, ArrowRight, Menu, X, ChevronDown, ChevronUp } from 'lucide-react';
+import { Menu, X, ChevronDown, ChevronUp } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export default function Navbar({ forceDark = false }: { forceDark?: boolean }) {
@@ -99,15 +99,6 @@ return (
 
           {/* Desktop Right Navigation */}
           <div className="hidden md:flex items-center space-x-6">
-            <button aria-label="Search" className={`transition-colors ${isMenuOpen ? 'hover:text-gray-500' : 'hover:text-gray-300'}`}>
-              <Search size={18} strokeWidth={1.5} color={isMenuOpen ? "#1a1a1a" : "white"} />
-            </button>
-            <button aria-label="Account" className={`transition-colors ${isMenuOpen ? 'hover:text-gray-500' : 'hover:text-gray-300'}`}>
-              <User size={18} strokeWidth={1.5} color={isMenuOpen ? "#1a1a1a" : "white"} />
-            </button>
-            <button aria-label="Contact" className={`transition-colors ${isMenuOpen ? 'hover:text-gray-500' : 'hover:text-gray-300'}`}>
-              <Phone size={18} strokeWidth={1.5} color={isMenuOpen ? "#1a1a1a" : "white"} />
-            </button>
             <Link to="/contact" className={`rounded-[2rem] px-8 py-[10px] text-[11px] font-medium tracking-[0.2em] transition-all duration-300 border ${isMenuOpen ? 'border-[#1a1a1a] hover:bg-[#1a1a1a] hover:text-white' : 'border-white/70 hover:bg-white hover:text-black'}`}>BOOK</Link>
           </div>
         </div>
@@ -179,6 +170,8 @@ return (
                         <li><Link to="/surgical" className="hover:text-gray-500" onClick={() => setIsMobileMenuOpen(false)}>Mid-face lift</Link></li>
                         <li><Link to="/surgical" className="hover:text-gray-500" onClick={() => setIsMobileMenuOpen(false)}>Neck lift, platysmaplasty</Link></li>
                         <li><Link to="/surgical" className="hover:text-gray-500" onClick={() => setIsMobileMenuOpen(false)}>Orthognathic surgery</Link></li>
+                        <li><Link to="/surgical" className="hover:text-gray-500" onClick={() => setIsMobileMenuOpen(false)}>Liposuction (Face, Neck)</Link></li>
+                        <li><Link to="/surgical" className="hover:text-gray-500" onClick={() => setIsMobileMenuOpen(false)}>Fat augmentation (Macro, Micro, Nano fat)</Link></li>
                       </ul>
                     </div>
                     <div>
@@ -194,12 +187,7 @@ return (
                         <li><Link to="/surgical" className="hover:text-gray-500" onClick={() => setIsMobileMenuOpen(false)}>Silicon implants (Chin, Jaw, Nose, Cheek)</Link></li>
                       </ul>
                     </div>
-                    <div>
-                      <h4 className="text-sm font-semibold tracking-wider text-gray-400 mb-2 uppercase">Liposuction</h4>
-                      <ul className="flex flex-col space-y-3 text-lg font-light">
-                        <li><Link to="/surgical" className="hover:text-gray-500" onClick={() => setIsMobileMenuOpen(false)}>Face, Neck</Link></li>
-                      </ul>
-                    </div>
+
                     <div>
                       <h4 className="text-sm font-semibold tracking-wider text-gray-400 mb-2 uppercase">Eye</h4>
                       <ul className="flex flex-col space-y-3 text-lg font-light">
@@ -208,12 +196,7 @@ return (
                         <li><Link to="/surgical" className="hover:text-gray-500" onClick={() => setIsMobileMenuOpen(false)}>Ptosis correction</Link></li>
                       </ul>
                     </div>
-                    <div>
-                      <h4 className="text-sm font-semibold tracking-wider text-gray-400 mb-2 uppercase">Fat Augmentation</h4>
-                      <ul className="flex flex-col space-y-3 text-lg font-light">
-                        <li><Link to="/surgical" className="hover:text-gray-500" onClick={() => setIsMobileMenuOpen(false)}>Macro, Micro, Nano fat</Link></li>
-                      </ul>
-                    </div>
+
                     <div>
                       <h4 className="text-sm font-semibold tracking-wider text-gray-400 mb-2 uppercase">Ear</h4>
                       <ul className="flex flex-col space-y-3 text-lg font-light">
@@ -281,12 +264,7 @@ return (
               </ul>
             </div>
 
-            <div className="border-t border-gray-200/50 pt-6">
-              <a href="#" className="block text-2xl md:text-3xl font-medium tracking-wide pb-2">Search</a>
-            </div>
-            <div className="border-t border-gray-200/50 pt-6">
-              <a href="#" className="block text-2xl md:text-3xl font-medium tracking-wide pb-2">Account</a>
-            </div>
+
             <div className="border-t border-gray-200/50 pt-6 pb-8">
               <a href="tel:+919444615554" className="block text-2xl md:text-3xl font-medium tracking-wide pb-2">+91 94446 15554</a>
             </div>
@@ -343,6 +321,8 @@ return (
                           <li><Link to="/surgical" className="hover:text-black transition-colors">Mid-face lift</Link></li>
                           <li><Link to="/surgical" className="hover:text-black transition-colors">Neck lift, platysmaplasty</Link></li>
                           <li><Link to="/surgical" className="hover:text-black transition-colors">Orthognathic surgery</Link></li>
+                          <li><Link to="/surgical" className="hover:text-black transition-colors">Liposuction (Face, Neck)</Link></li>
+                          <li><Link to="/surgical" className="hover:text-black transition-colors">Fat augmentation (Macro, Micro, Nano fat)</Link></li>
                         </ul>
                       </div>
                     </div>
@@ -381,10 +361,8 @@ return (
                   <div className="flex flex-col w-52 pt-11">
                     <div className="space-y-6">
                       <div>
-                        <h4 className="text-[10px] font-semibold tracking-wider text-gray-400 mb-2 uppercase">Body & Ear</h4>
+                        <h4 className="text-[10px] font-semibold tracking-wider text-gray-400 mb-2 uppercase">Ear</h4>
                         <ul className="flex flex-col space-y-2 text-xs md:text-sm font-light text-gray-800">
-                          <li><Link to="/surgical" className="hover:text-black transition-colors">Liposuction (Face, Neck)</Link></li>
-                          <li><Link to="/surgical" className="hover:text-black transition-colors">Fat augmentation (Macro, Micro, Nano fat)</Link></li>
                           <li><Link to="/surgical" className="hover:text-black transition-colors">Otoplasty</Link></li>
                           <li><Link to="/surgical" className="hover:text-black transition-colors">Ear lobe repair/reduction</Link></li>
                         </ul>

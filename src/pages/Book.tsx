@@ -57,7 +57,7 @@ export default function Book() {
               <div>
                 <h4 className="font-semibold text-xs tracking-wider mb-2 uppercase text-[#1a1a1a]">Locations</h4>
                 <p className="text-sm font-light text-gray-600 mb-2"><strong>Clinic 1: Skin Lab</strong><br />Coimbatore, Tamil Nadu</p>
-                <p className="text-sm font-light text-gray-600"><strong>Clinic 2: Rootwise Aesthetic Clinic</strong><br />Tamil Nadu</p>
+
               </div>
               
               <div>

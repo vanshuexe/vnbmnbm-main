@@ -72,10 +72,7 @@ return (
                     <strong>Clinic 1: Skin Lab</strong><br />
                     Coimbatore, Tamil Nadu
                   </p>
-                  <p className="text-gray-800 leading-relaxed">
-                    <strong>Clinic 2: Rootwise Aesthetic Clinic</strong><br />
-                    Tamil Nadu
-                  </p>
+
                 </div>
                 
                 <div>
@@ -92,11 +89,7 @@ return (
                     <strong>Clinic 1:</strong><br />
                     11:00 am - 7:00 pm
                   </p>
-                  <p className="text-gray-800 leading-relaxed">
-                    <strong>Clinic 2:</strong><br />
-                    9:00 am - 10:30 am<br />
-                    7:30 pm - 8:30 pm
-                  </p>
+
                 </div>
               </div>
             </div>
@@ -190,10 +183,7 @@ return (
                 <p className="font-medium text-gray-900">Clinic 1: Skin Lab</p>
                 <p>Coimbatore, Tamil Nadu</p>
               </div>
-              <div>
-                <p className="font-medium text-gray-900">Clinic 2: Rootwise Aesthetic Clinic</p>
-                <p>Tamil Nadu</p>
-              </div>
+
             </div>
             <div className="text-sm font-light text-gray-700 space-y-1">
               <p>+91 94446 15554</p>
@@ -214,7 +204,7 @@ return (
 
         {/* Bottom Footer */}
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center text-[10px] text-gray-600 pt-8 font-light">
-          <p>© Rootwise Aesthetic Clinic 2025 All Rights Reserved</p>
+          <p>© Skin Lab 2025 All Rights Reserved</p>
           <div className="flex space-x-12 mt-4 md:mt-0">
             <a href="#" className="hover:text-[#1a1a1a] transition-colors">Terms of Use</a>
             <a href="#" className="hover:text-[#1a1a1a] transition-colors">Cookies</a>

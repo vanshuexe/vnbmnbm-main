@@ -639,6 +639,242 @@ export default function NonSurgical() {
           </div>
         </section>
 
+              {/* PROFILO Section */}
+        <section id="profilo" className="py-24 px-6 md:px-12 lg:px-24 bg-white">
+          <div className="max-w-7xl mx-auto flex flex-col-reverse lg:flex-row gap-12 lg:gap-20 items-center">
+            {/* Content */}
+            <div className="w-full lg:w-1/2 flex flex-col">
+              <p className="text-[#6e5038] tracking-widest text-sm font-semibold uppercase mb-4">Skin Boosters</p>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-light text-[#1a1a1a] mb-6 tracking-tight leading-tight">
+                PROFILO <br/>
+                <span className="text-gray-500 italic text-2xl md:text-3xl">(Bio-Remodeling)</span>
+              </h2>
+              <div className="h-[1px] w-12 bg-[#1a1a1a] mb-8"></div>
+              <p className="text-gray-700 font-light leading-relaxed mb-8 text-lg">PROFILO is a revolutionary injectable treatment formulated with one of the highest concentrations of hyaluronic acid. It acts as a bio-remodeler rather than a traditional filler, spreading smoothly beneath the skin to stimulate collagen and elastin production, resulting in intensely hydrated, firmer, and more radiant skin.</p>
+              <ul className="space-y-6 mb-12">
+                <li className="flex items-start">
+                  <div className="w-1.5 h-1.5 rounded-full bg-[#6e5038] mr-4 mt-2.5 flex-shrink-0"></div>
+                  <p className="text-gray-800 font-light leading-relaxed">
+                    <strong className="font-medium text-[#1a1a1a]">Intense Hydration:</strong> Provides deep, long-lasting moisture to combat dull and tired-looking skin.
+                  </p>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-1.5 h-1.5 rounded-full bg-[#6e5038] mr-4 mt-2.5 flex-shrink-0"></div>
+                  <p className="text-gray-800 font-light leading-relaxed">
+                    <strong className="font-medium text-[#1a1a1a]">Skin Laxity Treatment:</strong> Effectively tightens and lifts mildly sagging skin across the face, neck, and hands.
+                  </p>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-1.5 h-1.5 rounded-full bg-[#6e5038] mr-4 mt-2.5 flex-shrink-0"></div>
+                  <p className="text-gray-800 font-light leading-relaxed">
+                    <strong className="font-medium text-[#1a1a1a]">Stimulates Collagen:</strong> Triggers a bio-remodeling process that naturally boosts collagen and elastin production.
+                  </p>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-1.5 h-1.5 rounded-full bg-[#6e5038] mr-4 mt-2.5 flex-shrink-0"></div>
+                  <p className="text-gray-800 font-light leading-relaxed">
+                    <strong className="font-medium text-[#1a1a1a]">Natural Glow:</strong> Improves overall skin tone and texture, leaving a radiant, youthful glow.
+                  </p>
+                </li>
+              </ul>
+              <a href="/book" className="inline-block border border-[#1a1a1a] text-[#1a1a1a] hover:bg-[#1a1a1a] hover:text-white transition-colors duration-300 px-8 py-3.5 text-sm tracking-widest uppercase text-center w-max">Book Consultation</a>
+            </div>
+            {/* Image */}
+            <div className="w-full lg:w-1/2 relative rounded-2xl overflow-hidden group shadow-sm">
+              <img src="https://ik.imagekit.io/fdhgiehjz/667677765.jpeg" alt="PROFILO" className="w-full h-[500px] md:h-[650px] object-cover object-center transition-transform duration-700 group-hover:scale-105"/>
+            </div>
+          </div>
+        </section>
+
+        {/* Exosomes / Mesotherapy Section */}
+        <section id="exosomes-mesotherapy" className="py-24 px-6 md:px-12 lg:px-24 bg-[#fcfbf9]">
+          <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-12 lg:gap-20 items-center">
+            {/* Image */}
+            <div className="w-full lg:w-1/2 relative rounded-2xl overflow-hidden group shadow-sm">
+              <img src="https://ik.imagekit.io/fdhgiehjz/65545443.jpeg" alt="Exosomes / Mesotherapy" className="w-full h-[500px] md:h-[650px] object-cover object-center transition-transform duration-700 group-hover:scale-105"/>
+            </div>
+            {/* Content */}
+            <div className="w-full lg:w-1/2 flex flex-col">
+              <p className="text-[#6e5038] tracking-widest text-sm font-semibold uppercase mb-4">Skin Refinement</p>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-light text-[#1a1a1a] mb-6 tracking-tight leading-tight">
+                Exosomes / Mesotherapy <br/>
+                <span className="text-gray-500 italic text-2xl md:text-3xl">(Cellular Rejuvenation)</span>
+              </h2>
+              <div className="h-[1px] w-12 bg-[#1a1a1a] mb-8"></div>
+              <p className="text-gray-700 font-light leading-relaxed mb-8 text-lg">Harness the power of regenerative medicine with Exosomes and Mesotherapy. This treatment delivers potent growth factors, vitamins, and peptides directly into the skin to accelerate healing, reduce inflammation, and rejuvenate at a cellular level, providing unparalleled anti-aging benefits.</p>
+              <ul className="space-y-6 mb-12">
+                <li className="flex items-start">
+                  <div className="w-1.5 h-1.5 rounded-full bg-[#6e5038] mr-4 mt-2.5 flex-shrink-0"></div>
+                  <p className="text-gray-800 font-light leading-relaxed">
+                    <strong className="font-medium text-[#1a1a1a]">Cellular Repair:</strong> Utilizes advanced exosome technology to repair damaged skin cells and promote regeneration.
+                  </p>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-1.5 h-1.5 rounded-full bg-[#6e5038] mr-4 mt-2.5 flex-shrink-0"></div>
+                  <p className="text-gray-800 font-light leading-relaxed">
+                    <strong className="font-medium text-[#1a1a1a]">Anti-Inflammatory:</strong> Significantly calms redness, irritation, and inflammation in sensitive skin.
+                  </p>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-1.5 h-1.5 rounded-full bg-[#6e5038] mr-4 mt-2.5 flex-shrink-0"></div>
+                  <p className="text-gray-800 font-light leading-relaxed">
+                    <strong className="font-medium text-[#1a1a1a]">Customized Cocktails:</strong> Mesotherapy blends are tailored with vitamins and antioxidants specific to your skin's needs.
+                  </p>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-1.5 h-1.5 rounded-full bg-[#6e5038] mr-4 mt-2.5 flex-shrink-0"></div>
+                  <p className="text-gray-800 font-light leading-relaxed">
+                    <strong className="font-medium text-[#1a1a1a]">Enhanced Vitality:</strong> Restores a bright, healthy, and revitalized appearance to aging or stressed skin.
+                  </p>
+                </li>
+              </ul>
+              <a href="/book" className="inline-block border border-[#1a1a1a] text-[#1a1a1a] hover:bg-[#1a1a1a] hover:text-white transition-colors duration-300 px-8 py-3.5 text-sm tracking-widest uppercase text-center w-max">Book Consultation</a>
+            </div>
+          </div>
+        </section>
+
+        {/* Scar Management Section */}
+        <section id="non-surgical-scar-management" className="py-24 px-6 md:px-12 lg:px-24 bg-white">
+          <div className="max-w-7xl mx-auto flex flex-col-reverse lg:flex-row gap-12 lg:gap-20 items-center">
+            {/* Content */}
+            <div className="w-full lg:w-1/2 flex flex-col">
+              <p className="text-[#6e5038] tracking-widest text-sm font-semibold uppercase mb-4">Skin Refinement</p>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-light text-[#1a1a1a] mb-6 tracking-tight leading-tight">
+                Scar Management <br/>
+                <span className="text-gray-500 italic text-2xl md:text-3xl">(Non-Surgical Refinement)</span>
+              </h2>
+              <div className="h-[1px] w-12 bg-[#1a1a1a] mb-8"></div>
+              <p className="text-gray-700 font-light leading-relaxed mb-8 text-lg">Our non-surgical scar management combines advanced topical treatments, targeted injections, and minimally invasive resurfacing techniques to fade acne scars, surgical scars, and hyperpigmentation, restoring a smooth, even skin texture.</p>
+              <ul className="space-y-6 mb-12">
+                <li className="flex items-start">
+                  <div className="w-1.5 h-1.5 rounded-full bg-[#6e5038] mr-4 mt-2.5 flex-shrink-0"></div>
+                  <p className="text-gray-800 font-light leading-relaxed">
+                    <strong className="font-medium text-[#1a1a1a]">Texture Improvement:</strong> Smooths out uneven or pitted skin caused by acne or minor injuries.
+                  </p>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-1.5 h-1.5 rounded-full bg-[#6e5038] mr-4 mt-2.5 flex-shrink-0"></div>
+                  <p className="text-gray-800 font-light leading-relaxed">
+                    <strong className="font-medium text-[#1a1a1a]">Color Blending:</strong> Reduces the redness or dark pigmentation often associated with healed scars.
+                  </p>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-1.5 h-1.5 rounded-full bg-[#6e5038] mr-4 mt-2.5 flex-shrink-0"></div>
+                  <p className="text-gray-800 font-light leading-relaxed">
+                    <strong className="font-medium text-[#1a1a1a]">Non-Invasive:</strong> Achieves significant improvement without the need for additional surgical incisions.
+                  </p>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-1.5 h-1.5 rounded-full bg-[#6e5038] mr-4 mt-2.5 flex-shrink-0"></div>
+                  <p className="text-gray-800 font-light leading-relaxed">
+                    <strong className="font-medium text-[#1a1a1a]">Customized Care:</strong> Tailored treatment plans combining peels, microneedling, or injections based on scar type.
+                  </p>
+                </li>
+              </ul>
+              <a href="/book" className="inline-block border border-[#1a1a1a] text-[#1a1a1a] hover:bg-[#1a1a1a] hover:text-white transition-colors duration-300 px-8 py-3.5 text-sm tracking-widest uppercase text-center w-max">Book Consultation</a>
+            </div>
+            {/* Image */}
+            <div className="w-full lg:w-1/2 relative rounded-2xl overflow-hidden group shadow-sm">
+              <img src="https://ik.imagekit.io/fdhgiehjz/88888.jpeg" alt="Scar Management" className="w-full h-[500px] md:h-[650px] object-cover object-center transition-transform duration-700 group-hover:scale-105"/>
+            </div>
+          </div>
+        </section>
+
+        {/* Double Chin Reduction Section */}
+        <section id="double-chin-reduction" className="py-24 px-6 md:px-12 lg:px-24 bg-[#fcfbf9]">
+          <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-12 lg:gap-20 items-center">
+            {/* Image */}
+            <div className="w-full lg:w-1/2 relative rounded-2xl overflow-hidden group shadow-sm">
+              <img src="https://ik.imagekit.io/fdhgiehjz/4344343.jpeg" alt="Double Chin Reduction" className="w-full h-[500px] md:h-[650px] object-cover object-center transition-transform duration-700 group-hover:scale-105"/>
+            </div>
+            {/* Content */}
+            <div className="w-full lg:w-1/2 flex flex-col">
+              <p className="text-[#6e5038] tracking-widest text-sm font-semibold uppercase mb-4">Facial Contouring</p>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-light text-[#1a1a1a] mb-6 tracking-tight leading-tight">
+                Double Chin Reduction <br/>
+                <span className="text-gray-500 italic text-2xl md:text-3xl">(Submental Contouring)</span>
+              </h2>
+              <div className="h-[1px] w-12 bg-[#1a1a1a] mb-8"></div>
+              <p className="text-gray-700 font-light leading-relaxed mb-8 text-lg">Target and eliminate stubborn fat beneath the chin with our non-surgical double chin reduction treatments. Utilizing targeted fat-dissolving injections, this procedure breaks down fat cells to sculpt a tighter, more defined jawline without surgery.</p>
+              <ul className="space-y-6 mb-12">
+                <li className="flex items-start">
+                  <div className="w-1.5 h-1.5 rounded-full bg-[#6e5038] mr-4 mt-2.5 flex-shrink-0"></div>
+                  <p className="text-gray-800 font-light leading-relaxed">
+                    <strong className="font-medium text-[#1a1a1a]">Targeted Fat Loss:</strong> Specifically addresses the submental fat pad that resists diet and exercise.
+                  </p>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-1.5 h-1.5 rounded-full bg-[#6e5038] mr-4 mt-2.5 flex-shrink-0"></div>
+                  <p className="text-gray-800 font-light leading-relaxed">
+                    <strong className="font-medium text-[#1a1a1a]">Defined Jawline:</strong> Enhances your lower facial profile, creating a sharper and more contoured jawline.
+                  </p>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-1.5 h-1.5 rounded-full bg-[#6e5038] mr-4 mt-2.5 flex-shrink-0"></div>
+                  <p className="text-gray-800 font-light leading-relaxed">
+                    <strong className="font-medium text-[#1a1a1a]">Permanent Results:</strong> Treated fat cells are permanently destroyed and naturally eliminated by the body.
+                  </p>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-1.5 h-1.5 rounded-full bg-[#6e5038] mr-4 mt-2.5 flex-shrink-0"></div>
+                  <p className="text-gray-800 font-light leading-relaxed">
+                    <strong className="font-medium text-[#1a1a1a]">No Surgery Required:</strong> Avoids the downtime, incisions, and risks associated with surgical liposuction.
+                  </p>
+                </li>
+              </ul>
+              <a href="/book" className="inline-block border border-[#1a1a1a] text-[#1a1a1a] hover:bg-[#1a1a1a] hover:text-white transition-colors duration-300 px-8 py-3.5 text-sm tracking-widest uppercase text-center w-max">Book Consultation</a>
+            </div>
+          </div>
+        </section>
+
+        {/* IV Infusions Section */}
+        <section id="iv-infusions" className="py-24 px-6 md:px-12 lg:px-24 bg-white">
+          <div className="max-w-7xl mx-auto flex flex-col-reverse lg:flex-row gap-12 lg:gap-20 items-center">
+            {/* Content */}
+            <div className="w-full lg:w-1/2 flex flex-col">
+              <p className="text-[#6e5038] tracking-widest text-sm font-semibold uppercase mb-4">Wellness</p>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-light text-[#1a1a1a] mb-6 tracking-tight leading-tight">
+                IV Infusions <br/>
+                <span className="text-gray-500 italic text-2xl md:text-3xl">(Wellness & Rejuvenation)</span>
+              </h2>
+              <div className="h-[1px] w-12 bg-[#1a1a1a] mb-8"></div>
+              <p className="text-gray-700 font-light leading-relaxed mb-8 text-lg">Revitalize your body and skin from the inside out with our customized IV infusions. Delivering a potent blend of essential vitamins, antioxidants (like Glutathione and Vitamin C), and hydration directly into your bloodstream for maximum absorption and instant glowing results.</p>
+              <ul className="space-y-6 mb-12">
+                <li className="flex items-start">
+                  <div className="w-1.5 h-1.5 rounded-full bg-[#6e5038] mr-4 mt-2.5 flex-shrink-0"></div>
+                  <p className="text-gray-800 font-light leading-relaxed">
+                    <strong className="font-medium text-[#1a1a1a]">Instant Hydration:</strong> Replenishes bodily fluids immediately for an energized, refreshed feeling.
+                  </p>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-1.5 h-1.5 rounded-full bg-[#6e5038] mr-4 mt-2.5 flex-shrink-0"></div>
+                  <p className="text-gray-800 font-light leading-relaxed">
+                    <strong className="font-medium text-[#1a1a1a]">Skin Brightening:</strong> Glutathione and Vitamin C help lighten pigmentation and give the skin a radiant glow.
+                  </p>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-1.5 h-1.5 rounded-full bg-[#6e5038] mr-4 mt-2.5 flex-shrink-0"></div>
+                  <p className="text-gray-800 font-light leading-relaxed">
+                    <strong className="font-medium text-[#1a1a1a]">Immunity Boost:</strong> Strengthens the immune system with essential vitamins and powerful antioxidants.
+                  </p>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-1.5 h-1.5 rounded-full bg-[#6e5038] mr-4 mt-2.5 flex-shrink-0"></div>
+                  <p className="text-gray-800 font-light leading-relaxed">
+                    <strong className="font-medium text-[#1a1a1a]">Maximum Absorption:</strong> Bypasses the digestive system for 100% absorption of nutrients.
+                  </p>
+                </li>
+              </ul>
+              <a href="/book" className="inline-block border border-[#1a1a1a] text-[#1a1a1a] hover:bg-[#1a1a1a] hover:text-white transition-colors duration-300 px-8 py-3.5 text-sm tracking-widest uppercase text-center w-max">Book Consultation</a>
+            </div>
+            {/* Image */}
+            <div className="w-full lg:w-1/2 relative rounded-2xl overflow-hidden group shadow-sm">
+              <img src="https://ik.imagekit.io/fdhgiehjz/4544.jpeg" alt="IV Infusions" className="w-full h-[500px] md:h-[650px] object-cover object-center transition-transform duration-700 group-hover:scale-105"/>
+            </div>
+          </div>
+        </section>
+
+
       </main>
       
       <CTA />

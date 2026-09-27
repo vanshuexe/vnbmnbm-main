@@ -38,10 +38,7 @@ export default function Footer() {
                 <p className="font-medium text-gray-900">Clinic 1: Skin Lab</p>
                 <p>Coimbatore, Tamil Nadu</p>
               </div>
-              <div>
-                <p className="font-medium text-gray-900">Clinic 2: Rootwise Aesthetic Clinic</p>
-                <p>Tamil Nadu</p>
-              </div>
+
             </div>
             <div className="text-sm font-light text-gray-700 space-y-1">
               <p>+91 94446 15554</p>
@@ -62,7 +59,7 @@ export default function Footer() {
 
         {/* Bottom Footer */}
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center text-[10px] text-gray-600 pt-8 font-light">
-          <p>© Rootwise Aesthetic Clinic 2025 All Rights Reserved</p>
+          <p>© Skin Lab 2025 All Rights Reserved</p>
           <div className="flex space-x-12 mt-4 md:mt-0">
             <a href="#" className="hover:text-[#1a1a1a] transition-colors">Terms of Use</a>
             <a href="#" className="hover:text-[#1a1a1a] transition-colors">Cookies</a>
