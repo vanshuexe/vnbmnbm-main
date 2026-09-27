@@ -109,7 +109,7 @@ return (
             <div className="w-full md:w-[55%] p-8 md:p-12 lg:p-20 xl:p-24 flex flex-col justify-center text-left">
               <h2 className="text-4xl md:text-5xl font-light mb-6 md:mb-8">Dr. Shruthilaya Ganesan</h2>
               <p className="text-gray-700 text-sm leading-relaxed font-light mb-10 md:mb-12 max-w-lg">
-                I am a Maxillofacial surgeon specialised in Facial Aesthetics and Cosmetic Surgery. My primary background is in treating the complex structures of the face, jaw, and neck. Following that, I completed an advanced post-doctoral fellowship in Cosmetic Surgery at DY Patil University under the mentorship of the legendary pioneer Dr. Mohan Thomas.<br/><br/>This gives me a unique dual expertise. My practice bridges the gap between maxillofacial surgery and advanced aesthetic surgery. I specialize in full-face surgical and non-surgical rejuvenation, rhinoplasty, and facial contouring.
+                I am a Maxillofacial surgeon specialised in Facial Aesthetics and Cosmetic Surgery. My primary background is in treating the complex structures of the face, jaw, and neck. Following that, I completed an advanced post-doctoral fellowship in Cosmetic Surgery at DY Patil University under the mentorship of the legendary pioneer Dr. Mohan Thomas.<br/><br/>This gives me a unique dual expertise. My practice bridges the gap between maxillofacial surgery and advanced aesthetic surgery. I specialize in full-face Cosmetic Surgery, rhinoplasty, and facial contouring.
               </p>
             </div>
             
