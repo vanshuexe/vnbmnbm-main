@@ -494,27 +494,5 @@
         "text": "Utilizes multi-layered suturing to minimize tension and optimize healing."
       }
     ]
-  },
-  {
-    "id": "wart-tongue-tie-removal",
-    "category": "Hair & Misc",
-    "title": "Wart & Tongue Tie Removal",
-    "subtitle": "Minor Surgical Procedures",
-    "image": "https://ik.imagekit.io/fdhgiehjz/4344343.jpeg",
-    "description": "We perform minor, precise surgical procedures for the complete removal of stubborn facial warts, skin tags, and the release of tongue ties (ankyloglossia). These procedures are fast, virtually painless, and highly effective.",
-    "bullets": [
-      {
-        "title": "Complete Removal:",
-        "text": "Surgically excises stubborn warts to prevent recurrence."
-      },
-      {
-        "title": "Improves Function:",
-        "text": "Tongue tie release instantly improves speech, eating, and oral mobility."
-      },
-      {
-        "title": "Minimal Downtime:",
-        "text": "Fast outpatient procedures with rapid, straightforward recovery."
-      }
-    ]
   }
 ]
