@@ -588,28 +588,24 @@
     ]
   },
   {
-    "id": "puffy-eyes",
-    "category": "Eyes",
-    "title": "Puffy Eyes",
-    "subtitle": "Under Eye Bag Treatment",
-    "image": "https://ik.imagekit.io/fdhgiehjz/4344343.jpeg?updatedAt=1789497478899",
-    "description": "Puffy, swollen eyes caused by under-eye fat herniation or fluid retention can make you look perpetually tired. Our surgical and non-surgical treatments target the root cause — removing or repositioning fat deposits and tightening the lower eyelid area to restore a smooth, refreshed, and well-rested appearance.",
+    "id": "wart-tongue-tie-removal",
+    "category": "Hair & Misc",
+    "title": "Wart & Tongue Tie Removal",
+    "subtitle": "Minor Surgical Procedures",
+    "image": "https://ik.imagekit.io/fdhgiehjz/4344343.jpeg",
+    "description": "We perform minor, precise surgical procedures for the complete removal of stubborn facial warts, skin tags, and the release of tongue ties (ankyloglossia). These procedures are fast, virtually painless, and highly effective.",
     "bullets": [
       {
-        "title": "Eliminates Puffiness:",
-        "text": "Permanently removes or repositions under-eye fat pads that cause a swollen, baggy appearance."
+        "title": "Complete Removal:",
+        "text": "Surgically excises stubborn warts to prevent recurrence."
       },
       {
-        "title": "Refreshed Look:",
-        "text": "Restores a smooth, youthful transition between the lower eyelid and cheek, eliminating the tired look."
+        "title": "Improves Function:",
+        "text": "Tongue tie release instantly improves speech, eating, and oral mobility."
       },
       {
-        "title": "Surgical & Non-Surgical Options:",
-        "text": "Treatment is tailored to the severity — from injectable fillers to lower blepharoplasty for lasting results."
-      },
-      {
-        "title": "Hidden Incisions:",
-        "text": "Surgical correction is performed through concealed incisions inside or just below the lower eyelid."
+        "title": "Minimal Downtime:",
+        "text": "Fast outpatient procedures with rapid, straightforward recovery."
       }
     ]
   }
