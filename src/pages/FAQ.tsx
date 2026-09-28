@@ -102,7 +102,7 @@ export default function FAQ() {
               
               <div className="space-y-4">
                 {section.questions.map((faq, qIndex) => {
-                  const uniqueIndex = \`\${sIndex}-\${qIndex}\`;
+                  const uniqueIndex = `${sIndex}-${qIndex}`;
                   const isOpen = openIndex === uniqueIndex;
                   
                   return (
@@ -121,9 +121,9 @@ export default function FAQ() {
                       </button>
                       
                       <div 
-                        className={\`transition-all duration-300 ease-in-out \${
+                        className={`transition-all duration-300 ease-in-out ${
                           isOpen ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'
-                        }\`}
+                        }`}
                       >
                         <div className="p-6 pt-0 text-gray-600 font-light leading-relaxed border-t border-gray-100">
                           {faq.a}
