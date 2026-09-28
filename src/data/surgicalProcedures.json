@@ -157,7 +157,7 @@
   },
   {
     "id": "rhinoplasty",
-    "category": "Face",
+    "category": "Nose",
     "title": "Rhinoplasty",
     "subtitle": "Nose Reshaping",
     "image": "https://ik.imagekit.io/fdhgiehjz/Rhinoplasty.PNG",
@@ -287,7 +287,7 @@
   },
   {
     "id": "platysmaplasty",
-    "category": "Face",
+    "category": "Neck",
     "title": "Platysmaplasty",
     "subtitle": "Surgical Neck Lift",
     "image": "https://ik.imagekit.io/fdhgiehjz/Surgical%20-%20platysmaplasty.PNG",
@@ -413,7 +413,7 @@
   },
   {
     "id": "surgical-brow-lift",
-    "category": "Face",
+    "category": "Eyes",
     "title": "Brow Lift",
     "subtitle": "Surgical Elevation",
     "image": "https://ik.imagekit.io/fdhgiehjz/65545443.jpeg",

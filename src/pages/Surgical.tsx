@@ -4,7 +4,7 @@ import CTA from '../components/CTA';
 import ProcedureCarousel from '../components/ProcedureCarousel';
 import procedures from '../data/surgicalProcedures.json';
 
-const categories = ['Face', 'Eyes', 'Ears', 'Nose', 'Hair & Misc'];
+const categories = ['Face', 'Eyes', 'Ears', 'Nose', 'Neck', 'Hair & Misc'];
 
 export default function Surgical() {
   return (
