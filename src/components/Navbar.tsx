@@ -267,6 +267,7 @@ return (
 
             <div className="border-t border-gray-200/50 pt-6 pb-8">
               <a href="tel:+919444615554" className="block text-2xl md:text-3xl font-medium tracking-wide pb-2">+91 94446 15554</a>
+              <a href="mailto:dr.shruthilayaganesan@gmail.com" className="block text-lg font-light text-gray-500 tracking-wide mt-1">dr.shruthilayaganesan@gmail.com</a>
             </div>
 
           </nav>
