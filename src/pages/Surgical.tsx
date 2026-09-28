@@ -2,6 +2,7 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import CTA from '../components/CTA';
 import ProcedureCarousel from '../components/ProcedureCarousel';
+import ProcedureList from '../components/ProcedureList';
 import procedures from '../data/surgicalProcedures.json';
 
 const categories = ['Face', 'Eyes', 'Ears', 'Nose', 'Neck', 'Hair & Misc'];
@@ -31,6 +32,7 @@ export default function Surgical() {
 
       <main className="flex-grow w-full bg-[#fcfbf9]">
         <ProcedureCarousel procedures={procedures} categories={categories} />
+        <ProcedureList procedures={procedures} />
       </main>
 
       <CTA />
