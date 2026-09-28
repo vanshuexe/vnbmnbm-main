@@ -474,28 +474,6 @@
     ]
   },
   {
-    "id": "alarplasty",
-    "category": "Nose",
-    "title": "Alarplasty",
-    "subtitle": "Nostril Reduction",
-    "image": "https://ik.imagekit.io/fdhgiehjz/65545443.jpeg",
-    "description": "Alarplasty is a delicate surgical procedure aimed specifically at narrowing wide or flared nostrils. Often performed alongside rhinoplasty or on its own, it refines the nasal base to bring the nose into perfect proportion with the rest of the face.",
-    "bullets": [
-      {
-        "title": "Narrows Nostrils:",
-        "text": "Reduces nostril flaring and decreases the width of the nasal base."
-      },
-      {
-        "title": "Hidden Incisions:",
-        "text": "Scars are concealed within the natural crease where the nostril meets the cheek."
-      },
-      {
-        "title": "Preserves Natural Look:",
-        "text": "Meticulously planned to ensure the nose looks naturally proportionate, not 'pinched'."
-      }
-    ]
-  },
-  {
     "id": "surgical-scar-revision",
     "category": "Hair & Misc",
     "title": "Scar Revision",
