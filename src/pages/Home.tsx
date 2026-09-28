@@ -206,7 +206,7 @@ return (
             className="w-full h-full object-cover object-center"
           />
         </div>
-      </section>
+      </motion.section>
 
       {/* The Feature Section */}
       <section className="relative z-10 w-full py-24 bg-[#f7f6f2] flex flex-col">
