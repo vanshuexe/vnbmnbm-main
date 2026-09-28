@@ -32,7 +32,7 @@ export default function ProcedureList({ procedures }: ProcedureListProps) {
               <motion.div 
                 initial={{ opacity: 0, x: isEven ? -50 : 50 }}
                 whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true, margin: "-100px" }}
+                viewport={{ once: false, margin: "-100px" }}
                 transition={{ duration: 0.8 }}
                 className="w-full lg:w-1/2 flex flex-col"
               >
@@ -72,7 +72,7 @@ export default function ProcedureList({ procedures }: ProcedureListProps) {
               <motion.div 
                 initial={{ opacity: 0, x: isEven ? 50 : -50 }}
                 whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true, margin: "-100px" }}
+                viewport={{ once: false, margin: "-100px" }}
                 transition={{ duration: 0.8, delay: 0.2 }}
                 className="w-full lg:w-1/2 relative rounded-2xl overflow-hidden group shadow-sm"
               >

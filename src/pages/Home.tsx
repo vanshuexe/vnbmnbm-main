@@ -182,7 +182,7 @@ return (
       <motion.section 
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, margin: "-100px" }}
+        viewport={{ once: false, margin: "-100px" }}
         transition={{ duration: 0.8 }}
         className="relative z-10 w-full flex flex-col md:flex-row min-h-[500px] md:h-[600px] bg-[#f4f3ef]"
       >

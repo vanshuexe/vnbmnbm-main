@@ -58,7 +58,7 @@ function CategoryRow({ category, procedures }: { category: string, procedures: P
             key={proc.id} 
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true, margin: "0px" }}
+            viewport={{ once: false, margin: "0px" }}
             transition={{ duration: 0.5, delay: index * 0.1 }}
             className="flex-none w-[280px] md:w-[320px] snap-start cursor-pointer group"
             onClick={() => scrollToProcedure(proc.id)}
