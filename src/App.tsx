@@ -3,6 +3,7 @@ import Home from './pages/Home';
 import Surgical from './pages/Surgical';
 import NonSurgical from './pages/NonSurgical';
 import Contact from './pages/Contact';
+import FAQ from './pages/FAQ';
 
 import TheFeature from './pages/TheFeature';
 import Book from './pages/Book';
@@ -15,6 +16,7 @@ export default function App() {
         <Route path="/surgical" element={<Surgical />} />
         <Route path="/non-surgical" element={<NonSurgical />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/faq" element={<FAQ />} />
 
         <Route path="/the-feature" element={<TheFeature />} />
         <Route path="/book" element={<Book />} />

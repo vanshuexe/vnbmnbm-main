@@ -50,7 +50,7 @@ export default function Footer() {
           <div className="w-full md:w-2/12 flex flex-col mt-2 md:mt-0">
             <h4 className="font-semibold text-xs tracking-wider mb-6">Learn More</h4>
             <ul className="text-sm font-light text-gray-700 space-y-6">
-              <li><a href="#" className="hover:text-[#1a1a1a] transition-colors">FAQ</a></li>
+              <li><Link to="/faq" className="hover:text-[#1a1a1a] transition-colors">FAQ</Link></li>
               <li><a href="#" className="hover:text-[#1a1a1a] transition-colors">Sitemap</a></li>
             </ul>
           </div>

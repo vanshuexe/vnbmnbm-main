@@ -260,6 +260,7 @@ return (
               </button>
               <ul className={`flex flex-col space-y-4 pl-4 overflow-hidden transition-all duration-300 text-lg font-light ${mobileSubMenuOpen === 'discover' ? 'max-h-[500px] mt-4 opacity-100' : 'max-h-0 opacity-0'}`}>
                 <li><Link to="/the-feature" className="hover:text-gray-500" onClick={() => setIsMobileMenuOpen(false)}>The Feature</Link></li>
+                <li><Link to="/faq" className="hover:text-gray-500" onClick={() => setIsMobileMenuOpen(false)}>FAQ</Link></li>
                 <li><Link to="/contact" className="hover:text-gray-500" onClick={() => setIsMobileMenuOpen(false)}>Contact Us</Link></li>
               </ul>
             </div>
@@ -396,6 +397,7 @@ return (
 
                     <ul className="flex flex-col space-y-4 text-sm font-light text-gray-800">
                       <li><Link to="/the-feature" className="hover:text-black transition-colors" onClick={() => setIsMobileMenuOpen(false)}>The Feature</Link></li>
+                      <li><Link to="/faq" className="hover:text-black transition-colors">FAQ</Link></li>
                       <li><Link to="/contact" className="hover:text-black transition-colors">Contact Us</Link></li>
                     </ul>
                   </div>
