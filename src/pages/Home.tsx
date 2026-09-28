@@ -139,7 +139,7 @@ return (
           {/* Surgical Block */}
           <div className="relative w-full md:w-1/2 h-[500px] md:h-[650px] group overflow-hidden cursor-pointer">
             <img 
-              src="https://ik.imagekit.io/fdhgiehjz/65545443.jpeg?updatedAt=1789497478699" 
+              src="https://ik.imagekit.io/fdhgiehjz/image5.jpeg?updatedAt=1790603261684" 
               alt="Surgical Procedures" 
               className="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-1000 group-hover:scale-105"
             />
