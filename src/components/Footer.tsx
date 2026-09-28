@@ -51,7 +51,7 @@ export default function Footer() {
             <h4 className="font-semibold text-xs tracking-wider mb-6">Learn More</h4>
             <ul className="text-sm font-light text-gray-700 space-y-6">
               <li><Link to="/faq" className="hover:text-[#1a1a1a] transition-colors">FAQ</Link></li>
-              <li><a href="#" className="hover:text-[#1a1a1a] transition-colors">Sitemap</a></li>
+              <li><Link to="/sitemap" className="hover:text-[#1a1a1a] transition-colors">Sitemap</Link></li>
             </ul>
           </div>
 
