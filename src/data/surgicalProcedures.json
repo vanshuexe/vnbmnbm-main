@@ -234,32 +234,6 @@
     ]
   },
   {
-    "id": "fat-augmentation",
-    "category": "Face",
-    "title": "Fat Augmentation",
-    "subtitle": "Macro, Micro &amp; Nano Fat",
-    "image": "https://ik.imagekit.io/fdhgiehjz/Fat%20augmentation.PNG",
-    "description": "Restore youthful volume and profoundly improve skin quality using your body's own natural fat. Through advanced purification, we utilize Macro fat for deep structural support, Micro fat for delicate contouring, and Nano fat to deliver a powerful boost of regenerative stem cells directly to the skin.",
-    "bullets": [
-      {
-        "title": "Natural Volume:",
-        "text": "Uses your body's own purified fat cells to safely restore lost facial volume, ensuring completely natural-looking and feeling results."
-      },
-      {
-        "title": "Versatile Application:",
-        "text": "Beautifully tailored: Macro fat restores deep volume, Micro fat refines contours, and Nano fat addresses fine lines."
-      },
-      {
-        "title": "Stem Cell Benefits:",
-        "text": "The transferred fat is rich in natural stem cells that continuously rejuvenate the overlying skin, giving it a healthy, radiant glow."
-      },
-      {
-        "title": "Long-Lasting:",
-        "text": "Because it utilizes your living tissue, a significant portion of the transferred fat becomes a permanent, beautiful part of your facial structure."
-      }
-    ]
-  },
-  {
     "id": "blepharoplasty",
     "category": "Eyes",
     "title": "Blepharoplasty",
@@ -456,28 +430,6 @@
     ]
   },
   {
-    "id": "orthognathic-surgery",
-    "category": "Face",
-    "title": "Orthognathic Surgery",
-    "subtitle": "Corrective Jaw Surgery",
-    "image": "https://ik.imagekit.io/fdhgiehjz/4344343.jpeg",
-    "description": "Orthognathic surgery corrects severe jaw discrepancies and bite issues that cannot be resolved with orthodontics alone. It improves breathing, chewing function, and facial symmetry by surgically realigning the upper and lower jaws.",
-    "bullets": [
-      {
-        "title": "Functional Improvement:",
-        "text": "Resolves difficulties with chewing, swallowing, and speech."
-      },
-      {
-        "title": "Facial Harmony:",
-        "text": "Dramatically improves lower facial proportions, symmetry, and profile."
-      },
-      {
-        "title": "Airway Expansion:",
-        "text": "Can effectively treat obstructive sleep apnea by opening the airway."
-      }
-    ]
-  },
-  {
     "id": "dimple-creation",
     "category": "Face",
     "title": "Dimple Creation",
@@ -496,28 +448,6 @@
       {
         "title": "Quick Procedure:",
         "text": "Typically performed under local anesthesia in under an hour."
-      }
-    ]
-  },
-  {
-    "id": "silicon-facial-implants",
-    "category": "Face",
-    "title": "Facial Implants",
-    "subtitle": "Chin, Nose, Cheek",
-    "image": "https://ik.imagekit.io/fdhgiehjz/8899.jpeg",
-    "description": "Custom silicone facial implants are used to enhance the fundamental bone structure of the face. Whether building a weak chin, augmenting flat cheekbones, or refining nasal contours, implants provide permanent, striking, and balanced facial definition.",
-    "bullets": [
-      {
-        "title": "Permanent Volume:",
-        "text": "Offers a lifelong solution to structural volume deficiencies."
-      },
-      {
-        "title": "Custom Contouring:",
-        "text": "Implants are meticulously selected and shaped to fit your unique anatomy."
-      },
-      {
-        "title": "Balanced Proportions:",
-        "text": "Brings harmony to facial features, such as balancing a prominent nose with a stronger chin."
       }
     ]
   },
