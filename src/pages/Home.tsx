@@ -43,8 +43,12 @@ return (
       {/* Main Hero Content */}
       <main className="relative z-10 flex flex-col justify-center items-center md:items-start min-h-[calc(100vh-80px)] px-6 md:px-12 lg:px-24 w-full text-center md:text-left">
         <div className="max-w-lg mt-12 flex flex-col items-center md:items-start">
-
-
+          {/* Eyebrow */}
+          <div className="flex items-center justify-center md:justify-start mb-4">
+            <div className="hidden md:block h-[12px] w-[2px] bg-white mr-3"></div>
+            <p className="text-sm tracking-wider font-light">Skin Lab</p>
+          </div>
+          
           {/* Heading */}
           <h1 className="text-[40px] leading-[1.1] md:text-5xl lg:text-6xl mb-6 md:mb-8 font-bold tracking-tight">
             Dr. Shruthilaya Ganesan
