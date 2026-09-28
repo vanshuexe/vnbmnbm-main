@@ -12,6 +12,7 @@ import Testimonials from '../components/Testimonials';
 import InstagramFeed from '../components/InstagramFeed';
 import CTA from '../components/CTA';
 import Footer from '../components/Footer';
+import { motion } from 'framer-motion';
 export default function Home() {
 return (
     <div className="relative min-h-screen bg-[#ebe9e4] font-sans overflow-x-hidden">
@@ -42,7 +43,12 @@ return (
 
       {/* Main Hero Content */}
       <main className="relative z-10 flex flex-col justify-center items-center md:items-start min-h-[calc(100vh-80px)] px-6 md:px-12 lg:px-24 w-full text-center md:text-left">
-        <div className="max-w-lg mt-12 flex flex-col items-center md:items-start">
+        <motion.div 
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="max-w-lg mt-12 flex flex-col items-center md:items-start"
+        >
 
 
           {/* Heading */}
@@ -173,7 +179,13 @@ return (
       </section>
 
       {/* Quote Section */}
-      <section className="relative z-10 w-full flex flex-col md:flex-row min-h-[500px] md:h-[600px] bg-[#f4f3ef]">
+      <motion.section 
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: "-100px" }}
+        transition={{ duration: 0.8 }}
+        className="relative z-10 w-full flex flex-col md:flex-row min-h-[500px] md:h-[600px] bg-[#f4f3ef]"
+      >
         {/* Left Content */}
         <div className="w-full md:w-1/2 h-full flex flex-col items-center justify-center p-12 md:p-24 text-left">
           <div className="max-w-md w-full mx-auto md:mr-12 xl:mr-24">

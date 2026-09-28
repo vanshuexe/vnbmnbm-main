@@ -1,9 +1,16 @@
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 
 export default function CTA() {
   return (
     <section className="relative z-10 w-full py-24 px-6 md:px-12 lg:px-24 bg-[#25211e] text-white">
-      <div className="max-w-4xl mx-auto text-center flex flex-col items-center">
+      <motion.div 
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: "-50px" }}
+        transition={{ duration: 0.8 }}
+        className="max-w-4xl mx-auto text-center flex flex-col items-center"
+      >
         <span className="text-[10px] font-semibold tracking-[0.2em] uppercase mb-4 text-gray-400">Take the Next Step</span>
         <h2 className="text-3xl md:text-5xl font-light mb-6 tracking-wide leading-tight">
           Begin Your Transformation
@@ -17,7 +24,7 @@ export default function CTA() {
         >
           Book a Consultation
         </Link>
-      </div>
+      </motion.div>
     </section>
   );
 }

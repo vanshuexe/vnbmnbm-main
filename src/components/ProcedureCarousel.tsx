@@ -1,5 +1,6 @@
 import { useRef } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { motion } from 'framer-motion';
 
 interface Procedure {
   id: string;
@@ -52,9 +53,13 @@ function CategoryRow({ category, procedures }: { category: string, procedures: P
         className="flex overflow-x-auto space-x-6 pb-6 hide-scrollbar snap-x snap-mandatory"
         style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
       >
-        {procedures.map((proc) => (
-          <div 
+        {procedures.map((proc, index) => (
+          <motion.div 
             key={proc.id} 
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true, margin: "0px" }}
+            transition={{ duration: 0.5, delay: index * 0.1 }}
             className="flex-none w-[280px] md:w-[320px] snap-start cursor-pointer group"
             onClick={() => scrollToProcedure(proc.id)}
           >
@@ -67,7 +72,7 @@ function CategoryRow({ category, procedures }: { category: string, procedures: P
             </div>
             <h3 className="text-xl font-medium tracking-tight mb-2 group-hover:text-[#6e5038] transition-colors">{proc.title}</h3>
             <p className="text-sm text-gray-500 font-light">{proc.subtitle}</p>
-          </div>
+          </motion.div>
         ))}
       </div>
     </div>

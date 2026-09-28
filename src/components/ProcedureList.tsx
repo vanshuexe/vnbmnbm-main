@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 
 interface Procedure {
   id: string;
@@ -28,7 +29,13 @@ export default function ProcedureList({ procedures }: ProcedureListProps) {
             <div className={`max-w-7xl mx-auto flex flex-col ${flexDirection} gap-12 lg:gap-20 items-center`}>
               
               {/* Content */}
-              <div className="w-full lg:w-1/2 flex flex-col">
+              <motion.div 
+                initial={{ opacity: 0, x: isEven ? -50 : 50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true, margin: "-100px" }}
+                transition={{ duration: 0.8 }}
+                className="w-full lg:w-1/2 flex flex-col"
+              >
                 <p className="text-[#6e5038] tracking-widest text-sm font-semibold uppercase mb-4">{proc.category}</p>
                 <h2 className="text-3xl md:text-4xl lg:text-5xl font-light text-[#1a1a1a] mb-6 tracking-tight leading-tight">
                   {proc.title} <br/>
@@ -59,16 +66,22 @@ export default function ProcedureList({ procedures }: ProcedureListProps) {
                 <Link to="/book" className="inline-block border border-[#1a1a1a] text-[#1a1a1a] hover:bg-[#1a1a1a] hover:text-white transition-colors duration-300 px-8 py-3.5 text-sm tracking-widest uppercase text-center w-max">
                   Book Consultation
                 </Link>
-              </div>
+              </motion.div>
 
               {/* Image */}
-              <div className="w-full lg:w-1/2 relative rounded-2xl overflow-hidden group shadow-sm">
+              <motion.div 
+                initial={{ opacity: 0, x: isEven ? 50 : -50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true, margin: "-100px" }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                className="w-full lg:w-1/2 relative rounded-2xl overflow-hidden group shadow-sm"
+              >
                 <img 
                   src={proc.image} 
                   alt={proc.title} 
                   className="w-full h-[500px] md:h-[650px] object-cover object-center transition-transform duration-700 group-hover:scale-105"
                 />
-              </div>
+              </motion.div>
 
             </div>
           </section>
