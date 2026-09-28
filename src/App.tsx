@@ -8,10 +8,12 @@ import Sitemap from './pages/Sitemap';
 
 import TheFeature from './pages/TheFeature';
 import Book from './pages/Book';
+import ScrollToTop from './components/ScrollToTop';
 
 export default function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/surgical" element={<Surgical />} />
