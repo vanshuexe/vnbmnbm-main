@@ -35,8 +35,14 @@ export default function Footer() {
             <h4 className="font-semibold text-xs tracking-wider mb-6 uppercase">Locations</h4>
             <div className="text-sm font-light text-gray-700 space-y-4 mb-8">
               <div>
-                <p className="font-medium text-gray-900">Clinic 1: Skin Lab</p>
+                <p className="font-medium text-gray-900">Clinic 1: Skin Lab Studio</p>
                 <p>Coimbatore, Tamil Nadu</p>
+                <p className="mt-1 text-gray-500 text-xs">Mon - Sat: 11:00 AM - 7:00 PM</p>
+              </div>
+              <div className="pt-2">
+                <p className="font-medium text-gray-900">Clinic 2: Rootwise Aesthetic Clinic</p>
+                <p>Coimbatore, Tamil Nadu</p>
+                <p className="mt-1 text-gray-500 text-xs">Mon - Sat: 11:00 AM - 7:00 PM</p>
               </div>
 
             </div>

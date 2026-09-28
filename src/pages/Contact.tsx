@@ -69,7 +69,11 @@ return (
                 <div>
                   <h4 className="text-[10px] font-semibold tracking-[0.2em] uppercase mb-2">Locations</h4>
                   <p className="text-gray-800 leading-relaxed mb-4">
-                    <strong>Clinic 1: Skin Lab</strong><br />
+                    <strong>Clinic 1: Skin Lab Studio</strong><br />
+                    Coimbatore, Tamil Nadu
+                  </p>
+                  <p className="text-gray-800 leading-relaxed mb-4">
+                    <strong>Clinic 2: Rootwise Aesthetic Clinic</strong><br />
                     Coimbatore, Tamil Nadu
                   </p>
 
@@ -86,8 +90,8 @@ return (
                 <div>
                   <h4 className="text-[10px] font-semibold tracking-[0.2em] uppercase mb-2">Hours</h4>
                   <p className="text-gray-800 leading-relaxed mb-4">
-                    <strong>Clinic 1:</strong><br />
-                    11:00 am - 7:00 pm
+                    <strong>Clinic 1:</strong> 11:00 am - 7:00 pm<br />
+                    <strong>Clinic 2:</strong> 11:00 am - 7:00 pm
                   </p>
 
                 </div>
