@@ -159,7 +159,7 @@ return (
           {/* Non-Surgical Block */}
           <div className="relative w-full md:w-1/2 h-[500px] md:h-[650px] group overflow-hidden cursor-pointer">
             <img 
-              src="https://ik.imagekit.io/fdhgiehjz/667677765.jpeg?updatedAt=1789497478744" 
+              src="https://ik.imagekit.io/fdhgiehjz/image7.jpeg?updatedAt=1790603263636" 
               alt="Non-Surgical Procedures" 
               className="absolute inset-0 w-full h-full object-cover object-[center_30%] transition-transform duration-1000 group-hover:scale-105"
             />
