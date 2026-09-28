@@ -92,11 +92,6 @@ return (
                 <li>Association of Oral and Maxillofacial Surgeons of India (AOMSI)</li>
                 <li>Specialised in Surgical and Non-surgical Facial Aesthetics</li>
               </ul>
-              <div>
-                <button className="bg-[#d6c9be] text-[#1a1a1a] px-8 py-4 rounded-full text-[10px] font-semibold tracking-[0.2em] hover:bg-[#c4b5a8] transition-colors uppercase">
-                  LEARN MORE
-                </button>
-              </div>
             </div>
             
           </div>
