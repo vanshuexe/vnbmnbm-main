@@ -62,7 +62,7 @@ return (
           </p>
           
 
-        </div>
+        </motion.div>
       </main>
       
       </div> {/* End of Hero Wrapper */}
