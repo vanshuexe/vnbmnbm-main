@@ -5,7 +5,7 @@ import ProcedureCarousel from '../components/ProcedureCarousel';
 import ProcedureList from '../components/ProcedureList';
 import procedures from '../data/surgicalProcedures.json';
 
-const categories = ['Face', 'Eyes', 'Ears', 'Nose', 'Neck', 'Hair & Misc'];
+const categories = ['Face', 'Eyes', 'Ears', 'Nose', 'Neck', 'Hair', 'Miscellaneous'];
 
 export default function Surgical() {
   return (

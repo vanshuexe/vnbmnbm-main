@@ -25,7 +25,7 @@ export default function TheFeature() {
             <img 
               src="https://ik.imagekit.io/fdhgiehjz/WhatsApp%20Image%202026-09-12%20at%207.52.38%20PM.jpeg" 
               alt="Filler Complication Management" 
-              className="w-full h-auto max-h-[80vh] object-cover"
+              className="w-full h-auto max-h-[80vh] object-contain object-center"
             />
           </div>
 
@@ -61,7 +61,7 @@ export default function TheFeature() {
             <img 
               src="https://ik.imagekit.io/fdhgiehjz/bg.jpeg" 
               alt="Define Your Chin, Refine Your Jawline" 
-              className="w-full h-auto max-h-[80vh] object-cover"
+              className="w-full h-auto max-h-[80vh] object-contain object-center"
             />
           </div>
 
@@ -94,7 +94,7 @@ export default function TheFeature() {
             <img 
               src="https://ik.imagekit.io/fdhgiehjz/888.jpeg" 
               alt="Facial Slimming & Contouring" 
-              className="w-full h-auto max-h-[80vh] object-cover"
+              className="w-full h-auto max-h-[80vh] object-contain object-center"
             />
           </div>
 
@@ -127,7 +127,7 @@ export default function TheFeature() {
             <img 
               src="https://ik.imagekit.io/fdhgiehjz/8899.jpeg" 
               alt="Restoring Under-Eye Volume & Harmony" 
-              className="w-full h-auto max-h-[80vh] object-cover"
+              className="w-full h-auto max-h-[80vh] object-contain object-center"
             />
           </div>
 

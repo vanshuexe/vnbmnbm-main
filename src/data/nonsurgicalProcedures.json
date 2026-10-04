@@ -4,7 +4,7 @@
     "category": "Botox",
     "title": "Masseter Treatment",
     "subtitle": "Face Slimming",
-    "image": "https://ik.imagekit.io/fdhgiehjz/88888.jpeg?updatedAt=1789497478866",
+    "image": "/images/procedures/originals/masseter-treatment.jpeg",
     "description": "Masseter Botox is a highly effective, non-surgical treatment that helps slim the lower face and relieve jaw tension by relaxing the masseter muscles. This provides a beautifully contoured, V-shaped jawline without the need for invasive surgery.",
     "bullets": [
       {
@@ -23,14 +23,17 @@
         "title": "Long-Lasting Results:",
         "text": "Effects gradually appear over 2-4 weeks and typically last between 4 to 6 months."
       }
-    ]
+    ],
+    "imageCaption": "Treatment reference image",
+    "imageWidth": 1096,
+    "imageHeight": 1091
   },
   {
     "id": "pdrn-amp-nctf",
     "category": "Skin Boosters",
-    "title": "PDRN &amp; NCTF",
+    "title": "PDRN & NCTF",
     "subtitle": "Cellular Renewal",
-    "image": "https://ik.imagekit.io/fdhgiehjz/667677765.jpeg?updatedAt=1789497478744",
+    "image": "/images/procedures/originals/pdrn-amp-nctf.jpeg",
     "description": "Skin boosters like PDRN and NCTF work at a cellular level to repair, hydrate, and rejuvenate the skin from the inside out. They deliver powerful nutrients directly into the dermis for a radiant, youthful glow.",
     "bullets": [
       {
@@ -49,14 +52,17 @@
         "title": "Anti-Aging:",
         "text": "Smooths out fine lines, refines pores, and improves overall skin tone and luminosity."
       }
-    ]
+    ],
+    "imageCaption": "Treatment reference image",
+    "imageWidth": 1231,
+    "imageHeight": 1231
   },
   {
     "id": "nefertiti-lift",
     "category": "Botox",
     "title": "Nefertiti Lift",
-    "subtitle": "Neck &amp; Jawline Definition",
-    "image": "https://ik.imagekit.io/fdhgiehjz/Botox%20-%20Nefertiti%20lift.PNG",
+    "subtitle": "Neck & Jawline Definition",
+    "image": "/images/procedures/originals/nefertiti-lift.png",
     "description": "Named after the Egyptian Queen known for her sculpted jawline, the Nefertiti Lift is an advanced Botox technique that targets the platysma bands in the neck. By relaxing these downward-pulling muscles, it creates an upward lifting effect for a sharper, more youthful profile.",
     "bullets": [
       {
@@ -75,14 +81,17 @@
         "title": "No Downtime:",
         "text": "A fast, in-and-out procedure allowing you to immediately return to your normal routine."
       }
-    ]
+    ],
+    "imageCaption": "Treatment reference image",
+    "imageWidth": 1233,
+    "imageHeight": 1233
   },
   {
     "id": "anti-wrinkle-injections",
     "category": "Botox",
     "title": "Anti-Wrinkle Injections",
-    "subtitle": "Smooth &amp; Prevent",
-    "image": "https://ik.imagekit.io/fdhgiehjz/IMG_6484.PNG",
+    "subtitle": "Smooth & Prevent",
+    "image": "/images/procedures/originals/anti-wrinkle-injections.png",
     "description": "Botox is a safe, FDA-approved treatment that temporarily relaxes the facial muscles responsible for dynamic wrinkles. It is expertly administered to soften existing expression lines and prevent new ones from forming, giving you a naturally refreshed and youthful appearance without looking \"frozen\".",
     "bullets": [
       {
@@ -101,14 +110,17 @@
         "title": "Quick Treatment:",
         "text": "A comfortable, 10-minute procedure with zero downtime. Full results become visible within 3 to 14 days."
       }
-    ]
+    ],
+    "imageCaption": "Treatment reference image",
+    "imageWidth": 1228,
+    "imageHeight": 1228
   },
   {
     "id": "gummy-smile-amp-lip-flip",
     "category": "Botox",
-    "title": "Gummy Smile &amp; Lip Flip",
+    "title": "Gummy Smile & Lip Flip",
     "subtitle": "Smile Enhancement",
-    "image": "https://ik.imagekit.io/fdhgiehjz/Botox%20-%20lip%20flip.PNG",
+    "image": "/images/procedures/originals/gummy-smile-amp-lip-flip.png",
     "description": "Enhance the natural beauty of your smile with precision Botox injections. Whether you're looking to reduce excess gum exposure or achieve a subtly fuller pout without dermal fillers, these specialized techniques offer a highly effective solution.",
     "bullets": [
       {
@@ -124,21 +136,24 @@
         "text": "Harmonizes your facial proportions by improving the aesthetic ratio of teeth to gums when you smile."
       },
       {
-        "title": "Quick &amp; Subtle:",
+        "title": "Quick & Subtle:",
         "text": "A fast procedure with beautifully natural-looking results that become visible in just a few days."
       }
-    ]
+    ],
+    "imageCaption": "Treatment reference image",
+    "imageWidth": 998,
+    "imageHeight": 998
   },
   {
     "id": "brow-lift",
     "category": "Botox",
     "title": "Brow Lift",
     "subtitle": "Eye Rejuvenation",
-    "image": "https://ik.imagekit.io/fdhgiehjz/Botox%20-%20Brow%20lift.PNG",
+    "image": "/images/procedures/originals/brow-lift.png",
     "description": "The Non-Surgical Brow Lift uses precise Botox injections to relax the muscles that pull the eyebrows downward. This allows the lifting muscles to take over, elevating the brow arch and opening up the eyes for a brighter, more youthful look.",
     "bullets": [
       {
-        "title": "Lifts &amp; Opens Eyes:",
+        "title": "Lifts & Opens Eyes:",
         "text": "Creates a subtle, elegant upward lift, making you look more awake and well-rested."
       },
       {
@@ -153,14 +168,17 @@
         "title": "Non-Surgical Alternative:",
         "text": "Achieves a beautiful, rested look without the incisions, scarring, or downtime of a traditional surgical brow lift."
       }
-    ]
+    ],
+    "imageCaption": "Treatment reference image",
+    "imageWidth": 1150,
+    "imageHeight": 1150
   },
   {
     "id": "keloid-management",
     "category": "Skin Refinement",
     "title": "Keloid Management",
     "subtitle": "Advanced Scar Reduction",
-    "image": "https://ik.imagekit.io/fdhgiehjz/keloid.PNG",
+    "image": "/images/procedures/originals/keloid-management.png",
     "description": "Reclaim smooth, comfortable skin with our comprehensive keloid management treatments. Utilizing targeted, non-surgical approaches—such as customized intralesional injections—we effectively break down excess scar tissue, relieve associated discomfort, and significantly improve the aesthetic appearance of stubborn keloids.",
     "bullets": [
       {
@@ -179,14 +197,17 @@
         "title": "Improves Aesthetics:",
         "text": "Progressively fades striking redness and hyperpigmentation, blending the scar closer to your natural skin tone."
       }
-    ]
+    ],
+    "imageCaption": "Treatment reference image",
+    "imageWidth": 381,
+    "imageHeight": 381
   },
   {
     "id": "sculptra",
     "category": "Skin Boosters",
     "title": "Sculptra",
     "subtitle": "Advanced Biostimulation",
-    "image": "https://ik.imagekit.io/fdhgiehjz/fr.PNG",
+    "image": "/images/procedures/originals/sculptra.png",
     "description": "Achieve lasting rejuvenation with Sculptra, a premier injectable biostimulator. Rather than simply \"filling\" wrinkles, Sculptra works deep within the dermis to stimulate your body's own natural collagen production. This restores underlying facial structure and volume for a smooth, naturally youthful glow.",
     "bullets": [
       {
@@ -194,7 +215,7 @@
         "text": "Actively stimulates collagen synthesis, progressively rebuilding the skin's structural foundation from the inside out."
       },
       {
-        "title": "Gradual &amp; Natural:",
+        "title": "Gradual & Natural:",
         "text": "Results develop subtly over the course of several months, ensuring you look beautifully refreshed without any sudden or obvious changes."
       },
       {
@@ -205,14 +226,17 @@
         "title": "Overall Rejuvenation:",
         "text": "Highly effective for addressing deep facial wrinkles, prominent folds, and widespread global volume loss."
       }
-    ]
+    ],
+    "imageCaption": "Treatment reference image",
+    "imageWidth": 1324,
+    "imageHeight": 1321
   },
   {
     "id": "mid-face-thread-lift",
     "category": "Skin Refinement",
     "title": "Mid-Face Thread Lift",
     "subtitle": "Non-Surgical Facelift",
-    "image": "https://ik.imagekit.io/fdhgiehjz/Mid%20face%20thread%20lift.PNG",
+    "image": "/images/procedures/originals/mid-face-thread-lift.png",
     "description": "Achieve a beautifully refreshed and youthful contour without surgery. The mid-face thread lift uses advanced, dissolvable threads to instantly lift and reposition sagging skin in the cheeks and mid-face, while simultaneously stimulating your body's natural collagen production for long-lasting firmness.",
     "bullets": [
       {
@@ -231,40 +255,67 @@
         "title": "Zero Downtime:",
         "text": "A fast and straightforward procedure that allows you to return to your normal daily activities almost immediately."
       }
-    ]
+    ],
+    "imageCaption": "Treatment reference image",
+    "imageWidth": 1321,
+    "imageHeight": 1319
   },
   {
     "id": "lip-filler",
     "category": "Dermal Fillers",
     "title": "Lip Filler",
-    "subtitle": "Plump &amp; Define",
-    "image": "https://ik.imagekit.io/fdhgiehjz/Dermal%20filler%20-%20Lip%20filler.PNG",
-    "description": "Achieve the perfect pout with our premium hyaluronic acid lip fillers. Designed to instantly restore lost volume, refine your lip contours, and smooth out vertical lip lines, this treatment delivers beautifully natural, plump, and deeply hydrated lips tailored entirely to your desires.",
+    "subtitle": "Natural Shape & Balance",
+    "image": "/images/procedures/lip-filler-m-shape.png",
+    "description": "An M-shaped upper lip has a more prominent central curve with thinner or inward-turning areas on either side. Often called an M-shaped lip deformity, it is a natural variation in lip anatomy. Carefully placed hyaluronic acid dermal fillers can add support and volume to selected areas, soften the M-shaped contour and improve balance while preserving the Cupid's bow and your natural lip character.",
     "bullets": [
       {
-        "title": "Enhanced Volume:",
-        "text": "Instantly adds soft, natural-looking volume to thin or aging lips, giving them a youthful fullness."
+        "text": "Targeted filler placement can soften uneven contours and improve upper-lip proportions, rather than simply increasing overall lip size.",
+        "title": "Shape Refinement:"
       },
       {
-        "title": "Refines Shape:",
-        "text": "Expertly defines the lip borders and Cupid's bow, perfecting your natural lip shape and symmetry."
+        "text": "The aim is a softer, more harmonious contour that complements your face and preserves your lip's individual features.",
+        "title": "Natural-Looking Balance:"
       },
       {
-        "title": "Hydrates Deeply:",
-        "text": "Formulated with hyaluronic acid that draws in moisture, leaving your lips feeling incredibly soft and deeply hydrated."
-      },
-      {
-        "title": "Customizable Results:",
-        "text": "Fully tailored to your aesthetic goals—whether you desire a subtle, soft enhancement or a glamorous, full-volume look."
+        "text": "The approach depends on your lip anatomy and goals. Improvement varies, and staged treatment may be recommended.",
+        "title": "Personalised Treatment:"
       }
-    ]
+    ],
+    "imageCaption": "Individual results vary",
+    "imageWidth": 1320,
+    "imageHeight": 655
+  },
+  {
+    "id": "lower-face-harmony",
+    "category": "Dermal Fillers",
+    "title": "Lower Face Harmony",
+    "subtitle": "Balance with Dermal Fillers",
+    "image": "/images/procedures/lower-face-harmony.jpeg",
+    "description": "Lower-face harmony comes from the relationship between the lips, chin and jawline. Carefully selected hyaluronic acid dermal fillers can refine lip proportions, support chin projection and soften uneven transitions to create a more balanced contour. Treatment is tailored to your facial structure, with the aim of subtle refinement that preserves your individual features.",
+    "bullets": [
+      {
+        "text": "The lips, chin and surrounding contours are assessed together to plan changes that complement the whole face.",
+        "title": "Balanced Proportions:"
+      },
+      {
+        "text": "Targeted volume and support can improve selected areas without aiming for an exaggerated appearance.",
+        "title": "Subtle Refinement:"
+      },
+      {
+        "text": "The areas treated depend on your anatomy and goals. Fillers provide temporary enhancement, and results vary.",
+        "title": "Individual Approach:"
+      }
+    ],
+    "imageCaption": "Individual results vary",
+    "imageWidth": 1440,
+    "imageHeight": 809
   },
   {
     "id": "profilo",
     "category": "Skin Boosters",
     "title": "PROFILO",
     "subtitle": "Bio-Remodeling",
-    "image": "https://ik.imagekit.io/fdhgiehjz/667677765.jpeg",
+    "image": "/images/procedures/originals/profilo.jpeg",
     "description": "PROFILO is a revolutionary injectable treatment formulated with one of the highest concentrations of hyaluronic acid. It acts as a bio-remodeler rather than a traditional filler, spreading smoothly beneath the skin to stimulate collagen and elastin production, resulting in intensely hydrated, firmer, and more radiant skin.",
     "bullets": [
       {
@@ -283,14 +334,17 @@
         "title": "Natural Glow:",
         "text": "Improves overall skin tone and texture, leaving a radiant, youthful glow."
       }
-    ]
+    ],
+    "imageCaption": "Treatment reference image",
+    "imageWidth": 1231,
+    "imageHeight": 1231
   },
   {
     "id": "exosomes-mesotherapy",
     "category": "Skin Boosters",
     "title": "Exosomes / Mesotherapy",
     "subtitle": "Cellular Rejuvenation",
-    "image": "https://ik.imagekit.io/fdhgiehjz/65545443.jpeg",
+    "image": "https://ik.imagekit.io/fdhgiehjz/IMG_1406.PNG",
     "description": "Harness the power of regenerative medicine with Exosomes and Mesotherapy. This treatment delivers potent growth factors, vitamins, and peptides directly into the skin to accelerate healing, reduce inflammation, and rejuvenate at a cellular level, providing unparalleled anti-aging benefits.",
     "bullets": [
       {
@@ -309,14 +363,17 @@
         "title": "Enhanced Vitality:",
         "text": "Restores a bright, healthy, and revitalized appearance to aging or stressed skin."
       }
-    ]
+    ],
+    "imageCaption": "Illustrative image",
+    "imageWidth": 1122,
+    "imageHeight": 1402
   },
   {
     "id": "non-surgical-scar-management",
     "category": "Wellness",
     "title": "Scar Management",
     "subtitle": "Non-Surgical Refinement",
-    "image": "https://ik.imagekit.io/fdhgiehjz/88888.jpeg",
+    "image": "/images/scar-revision-illustration.png",
     "description": "Our non-surgical scar management combines advanced topical treatments, targeted injections, and minimally invasive resurfacing techniques to fade acne scars, surgical scars, and hyperpigmentation, restoring a smooth, even skin texture.",
     "bullets": [
       {
@@ -335,14 +392,17 @@
         "title": "Customized Care:",
         "text": "Tailored treatment plans combining peels, microneedling, or injections based on scar type."
       }
-    ]
+    ],
+    "imageCaption": "Illustrative image",
+    "imageWidth": 1122,
+    "imageHeight": 1402
   },
   {
     "id": "double-chin-reduction",
     "category": "Wellness",
     "title": "Double Chin Reduction",
     "subtitle": "Submental Contouring",
-    "image": "https://ik.imagekit.io/fdhgiehjz/4344343.jpeg",
+    "image": "/images/procedures/double-chin-reduction.png",
     "description": "Target and eliminate stubborn fat beneath the chin with our non-surgical double chin reduction treatments. Utilizing targeted fat-dissolving injections, this procedure breaks down fat cells to sculpt a tighter, more defined jawline without surgery.",
     "bullets": [
       {
@@ -361,14 +421,17 @@
         "title": "No Surgery Required:",
         "text": "Avoids the downtime, incisions, and risks associated with surgical liposuction."
       }
-    ]
+    ],
+    "imageCaption": "Treatment reference image",
+    "imageWidth": 272,
+    "imageHeight": 272
   },
   {
     "id": "iv-infusions",
     "category": "Wellness",
     "title": "IV Infusions",
     "subtitle": "Wellness & Rejuvenation",
-    "image": "https://ik.imagekit.io/fdhgiehjz/4544.jpeg",
+    "image": "/images/procedures/iv-infusions.png",
     "description": "Revitalize your body and skin from the inside out with our customized IV infusions. Delivering a potent blend of essential vitamins, antioxidants (like Glutathione and Vitamin C), and hydration directly into your bloodstream for maximum absorption and instant glowing results.",
     "bullets": [
       {
@@ -387,6 +450,8 @@
         "title": "Maximum Absorption:",
         "text": "Bypasses the digestive system for 100% absorption of nutrients."
       }
-    ]
+    ],
+    "imageWidth": 493,
+    "imageHeight": 370
   }
 ]

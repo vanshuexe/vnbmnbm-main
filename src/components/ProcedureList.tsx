@@ -7,6 +7,9 @@ interface Procedure {
   title: string;
   subtitle: string;
   image: string;
+  imageCaption?: string;
+  imageWidth?: number;
+  imageHeight?: number;
   description?: string;
   bullets?: { title: string; text: string }[];
 }
@@ -79,8 +82,13 @@ export default function ProcedureList({ procedures }: ProcedureListProps) {
                 <img 
                   src={proc.image} 
                   alt={proc.title} 
-                  className="w-full h-[500px] md:h-[650px] object-cover object-center transition-transform duration-700 group-hover:scale-105"
+                  width={proc.imageWidth}
+                  height={proc.imageHeight}
+                  className="w-full h-auto max-h-[650px] object-contain object-center bg-[#f7f6f2]"
+                  loading="lazy"
+                  decoding="async"
                 />
+                {proc.imageCaption && <span className="absolute bottom-4 left-4 rounded bg-white/90 px-3 py-1 text-xs text-gray-700">{proc.imageCaption}</span>}
               </motion.div>
 
             </div>

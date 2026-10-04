@@ -8,6 +8,9 @@ interface Procedure {
   title: string;
   subtitle: string;
   image: string;
+  imageCaption?: string;
+  imageWidth?: number;
+  imageHeight?: number;
 }
 
 interface ProcedureCarouselProps {
@@ -39,10 +42,10 @@ function CategoryRow({ category, procedures }: { category: string, procedures: P
       <div className="flex items-center justify-between mb-8">
         <h2 className="text-3xl md:text-4xl font-light tracking-tight">{category}</h2>
         <div className="flex space-x-2">
-          <button onClick={() => scroll('left')} className="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center hover:bg-[#1a1a1a] hover:text-white hover:border-[#1a1a1a] transition-all">
+          <button aria-label={`Previous ${category} procedures`} onClick={() => scroll('left')} className="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center hover:bg-[#1a1a1a] hover:text-white hover:border-[#1a1a1a] transition-all">
             <ChevronLeft size={20} strokeWidth={1} />
           </button>
-          <button onClick={() => scroll('right')} className="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center hover:bg-[#1a1a1a] hover:text-white hover:border-[#1a1a1a] transition-all">
+          <button aria-label={`Next ${category} procedures`} onClick={() => scroll('right')} className="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center hover:bg-[#1a1a1a] hover:text-white hover:border-[#1a1a1a] transition-all">
             <ChevronRight size={20} strokeWidth={1} />
           </button>
         </div>
@@ -63,12 +66,17 @@ function CategoryRow({ category, procedures }: { category: string, procedures: P
             className="flex-none w-[280px] md:w-[320px] snap-start cursor-pointer group"
             onClick={() => scrollToProcedure(proc.id)}
           >
-            <div className="w-full aspect-[4/5] rounded-2xl overflow-hidden mb-6 bg-gray-100">
+            <div className="relative w-full aspect-[4/5] rounded-2xl overflow-hidden mb-6 bg-gray-100">
               <img 
                 src={proc.image} 
                 alt={proc.title}
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                width={proc.imageWidth}
+                height={proc.imageHeight}
+                className="w-full h-full object-contain object-center"
+                loading="lazy"
+                decoding="async"
               />
+              {proc.imageCaption && <span className="absolute bottom-3 left-3 rounded bg-white/90 px-2 py-1 text-[10px] text-gray-700">{proc.imageCaption}</span>}
             </div>
             <h3 className="text-xl font-medium tracking-tight mb-2 group-hover:text-[#6e5038] transition-colors">{proc.title}</h3>
             <p className="text-sm text-gray-500 font-light">{proc.subtitle}</p>

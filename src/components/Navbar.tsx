@@ -1,414 +1,66 @@
-import { useState } from 'react';
-import { Menu, X, ChevronDown, ChevronUp } from 'lucide-react';
+import { useEffect, useState } from 'react';
+import { Menu, X, ChevronDown } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import surgical from '../data/surgicalProcedures.json';
+import nonSurgical from '../data/nonsurgicalProcedures.json';
+
+const readable = (text: string) => text.replaceAll('&amp;', '&');
+const surgicalCategories = ['Face', 'Eyes', 'Ears', 'Nose', 'Neck', 'Miscellaneous'];
+const nonSurgicalCategories = ['Botox', 'Dermal Fillers', 'Skin Boosters', 'Skin Refinement', 'Wellness'];
+const additionalSurgical = [
+  { title: 'Orthognathic surgery', category: 'Face' },
+  { title: 'Fat augmentation (Macro, Micro, Nano fat)', category: 'Face' },
+  { title: 'Chin implants', category: 'Face' },
+  { title: 'Revision rhinoplasty', category: 'Nose' },
+  { title: 'Alarplasty', category: 'Nose' },
+  { title: 'Wart removal', category: 'Miscellaneous' },
+  { title: 'Tongue tie', category: 'Miscellaneous' },
+];
+const groups = [
+  ...nonSurgicalCategories.map(category => ({ title: category, section: 'Non-Surgical', items: nonSurgical.filter(p => p.category === category && p.id !== 'exosomes-mesotherapy').map(p => ({ title: readable(p.title), to: `/non-surgical#${p.id}` })) })),
+  ...surgicalCategories.map(category => ({ title: category, section: 'Surgical', items: [...surgical.filter(p => p.category === category).map(p => ({ title: readable(p.title), to: `/surgical#${p.id}` })), ...additionalSurgical.filter(p => p.category === category).map(p => ({ title: p.title, to: '/surgical' }))] })),
+  { title: 'Hair', section: 'Hair', items: [
+    { title: 'Hair transplant', to: '/surgical#hair-transplant' },
+    { title: 'Exosomes', to: '/non-surgical#exosomes-mesotherapy' },
+    { title: 'Mesotherapy', to: '/non-surgical#exosomes-mesotherapy' },
+  ] },
+];
+
+function CenterBrand() {
+  return <span className="max-w-[210px] md:max-w-none text-[9px] md:text-[11px] font-light leading-[1.5] tracking-[0.06em]">For Advanced Maxillofacial and Cosmetic Surgery</span>;
+}
 
 export default function Navbar({ forceDark = false }: { forceDark?: boolean }) {
   const [activeMenu, setActiveMenu] = useState<string | null>(null);
-  
-  // Mobile specific states
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [mobileSubMenuOpen, setMobileSubMenuOpen] = useState<string | null>(null);
-  const [mobileNestedSubMenuOpen, setMobileNestedSubMenuOpen] = useState<string | null>(null);
-
-  const isMenuOpen = activeMenu !== null;
-  
-  const toggleMobileSubMenu = (menu: string) => {
-    if (mobileSubMenuOpen === menu) {
-      setMobileSubMenuOpen(null);
-      setMobileNestedSubMenuOpen(null); // Close nested if parent closes
-    } else {
-      setMobileSubMenuOpen(menu);
-      setMobileNestedSubMenuOpen(null);
-    }
-  };
-
-  
-  const toggleMobileNestedSubMenu = (menu: string) => {
-    if (mobileNestedSubMenuOpen === menu) {
-      setMobileNestedSubMenuOpen(null);
-    } else {
-      setMobileNestedSubMenuOpen(menu);
-    }
-  };
-return (
-    <>
-    {/* Header / Navbar with Mega Menu */}
-      <header 
-        className={`relative z-50 w-full transition-colors duration-500 ${isMenuOpen || forceDark ? 'bg-[#f7f6f2] text-[#1a1a1a]' : 'bg-transparent text-white'}`}
-        onMouseLeave={() => setActiveMenu(null)}
-      >
-        <div className="flex items-center justify-between px-6 md:px-8 py-6 w-full">
-          
-          {/* Mobile Left Navigation: Hamburger Menu */}
-          <div className="flex md:hidden items-center">
-            <button 
-              aria-label="Menu" 
-              onClick={() => setIsMobileMenuOpen(true)}
-              className={`transition-all active:scale-95 ${isMenuOpen || isMobileMenuOpen || forceDark ? 'text-[#1a1a1a]' : 'text-white'}`}
-            >
-              {isMenuOpen || forceDark || isMobileMenuOpen ? <Menu size={24} strokeWidth={1.5} color="#1a1a1a" /> : <Menu size={24} strokeWidth={1.5} />}
-            </button>
-          </div>
-
-          {/* Desktop Left Navigation */}
-          <nav className="hidden md:flex space-x-8 text-sm tracking-wide">
-            {/* Procedures Tab */}
-            <div className="relative group flex items-center h-full">
-              <button 
-                className={`pb-1 transition-all active:scale-95 relative z-10 ${activeMenu === 'procedures' ? 'text-[#1a1a1a]' : isMenuOpen || forceDark ? 'text-gray-500 hover:text-[#1a1a1a]' : 'text-white hover:text-gray-300'}`}
-                onMouseEnter={() => setActiveMenu('procedures')}
-                onClick={() => setActiveMenu(activeMenu === 'procedures' ? null : 'procedures')}
-              >
-                Procedures
-              </button>
-              {/* Active/Hover underline */}
-              <div className={`absolute bottom-0 left-0 h-[1px] transition-all duration-300 ${activeMenu === 'procedures' ? 'w-full bg-[#1a1a1a]' : 'w-0 bg-white'}`}></div>
-            </div>
-
-
-
-            {/* Discover Tab */}
-            <div className="relative group flex items-center h-full">
-              <button 
-                className={`pb-1 transition-all active:scale-95 relative z-10 ${activeMenu === 'discover' ? 'text-[#1a1a1a]' : isMenuOpen || forceDark ? 'text-gray-500 hover:text-[#1a1a1a]' : 'text-white hover:text-gray-300'}`}
-                onMouseEnter={() => setActiveMenu('discover')}
-                onClick={() => setActiveMenu(activeMenu === 'discover' ? null : 'discover')}
-              >
-                Discover
-              </button>
-              {/* Active/Hover underline */}
-              <div className={`absolute bottom-0 left-0 h-[1px] transition-all duration-300 ${activeMenu === 'discover' ? 'w-full bg-[#1a1a1a]' : 'w-0 bg-white'}`}></div>
-            </div>
-          </nav>
-
-          {/* Center Logo */}
-          <div className="absolute left-1/2 -translate-x-1/2 flex flex-col items-center text-center cursor-pointer">
-            <Link to="/" className="flex flex-col items-center">
-              <img 
-                src="https://ik.imagekit.io/fdhgiehjz/66.png?updatedAt=1789392513970" 
-                alt="Skin Lab Logo" 
-                className="h-10 md:h-12 w-auto object-contain max-h-12" 
-              />
-            </Link>
-          </div>
-
-          {/* Mobile Right Navigation: Book Button */}
-          <div className="flex md:hidden items-center">
-            <Link to="/contact" className={`rounded-[2rem] px-6 py-[8px] text-[10px] font-medium tracking-[0.2em] transition-all duration-300 border ${isMenuOpen ? 'border-[#1a1a1a] hover:bg-[#1a1a1a] hover:text-white' : 'border-white/70 hover:bg-white hover:text-black'}`}>BOOK</Link>
-          </div>
-
-          {/* Desktop Right Navigation */}
-          <div className="hidden md:flex items-center space-x-6">
-            <Link to="/contact" className={`rounded-[2rem] px-8 py-[10px] text-[11px] font-medium tracking-[0.2em] transition-all duration-300 border ${isMenuOpen ? 'border-[#1a1a1a] hover:bg-[#1a1a1a] hover:text-white' : 'border-white/70 hover:bg-white hover:text-black'}`}>BOOK</Link>
-          </div>
-        </div>
-
-        {/* Mobile Fullscreen Menu */}
-        <div 
-          className={`fixed inset-0 bg-[#f7f6f2] text-[#1a1a1a] z-50 flex flex-col transition-transform duration-300 ease-in-out md:hidden overflow-y-auto ${
-            isMobileMenuOpen ? 'translate-x-0' : '-translate-x-full'
-          }`}
-        >
-          {/* Mobile Menu Header */}
-          <div className="flex items-center justify-between px-6 py-6 w-full border-b border-gray-200">
-            <button 
-              aria-label="Close Menu" 
-              onClick={() => setIsMobileMenuOpen(false)}
-              className="text-[#1a1a1a]"
-            >
-              <X size={24} strokeWidth={1.5} />
-            </button>
-
-            <Link to="/" onClick={() => setIsMobileMenuOpen(false)} className="flex flex-col items-center text-center cursor-pointer">
-              <img 
-                src="https://ik.imagekit.io/fdhgiehjz/66.png?updatedAt=1789392513970" 
-                alt="Skin Lab Logo" 
-                className="h-9 w-auto object-contain max-h-9" 
-              />
-            </Link>
-
-            <Link to="/contact" onClick={() => setIsMobileMenuOpen(false)} className={`inline-block text-center rounded-[2rem] px-6 py-[8px] text-[10px] font-medium tracking-[0.2em] border transition-all ${isMenuOpen || forceDark ? 'border-[#1a1a1a] text-[#1a1a1a] hover:bg-[#1a1a1a] hover:text-white' : 'border-white text-white hover:bg-white hover:text-black'}`}>BOOK</Link>
-          </div>
-
-          {/* Mobile Menu Links */}
-          <nav className="flex flex-col px-6 py-8 space-y-6 flex-grow">
-            {/* Procedures Accordion */}
-            <div className="flex flex-col">
-              <button 
-                className="w-full flex items-center justify-between text-2xl md:text-3xl font-medium tracking-wide pb-2 active:opacity-60 transition-opacity"
-                onClick={() => toggleMobileSubMenu('procedures')}
-              >
-                <span>Procedures</span>
-                {mobileSubMenuOpen === 'procedures' ? <ChevronUp size={24} strokeWidth={1} /> : <ChevronDown size={24} strokeWidth={1} />}
-              </button>
-              
-              {/* Procedures Submenu */}
-              <div className={`overflow-hidden transition-all duration-300 flex flex-col ${mobileSubMenuOpen === 'procedures' ? 'max-h-[2500px] mt-4 opacity-100' : 'max-h-0 opacity-0'}`}>
-                
-                {/* Surgical Nested Accordion */}
-                <div className="flex flex-col pl-4 mb-4">
-                  <button 
-                    className="w-full flex items-center justify-between text-xl font-medium text-gray-500 pb-2 active:opacity-60 transition-opacity"
-                    onClick={() => toggleMobileNestedSubMenu('surgical')}
-                  >
-                    <span>Surgical</span>
-                    {mobileNestedSubMenuOpen === 'surgical' ? <ChevronUp size={20} strokeWidth={1} /> : <ChevronDown size={20} strokeWidth={1} />}
-                  </button>
-                  <div className={`flex flex-col space-y-6 pl-2 overflow-hidden transition-all duration-300 ${mobileNestedSubMenuOpen === 'surgical' ? 'max-h-[1800px] mt-3 opacity-100' : 'max-h-0 opacity-0'}`}>
-                    <div>
-                      <h4 className="text-sm font-semibold tracking-wider text-gray-400 mb-2 uppercase">Thread lift</h4>
-                      <ul className="flex flex-col space-y-3 text-lg font-light">
-                        <li><Link to="/surgical" className="hover:text-gray-500" onClick={() => setIsMobileMenuOpen(false)}>Eyebrow, Forehead, Mid-face, Neck</Link></li>
-                      </ul>
-                    </div>
-                    <div>
-                      <h4 className="text-sm font-semibold tracking-wider text-gray-400 mb-2 uppercase">Face</h4>
-                      <ul className="flex flex-col space-y-3 text-lg font-light">
-                        <li><Link to="/surgical" className="hover:text-gray-500" onClick={() => setIsMobileMenuOpen(false)}>Face lift, Deep plane face lift</Link></li>
-                        <li><Link to="/surgical" className="hover:text-gray-500" onClick={() => setIsMobileMenuOpen(false)}>Forehead lift</Link></li>
-                        <li><Link to="/surgical" className="hover:text-gray-500" onClick={() => setIsMobileMenuOpen(false)}>Brow lift</Link></li>
-                        <li><Link to="/surgical" className="hover:text-gray-500" onClick={() => setIsMobileMenuOpen(false)}>Mid-face lift</Link></li>
-                        <li><Link to="/surgical" className="hover:text-gray-500" onClick={() => setIsMobileMenuOpen(false)}>Neck lift, platysmaplasty</Link></li>
-                        <li><Link to="/surgical" className="hover:text-gray-500" onClick={() => setIsMobileMenuOpen(false)}>Orthognathic surgery</Link></li>
-                        <li><Link to="/surgical" className="hover:text-gray-500" onClick={() => setIsMobileMenuOpen(false)}>Liposuction (Face, Neck)</Link></li>
-                        <li><Link to="/surgical" className="hover:text-gray-500" onClick={() => setIsMobileMenuOpen(false)}>Fat augmentation (Macro, Micro, Nano fat)</Link></li>
-                      </ul>
-                    </div>
-                    <div>
-                      <h4 className="text-sm font-semibold tracking-wider text-gray-400 mb-2 uppercase">Cheek</h4>
-                      <ul className="flex flex-col space-y-3 text-lg font-light">
-                        <li><Link to="/surgical" className="hover:text-gray-500" onClick={() => setIsMobileMenuOpen(false)}>Dimple creation</Link></li>
-                        <li><Link to="/surgical" className="hover:text-gray-500" onClick={() => setIsMobileMenuOpen(false)}>Buccal fat pad removal</Link></li>
-                      </ul>
-                    </div>
-                    <div>
-                      <h4 className="text-sm font-semibold tracking-wider text-gray-400 mb-2 uppercase">Facial Implants</h4>
-                      <ul className="flex flex-col space-y-3 text-lg font-light">
-                        <li><Link to="/surgical" className="hover:text-gray-500" onClick={() => setIsMobileMenuOpen(false)}>Silicon implants (Chin, Jaw, Nose, Cheek)</Link></li>
-                      </ul>
-                    </div>
-
-                    <div>
-                      <h4 className="text-sm font-semibold tracking-wider text-gray-400 mb-2 uppercase">Eye</h4>
-                      <ul className="flex flex-col space-y-3 text-lg font-light">
-                        <li><Link to="/surgical" className="hover:text-gray-500" onClick={() => setIsMobileMenuOpen(false)}>Blepharoplasty</Link></li>
-                        <li><Link to="/surgical" className="hover:text-gray-500" onClick={() => setIsMobileMenuOpen(false)}>Canthoplasty</Link></li>
-                        <li><Link to="/surgical" className="hover:text-gray-500" onClick={() => setIsMobileMenuOpen(false)}>Ptosis correction</Link></li>
-                      </ul>
-                    </div>
-
-                    <div>
-                      <h4 className="text-sm font-semibold tracking-wider text-gray-400 mb-2 uppercase">Ear</h4>
-                      <ul className="flex flex-col space-y-3 text-lg font-light">
-                        <li><Link to="/surgical" className="hover:text-gray-500" onClick={() => setIsMobileMenuOpen(false)}>Otoplasty</Link></li>
-                        <li><Link to="/surgical" className="hover:text-gray-500" onClick={() => setIsMobileMenuOpen(false)}>Ear lobe repair/reduction</Link></li>
-                      </ul>
-                    </div>
-                    <div>
-                      <h4 className="text-sm font-semibold tracking-wider text-gray-400 mb-2 uppercase">Nose</h4>
-                      <ul className="flex flex-col space-y-3 text-lg font-light">
-                        <li><Link to="/surgical" className="hover:text-gray-500" onClick={() => setIsMobileMenuOpen(false)}>Rhinoplasty, Revision Rhinoplasty</Link></li>
-                        <li><Link to="/surgical" className="hover:text-gray-500" onClick={() => setIsMobileMenuOpen(false)}>Alarplasty</Link></li>
-                      </ul>
-                    </div>
-                    <div>
-                      <h4 className="text-sm font-semibold tracking-wider text-gray-400 mb-2 uppercase">Hair & Misc</h4>
-                      <ul className="flex flex-col space-y-3 text-lg font-light">
-                        <li><Link to="/surgical" className="hover:text-gray-500" onClick={() => setIsMobileMenuOpen(false)}>Hair transplantation</Link></li>
-                        <li><Link to="/surgical" className="hover:text-gray-500" onClick={() => setIsMobileMenuOpen(false)}>Surgical scar revision, Wart removal, Mole removal, Tongue tie</Link></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Non-Surgical Nested Accordion */}
-                <div className="flex flex-col pl-4">
-                  <button 
-                    className="w-full flex items-center justify-between text-xl font-medium text-[#1a1a1a] pb-2 active:opacity-60 transition-opacity"
-                    onClick={() => toggleMobileNestedSubMenu('nonsurgical')}
-                  >
-                    <span>Non-Surgical</span>
-                    {mobileNestedSubMenuOpen === 'nonsurgical' ? <ChevronUp size={20} strokeWidth={1} /> : <ChevronDown size={20} strokeWidth={1} />}
-                  </button>
-                  <ul className={`flex flex-col space-y-4 pl-4 overflow-hidden transition-all duration-300 text-lg font-light ${mobileNestedSubMenuOpen === 'nonsurgical' ? 'max-h-[800px] mt-3 opacity-100' : 'max-h-0 opacity-0'}`}>
-                    <li><Link to="/non-surgical" className="hover:text-gray-500" onClick={() => setIsMobileMenuOpen(false)}>BOTOX</Link></li>
-                    <li><Link to="/non-surgical" className="hover:text-gray-500" onClick={() => setIsMobileMenuOpen(false)}>DERMAL FILLERS</Link></li>
-                    <li><Link to="/non-surgical" className="hover:text-gray-500" onClick={() => setIsMobileMenuOpen(false)}>PROFILO</Link></li>
-                    <li><Link to="/non-surgical" className="hover:text-gray-500" onClick={() => setIsMobileMenuOpen(false)}>SCULPTRA</Link></li>
-                    <li><Link to="/non-surgical" className="hover:text-gray-500" onClick={() => setIsMobileMenuOpen(false)}>PDRN/NCTF</Link></li>
-                    <li><Link to="/non-surgical" className="hover:text-gray-500" onClick={() => setIsMobileMenuOpen(false)}>Exosomes / Mesotherapy</Link></li>
-                    <li><Link to="/non-surgical" className="hover:text-gray-500" onClick={() => setIsMobileMenuOpen(false)}>Non surgical facelift</Link></li>
-                    <li><Link to="/non-surgical" className="hover:text-gray-500" onClick={() => setIsMobileMenuOpen(false)}>Keloid scar management</Link></li>
-                    <li><Link to="/non-surgical" className="hover:text-gray-500" onClick={() => setIsMobileMenuOpen(false)}>Non-surgical scar management</Link></li>
-                    <li><Link to="/non-surgical" className="hover:text-gray-500" onClick={() => setIsMobileMenuOpen(false)}>Double chin reduction</Link></li>
-                    <li><Link to="/non-surgical" className="hover:text-gray-500" onClick={() => setIsMobileMenuOpen(false)}>IV infusions</Link></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-
-
-            {/* Discover Accordion */}
-            <div className="flex flex-col border-t border-gray-200/50 pt-6">
-              <button 
-                className="w-full flex items-center justify-between text-2xl md:text-3xl font-medium tracking-wide pb-2 active:opacity-60 transition-opacity"
-                onClick={() => toggleMobileSubMenu('discover')}
-              >
-                <span>Discover</span>
-                {mobileSubMenuOpen === 'discover' ? <ChevronUp size={24} strokeWidth={1} /> : <ChevronDown size={24} strokeWidth={1} />}
-              </button>
-              <ul className={`flex flex-col space-y-4 pl-4 overflow-hidden transition-all duration-300 text-lg font-light ${mobileSubMenuOpen === 'discover' ? 'max-h-[500px] mt-4 opacity-100' : 'max-h-0 opacity-0'}`}>
-                <li><Link to="/the-feature" className="hover:text-gray-500" onClick={() => setIsMobileMenuOpen(false)}>The Feature</Link></li>
-                <li><Link to="/faq" className="hover:text-gray-500" onClick={() => setIsMobileMenuOpen(false)}>FAQ</Link></li>
-                <li><Link to="/contact" className="hover:text-gray-500" onClick={() => setIsMobileMenuOpen(false)}>Contact Us</Link></li>
-              </ul>
-            </div>
-
-
-            <div className="border-t border-gray-200/50 pt-6 pb-8">
-              <a href="tel:+919444615554" className="block text-2xl md:text-3xl font-medium tracking-wide pb-2">+91 94446 15554</a>
-              <a href="mailto:dr.shruthilayaganesan@gmail.com" className="block text-lg font-light text-gray-500 tracking-wide mt-1">dr.shruthilayaganesan@gmail.com</a>
-            </div>
-
-          </nav>
-        </div>
-
-        {/* Mega Menu Dropdown Panel */}
-        <div 
-          className={`w-full overflow-hidden transition-all duration-500 ease-in-out ${
-            isMenuOpen ? 'max-h-[900px] opacity-100' : 'max-h-0 opacity-0'
-          }`}
-        >
-          <div className="px-8 md:px-12 py-12">
-            {/* Procedures Menu Content */}
-            {activeMenu === 'procedures' && (
-              <div className="flex justify-between w-full animate-fade-in">
-                {/* Left side: Links columns */}
-                <div className="flex gap-16 pt-4 pb-4 w-full">
-                  {/* Non-Surgical Column */}
-                  <div className="flex flex-col w-52">
-                    <h3 className="font-semibold text-sm mb-6 uppercase tracking-wider">Non-Surgical</h3>
-                    <ul className="flex flex-col space-y-3 text-xs md:text-sm font-light text-gray-800">
-                      <li><Link to="/non-surgical" className="hover:text-black transition-colors">BOTOX</Link></li>
-                      <li><Link to="/non-surgical" className="hover:text-black transition-colors">DERMAL FILLERS</Link></li>
-                      <li><Link to="/non-surgical" className="hover:text-black transition-colors">PROFILO</Link></li>
-                      <li><Link to="/non-surgical" className="hover:text-black transition-colors">SCULPTRA</Link></li>
-                      <li><Link to="/non-surgical" className="hover:text-black transition-colors">PDRN/NCTF</Link></li>
-                      <li><Link to="/non-surgical" className="hover:text-black transition-colors">Exosomes / Mesotherapy</Link></li>
-                      <li><Link to="/non-surgical" className="hover:text-black transition-colors">Non surgical facelift</Link></li>
-                      <li><Link to="/non-surgical" className="hover:text-black transition-colors">Keloid scar management</Link></li>
-                      <li><Link to="/non-surgical" className="hover:text-black transition-colors">Non-surgical scar management</Link></li>
-                      <li><Link to="/non-surgical" className="hover:text-black transition-colors">Double chin reduction</Link></li>
-                      <li><Link to="/non-surgical" className="hover:text-black transition-colors">IV infusions</Link></li>
-                    </ul>
-                  </div>
-
-                  {/* Surgical Column 1 */}
-                  <div className="flex flex-col w-52">
-                    <h3 className="font-semibold text-sm mb-6 uppercase tracking-wider">Surgical</h3>
-                    <div className="space-y-6">
-                      <div>
-                        <h4 className="text-[10px] font-semibold tracking-wider text-gray-400 mb-2 uppercase">Thread lift</h4>
-                        <ul className="flex flex-col space-y-2 text-xs md:text-sm font-light text-gray-800">
-                          <li><Link to="/surgical" className="hover:text-black transition-colors">Eyebrow, Forehead, Mid-face, Neck</Link></li>
-                        </ul>
-                      </div>
-                      <div>
-                        <h4 className="text-[10px] font-semibold tracking-wider text-gray-400 mb-2 uppercase">Face</h4>
-                        <ul className="flex flex-col space-y-2 text-xs md:text-sm font-light text-gray-800">
-                          <li><Link to="/surgical" className="hover:text-black transition-colors">Face lift, Deep plane face lift</Link></li>
-                          <li><Link to="/surgical" className="hover:text-black transition-colors">Forehead lift</Link></li>
-                          <li><Link to="/surgical" className="hover:text-black transition-colors">Brow lift</Link></li>
-                          <li><Link to="/surgical" className="hover:text-black transition-colors">Mid-face lift</Link></li>
-                          <li><Link to="/surgical" className="hover:text-black transition-colors">Neck lift, platysmaplasty</Link></li>
-                          <li><Link to="/surgical" className="hover:text-black transition-colors">Orthognathic surgery</Link></li>
-                          <li><Link to="/surgical" className="hover:text-black transition-colors">Liposuction (Face, Neck)</Link></li>
-                          <li><Link to="/surgical" className="hover:text-black transition-colors">Fat augmentation (Macro, Micro, Nano fat)</Link></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Surgical Column 2 */}
-                  <div className="flex flex-col w-52 pt-11">
-                    <div className="space-y-6">
-                      <div>
-                        <h4 className="text-[10px] font-semibold tracking-wider text-gray-400 mb-2 uppercase">Cheek & Implants</h4>
-                        <ul className="flex flex-col space-y-2 text-xs md:text-sm font-light text-gray-800">
-                          <li><Link to="/surgical" className="hover:text-black transition-colors">Dimple creation</Link></li>
-                          <li><Link to="/surgical" className="hover:text-black transition-colors">Buccal fat pad removal</Link></li>
-                          <li><Link to="/surgical" className="hover:text-black transition-colors">Silicon face implants</Link></li>
-                        </ul>
-                      </div>
-                      <div>
-                        <h4 className="text-[10px] font-semibold tracking-wider text-gray-400 mb-2 uppercase">Eye</h4>
-                        <ul className="flex flex-col space-y-2 text-xs md:text-sm font-light text-gray-800">
-                          <li><Link to="/surgical" className="hover:text-black transition-colors">Blepharoplasty</Link></li>
-                          <li><Link to="/surgical" className="hover:text-black transition-colors">Canthoplasty</Link></li>
-                          <li><Link to="/surgical" className="hover:text-black transition-colors">Ptosis correction</Link></li>
-                        </ul>
-                      </div>
-                      <div>
-                        <h4 className="text-[10px] font-semibold tracking-wider text-gray-400 mb-2 uppercase">Nose</h4>
-                        <ul className="flex flex-col space-y-2 text-xs md:text-sm font-light text-gray-800">
-                          <li><Link to="/surgical" className="hover:text-black transition-colors">Rhinoplasty, Revision Rhinoplasty</Link></li>
-                          <li><Link to="/surgical" className="hover:text-black transition-colors">Alarplasty</Link></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Surgical Column 3 */}
-                  <div className="flex flex-col w-52 pt-11">
-                    <div className="space-y-6">
-                      <div>
-                        <h4 className="text-[10px] font-semibold tracking-wider text-gray-400 mb-2 uppercase">Ear</h4>
-                        <ul className="flex flex-col space-y-2 text-xs md:text-sm font-light text-gray-800">
-                          <li><Link to="/surgical" className="hover:text-black transition-colors">Otoplasty</Link></li>
-                          <li><Link to="/surgical" className="hover:text-black transition-colors">Ear lobe repair/reduction</Link></li>
-                        </ul>
-                      </div>
-                      <div>
-                        <h4 className="text-[10px] font-semibold tracking-wider text-gray-400 mb-2 uppercase">Hair & Misc</h4>
-                        <ul className="flex flex-col space-y-2 text-xs md:text-sm font-light text-gray-800">
-                          <li><Link to="/surgical" className="hover:text-black transition-colors">Hair transplantation</Link></li>
-                          <li><Link to="/surgical" className="hover:text-black transition-colors">Surgical scar revision</Link></li>
-                          <li><Link to="/surgical" className="hover:text-black transition-colors">Wart/Mole removal, Tongue tie</Link></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-
-              </div>
-            )}
-
-
-
-            {/* Discover Menu Content */}
-            {activeMenu === 'discover' && (
-              <div className="flex justify-between w-full animate-fade-in">
-                {/* Left side: Links columns */}
-                <div className="flex gap-32 pt-4">
-                  {/* The Practice Column */}
-                  <div className="flex flex-col">
-
-                    <ul className="flex flex-col space-y-4 text-sm font-light text-gray-800">
-                      <li><Link to="/the-feature" className="hover:text-black transition-colors" onClick={() => setIsMobileMenuOpen(false)}>The Feature</Link></li>
-                      <li><Link to="/faq" className="hover:text-black transition-colors">FAQ</Link></li>
-                      <li><Link to="/contact" className="hover:text-black transition-colors">Contact Us</Link></li>
-                    </ul>
-                  </div>
-                </div>
-
-
-              </div>
-            )}
-          </div>
-        </div>
-      </header>
-    </>
-  );
+  const [mobileOpen, setMobileOpen] = useState(false);
+  const [mobileGroup, setMobileGroup] = useState<string | null>(null);
+  useEffect(() => {
+    if (!mobileOpen) return;
+    const previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+    return () => { document.body.style.overflow = previousOverflow; };
+  }, [mobileOpen]);
+  const dark = forceDark || activeMenu !== null;
+  const close = () => { setActiveMenu(null); setMobileOpen(false); setMobileGroup(null); };
+  const renderGroup = (group: typeof groups[number]) => <div key={`${group.section}-${group.title}`}>{group.section !== 'Hair' && <h4 className="text-[11px] font-semibold tracking-[0.15em] uppercase text-[#6e5038] mb-4">{group.title}</h4>}<ul className="space-y-3">{group.items.map(item => <li key={item.title}><Link to={item.to} onClick={close} className="text-sm font-light leading-relaxed text-gray-700 hover:text-black transition-colors">{item.title}</Link></li>)}</ul></div>;
+  return <header className={`relative z-50 w-full transition-colors ${dark ? 'bg-[#f7f6f2] text-[#1a1a1a]' : 'text-white'}`} onMouseLeave={() => setActiveMenu(null)}>
+    <div className="grid grid-cols-[auto_1fr_auto] md:grid-cols-[1fr_auto_1fr] items-center gap-3 px-4 md:px-8 py-6 w-full">
+      <button aria-label="Open menu" className="md:hidden" onClick={() => setMobileOpen(true)}><Menu size={24} strokeWidth={1.5} /></button>
+      <nav aria-label="Main navigation" className="hidden md:flex gap-8 text-sm">
+        {['Procedures', 'Discover'].map(label => <button key={label} aria-expanded={activeMenu === label} onMouseEnter={() => setActiveMenu(label)} onClick={() => setActiveMenu(label)} className="pb-1 hover:opacity-70">{label}</button>)}
+      </nav>
+      <Link to="/" onClick={close} aria-label="Advanced Maxillofacial and Cosmetic Surgery home" className="flex flex-col items-center text-center"><CenterBrand /></Link>
+      <Link to="/contact" onClick={close} className="justify-self-end rounded-full border border-current px-3 md:px-8 py-2 md:py-3 text-[10px] tracking-[0.2em] hover:opacity-70">BOOK</Link>
+    </div>
+    {activeMenu === 'Procedures' && <div className="hidden md:block max-h-[75vh] overflow-y-auto border-t border-black/10 px-8 lg:px-12 py-10">
+      <div className="max-w-7xl mx-auto grid grid-cols-2 xl:grid-cols-[1fr_2fr_0.7fr] gap-10">
+        {['Non-Surgical', 'Surgical', 'Hair'].map(section => <section key={section} className={section === 'Hair' ? 'xl:col-span-1 col-span-2' : ''}><h3 className="text-sm font-semibold uppercase tracking-[0.15em] mb-6">{section}</h3><div className={`grid gap-8 ${section === 'Surgical' ? 'lg:grid-cols-2 xl:grid-cols-3' : ''}`}>{groups.filter(group => group.section === section).map(renderGroup)}</div></section>)}
+      </div>
+    </div>}
+    {activeMenu === 'Discover' && <nav aria-label="Discover" className="hidden md:flex gap-10 border-t border-black/10 px-8 py-10">{[['The Feature', '/the-feature'], ['FAQ', '/faq'], ['Contact Us', '/contact']].map(([label, to]) => <Link key={to} to={to} onClick={close}>{label}</Link>)}</nav>}
+    {mobileOpen && <div className="fixed inset-0 z-50 bg-[#f7f6f2] text-[#1a1a1a] overflow-y-auto md:hidden">
+      <div className="grid grid-cols-[auto_1fr_auto] items-center gap-3 p-4 border-b border-black/10"><button aria-label="Close menu" onClick={close}><X size={24} /></button><Link to="/" onClick={close} className="flex flex-col items-center text-center"><CenterBrand /></Link><Link to="/contact" onClick={close} className="text-[10px] tracking-widest">BOOK</Link></div>
+      <nav aria-label="Mobile procedures" className="p-6 space-y-8">{['Non-Surgical', 'Surgical', 'Hair'].map(section => <section key={section}><h3 className="font-cormorant text-3xl mb-4">{section}</h3>{groups.filter(group => group.section === section).map(group => { const key = `${group.section}-${group.title}`; return <div key={key} className="border-b border-black/10 py-3"><button className="w-full flex items-center justify-between text-sm" aria-expanded={mobileGroup === key} onClick={() => setMobileGroup(mobileGroup === key ? null : key)}>{group.title}<ChevronDown size={16} /></button>{mobileGroup === key && <ul className="pt-4 pb-2 space-y-3">{group.items.map(item => <li key={item.title}><Link to={item.to} onClick={close} className="text-sm text-gray-600">{item.title}</Link></li>)}</ul>}</div>; })}</section>)}<div className="flex flex-col gap-4 border-t border-black/10 pt-6">{[['The Feature', '/the-feature'], ['FAQ', '/faq'], ['Contact Us', '/contact']].map(([label, to]) => <Link key={to} to={to} onClick={close}>{label}</Link>)}</div></nav>
+    </div>}
+  </header>;
 }

@@ -27,11 +27,9 @@ export default function Footer() {
 
           {/* Middle Column: Address & Contact */}
           <div className="w-full md:w-3/12 flex flex-col mt-2 md:mt-0">
-            <img 
-              src="https://ik.imagekit.io/fdhgiehjz/66.png?updatedAt=1789392513970" 
-              alt="Skin Lab Logo" 
-              className="h-10 w-auto object-contain self-start mb-4 max-h-10" 
-            />
+            <Link to="/" className="font-cormorant text-3xl font-semibold leading-tight text-[#1a1a1a] mb-6">
+              Dr. Shruthilaya Ganesan
+            </Link>
             <h4 className="font-semibold text-xs tracking-wider mb-6 uppercase">Locations</h4>
             <div className="text-sm font-light text-gray-700 space-y-4 mb-8">
               <div>
@@ -42,7 +40,10 @@ export default function Footer() {
               <div className="pt-2">
                 <p className="font-medium text-gray-900">Clinic 2: Rootwise Aesthetic Clinic</p>
                 <p>Coimbatore, Tamil Nadu</p>
-                <p className="mt-1 text-gray-500 text-xs">Mon - Sat: 11:00 AM - 7:00 PM</p>
+                <p className="mt-1 text-gray-700 text-xs leading-relaxed">
+                  Mon - Sat: 9:30 AM - 10:30 AM<br />
+                  7:30 PM - 8:30 PM
+                </p>
               </div>
 
             </div>
@@ -65,7 +66,7 @@ export default function Footer() {
 
         {/* Bottom Footer */}
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center text-[10px] text-gray-600 pt-8 font-light">
-          <p>© Skin Lab 2025 All Rights Reserved</p>
+          <p>© {new Date().getFullYear()} Dr. Shruthilaya Ganesan. All Rights Reserved.</p>
           <div className="flex space-x-12 mt-4 md:mt-0">
             <a href="#" className="hover:text-[#1a1a1a] transition-colors">Terms of Use</a>
             <a href="#" className="hover:text-[#1a1a1a] transition-colors">Cookies</a>

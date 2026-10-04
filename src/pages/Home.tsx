@@ -20,22 +20,19 @@ return (
       {/* Hero Wrapper - strictly contains the 100vh hero to prevent layout bleeding */}
       <div className="relative w-full h-screen text-white bg-[#25211e]">
         
-        {/* Background Video & Overlays for Hero */}
+        {/* Background Banner & Overlays for Hero */}
         <div className="absolute inset-0 z-0 overflow-hidden">
-        <video 
-          autoPlay 
-          loop 
-          muted 
-          playsInline
-          className="w-full h-full object-cover object-center opacity-85 scale-110"
-        >
-          <source src="/hero-video.mp4" type="video/mp4" />
-        </video>
+        <img
+          src="/images/home-hero-banner.png"
+          alt=""
+          fetchPriority="high"
+          className="w-full h-full object-cover object-center opacity-85"
+        />
         {/* Gradient overlays to match the dark taupe moody lighting but lighter */}
         <div className="absolute inset-0 bg-gradient-to-r from-[#25211e]/80 via-[#25211e]/40 to-transparent"></div>
         <div className="absolute inset-0 bg-gradient-to-t from-[#1a1715]/70 via-transparent to-transparent"></div>
         
-        {/* Subtle warm light accent over the video */}
+        {/* Subtle warm light accent over the banner */}
         <div className="absolute right-0 top-0 bottom-0 w-1/2 bg-gradient-to-l from-[#6e5038]/20 to-transparent mix-blend-overlay pointer-events-none"></div>
       </div>
 
@@ -52,7 +49,7 @@ return (
 
 
           {/* Heading */}
-          <h1 className="text-[40px] leading-[1.1] md:text-5xl lg:text-6xl mb-6 md:mb-8 font-bold tracking-tight">
+          <h1 className="font-cormorant text-[46px] leading-[1.05] md:text-[64px] lg:text-[72px] mb-6 md:mb-8 font-medium tracking-[-0.025em]">
             Dr. Shruthilaya Ganesan
           </h1>
           
@@ -67,17 +64,47 @@ return (
       
       </div> {/* End of Hero Wrapper */}
 
-      {/* Qualifications & Experience Section - shown first to establish credentials */}
+      {/* Doctor Profile Section */}
+      <section id="doctor-profile" className="relative z-10 w-full py-12 md:py-24 px-4 md:px-12 lg:px-24 bg-[#ebe9e4]">
+        <div className="max-w-7xl mx-auto">
+          <div className="bg-[#f7f6f2] rounded-3xl overflow-hidden flex flex-col-reverse md:flex-row shadow-sm text-[#1a1a1a]">
+            {/* Left Content */}
+            <div className="w-full md:w-[55%] p-8 md:p-12 lg:p-20 xl:p-24 flex flex-col justify-center text-left">
+              <h2 className="font-cormorant text-4xl md:text-5xl font-medium mb-6 md:mb-8">Dr. Shruthilaya Ganesan</h2>
+              <p className="text-gray-700 text-sm leading-relaxed font-light mb-10 md:mb-12 max-w-lg">
+                I am a Maxillofacial surgeon specialised in Facial Aesthetics and Cosmetic Surgery. My primary background is in treating the complex structures of the face, jaw, and neck. Following that, I completed an advanced post-doctoral fellowship in Cosmetic Surgery at DY Patil University under the mentorship of the legendary pioneer Dr. Mohan Thomas.<br/><br/>This gives me a unique dual expertise. My practice bridges the gap between maxillofacial surgery and advanced aesthetic surgery. I specialize in full-face Cosmetic Surgery, rhinoplasty, and facial contouring.
+              </p>
+            </div>
+
+            {/* Right Image */}
+            <div className="w-full md:w-[45%] h-[350px] md:h-auto md:min-h-[500px] bg-[#ebe7e0] flex justify-center items-center p-6 md:p-8 overflow-hidden">
+              <img
+                src="/images/doctor-profile.png"
+                alt="Dr. Shruthilaya Ganesan"
+                width={500}
+                height={500}
+                className="w-full h-auto max-w-[440px] max-h-[440px] object-contain object-center"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Qualifications & Experience Section */}
       <section id="qualifications" className="relative z-10 w-full py-12 md:py-24 px-4 md:px-12 lg:px-24 bg-[#ebe9e4]">
         <div className="max-w-7xl mx-auto">
           <div className="bg-[#f7f6f2] rounded-3xl overflow-hidden flex flex-col md:flex-row shadow-sm text-[#1a1a1a]">
             
             {/* Left Image */}
-            <div className="w-full md:w-[50%] h-[420px] md:h-auto md:min-h-[520px] overflow-hidden">
+            <div className="w-full md:w-[50%] flex items-center justify-center bg-white overflow-hidden">
               <img 
-                src="https://ik.imagekit.io/fdhgiehjz/nav.PNG" 
+                src="/images/qualifications-experience.png" 
                 alt="Qualifications and Experience" 
-                className="w-full h-full object-cover object-center"
+                width={1023}
+                height={1279}
+                loading="lazy"
+                decoding="async"
+                className="w-full h-auto max-h-[700px] object-contain object-center"
               />
             </div>
 
@@ -98,30 +125,6 @@ return (
         </div>
       </section>
 
-      {/* Doctor Profile Section */}
-      <section className="relative z-10 w-full py-12 md:py-24 px-4 md:px-12 lg:px-24 bg-[#ebe9e4]">
-        <div className="max-w-7xl mx-auto">
-          <div className="bg-[#f7f6f2] rounded-3xl overflow-hidden flex flex-col-reverse md:flex-row shadow-sm text-[#1a1a1a]">
-            {/* Left Content */}
-            <div className="w-full md:w-[55%] p-8 md:p-12 lg:p-20 xl:p-24 flex flex-col justify-center text-left">
-              <h2 className="text-4xl md:text-5xl font-light mb-6 md:mb-8">Dr. Shruthilaya Ganesan</h2>
-              <p className="text-gray-700 text-sm leading-relaxed font-light mb-10 md:mb-12 max-w-lg">
-                I am a Maxillofacial surgeon specialised in Facial Aesthetics and Cosmetic Surgery. My primary background is in treating the complex structures of the face, jaw, and neck. Following that, I completed an advanced post-doctoral fellowship in Cosmetic Surgery at DY Patil University under the mentorship of the legendary pioneer Dr. Mohan Thomas.<br/><br/>This gives me a unique dual expertise. My practice bridges the gap between maxillofacial surgery and advanced aesthetic surgery. I specialize in full-face Cosmetic Surgery, rhinoplasty, and facial contouring.
-              </p>
-            </div>
-            
-            {/* Right Image */}
-            <div className="w-full md:w-[45%] h-[350px] md:h-auto min-h-[350px] md:min-h-[500px] bg-[#ebe7e0] flex justify-center items-end overflow-hidden">
-              <img 
-                src="https://ik.imagekit.io/fdhgiehjz/66-removebg-preview.png?updatedAt=1789395327695" 
-                alt="Dr. Shruthilaya Ganesan" 
-                className="h-[92%] w-auto object-contain object-bottom drop-shadow-md transition-transform duration-700 hover:scale-105"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Procedures Split Section */}
       <section className="relative z-10 w-full pt-16 pb-0 bg-[#ebe9e4] flex flex-col">
         {/* Section Heading */}
@@ -134,9 +137,9 @@ return (
           {/* Surgical Block */}
           <div className="relative w-full md:w-1/2 h-[500px] md:h-[650px] group overflow-hidden cursor-pointer">
             <img 
-              src="https://ik.imagekit.io/fdhgiehjz/image5.jpeg?updatedAt=1790603261684" 
-              alt="Surgical Procedures" 
-              className="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-1000 group-hover:scale-105"
+              src="/images/surgical-male-face-closeup.png"
+              alt="Close-up male face with facial surgery planning marks"
+              className="absolute inset-0 w-full h-full object-cover object-[center_30%] transition-transform duration-1000 group-hover:scale-105"
             />
             {/* Tint overlay */}
             <div className="absolute inset-0 bg-[#3a281c]/50 group-hover:bg-[#3a281c]/60 transition-colors duration-500"></div>
@@ -154,8 +157,8 @@ return (
           {/* Non-Surgical Block */}
           <div className="relative w-full md:w-1/2 h-[500px] md:h-[650px] group overflow-hidden cursor-pointer">
             <img 
-              src="https://ik.imagekit.io/fdhgiehjz/image7.jpeg?updatedAt=1790603263636" 
-              alt="Non-Surgical Procedures" 
+              src="/images/non-surgical-female-face-closeup.png"
+              alt="Close-up female face with non-surgical treatment mapping dots"
               className="absolute inset-0 w-full h-full object-cover object-[center_30%] transition-transform duration-1000 group-hover:scale-105"
             />
             {/* Tint overlay */}
@@ -225,11 +228,11 @@ return (
             </div>
             
             {/* Right side image */}
-            <div className="w-full lg:w-1/2 h-[400px] lg:h-auto relative overflow-hidden group">
+            <div className="w-full lg:w-1/2 flex items-center justify-center p-4 md:p-6 bg-[#f7f6f2]">
               <img 
                 src="https://ik.imagekit.io/fdhgiehjz/WhatsApp%20Image%202026-09-12%20at%207.52.38%20PM.jpeg" 
                 alt="Filler Complication Management" 
-                className="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-1000 group-hover:scale-105"
+                className="w-full h-auto object-contain object-center"
               />
             </div>
           </div>
@@ -255,11 +258,11 @@ return (
             </div>
             
             {/* Left side image (now on right visually due to row-reverse) */}
-            <div className="w-full lg:w-1/2 h-[400px] lg:h-auto relative overflow-hidden group">
+            <div className="w-full lg:w-1/2 flex items-center justify-center p-4 md:p-6 bg-[#f7f6f2]">
               <img 
                 src="https://ik.imagekit.io/fdhgiehjz/bg.jpeg" 
                 alt="Define Your Chin, Refine Your Jawline" 
-                className="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-1000 group-hover:scale-105"
+                className="w-full h-auto object-contain object-center"
               />
             </div>
           </div>
@@ -288,11 +291,11 @@ return (
             </div>
             
             {/* Right side image */}
-            <div className="w-full lg:w-1/2 h-[400px] lg:h-auto relative overflow-hidden group">
+            <div className="w-full lg:w-1/2 flex items-center justify-center p-4 md:p-6 bg-[#f7f6f2]">
               <img 
                 src="https://ik.imagekit.io/fdhgiehjz/888.jpeg" 
                 alt="Facial Slimming & Contouring" 
-                className="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-1000 group-hover:scale-105"
+                className="w-full h-auto object-contain object-center"
               />
             </div>
           </div>
@@ -322,11 +325,11 @@ return (
             </div>
             
             {/* Left side image (now on right visually due to row-reverse) */}
-            <div className="w-full lg:w-1/2 h-[400px] lg:h-auto relative overflow-hidden group">
+            <div className="w-full lg:w-1/2 flex items-center justify-center p-4 md:p-6 bg-[#f7f6f2]">
               <img 
                 src="https://ik.imagekit.io/fdhgiehjz/8899.jpeg" 
                 alt="Restoring Under-Eye Volume & Harmony" 
-                className="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-1000 group-hover:scale-105"
+                className="w-full h-auto object-contain object-center"
               />
             </div>
           </div>
