@@ -188,8 +188,8 @@ return (
             <div className="absolute inset-0 flex flex-col items-center justify-center text-white p-8 text-center z-10">
               <h3 className="font-cormorant text-5xl lg:text-6xl font-medium mb-4">Surgical</h3>
               <p className="text-sm font-light tracking-wide mb-10">The Complete Aesthetic Transformation.</p>
-              <Link to="/surgical" className="border border-white rounded-[2rem] px-12 py-3 text-[10px] font-semibold tracking-[0.2em] hover:bg-white hover:text-[#1a1a1a] transition-all duration-300 uppercase inline-block">
-                LEARN MORE
+              <Link to="/surgical/" className="border border-white rounded-[2rem] px-12 py-3 text-[10px] font-semibold tracking-[0.2em] hover:bg-white hover:text-[#1a1a1a] transition-all duration-300 uppercase inline-block">
+                LEARN MORE<span className="sr-only"> about surgical procedures</span>
               </Link>
             </div>
           </div>
@@ -208,8 +208,8 @@ return (
             <div className="absolute inset-0 flex flex-col items-center justify-center text-white p-8 text-center z-10">
               <h3 className="font-cormorant text-5xl lg:text-6xl font-medium mb-4">Non-Surgical</h3>
               <p className="text-sm font-light tracking-wide mb-10">Noninvasive Methods. Transformative Results.</p>
-              <Link to="/non-surgical" className="border border-white rounded-[2rem] px-12 py-3 text-[10px] font-semibold tracking-[0.2em] hover:bg-white hover:text-[#1a1a1a] transition-all duration-300 uppercase inline-block">
-                LEARN MORE
+              <Link to="/non-surgical/" className="border border-white rounded-[2rem] px-12 py-3 text-[10px] font-semibold tracking-[0.2em] hover:bg-white hover:text-[#1a1a1a] transition-all duration-300 uppercase inline-block">
+                LEARN MORE<span className="sr-only"> about non-surgical treatments</span>
               </Link>
             </div>
           </div>

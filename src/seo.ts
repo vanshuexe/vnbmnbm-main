@@ -143,7 +143,8 @@ const pageFor = (pathname: string) => {
   return PAGES.find((p) => p.path === clean);
 };
 
-const urlFor = (path: string) => (path === '/' ? `${SITE_URL}/` : `${SITE_URL}${path}`);
+// Trailing slash matches how the host serves prerendered pages (/surgical -> /surgical/).
+const urlFor = (path: string) => (path === '/' ? `${SITE_URL}/` : `${SITE_URL}${path}/`);
 
 // ---------- Structured data ----------
 
@@ -151,7 +152,7 @@ const clinicNode = (c: (typeof CLINICS)[number]) => ({
   '@type': 'MedicalClinic',
   '@id': `${SITE_URL}/#${c.id}`,
   name: c.name,
-  url: `${SITE_URL}/contact`,
+  url: `${SITE_URL}/contact/`,
   telephone: PHONE,
   medicalSpecialty: 'PlasticSurgery',
   address: {
@@ -383,12 +384,12 @@ ${CLINICS.map((c) => `- ${c.name}: ${c.streetAddress}, Coimbatore, Tamil Nadu ${
 ## Contact
 - Phone / WhatsApp: +91 94446 15554
 - Email: ${EMAIL}
-- Book a consultation: ${SITE_URL}/book
+- Book a consultation: ${SITE_URL}/book/
 
-## Surgical procedures (${SITE_URL}/surgical)
+## Surgical procedures (${SITE_URL}/surgical/)
 ${group(surgicalProcedures)}
 
-## Non-surgical treatments (${SITE_URL}/non-surgical)
+## Non-surgical treatments (${SITE_URL}/non-surgical/)
 ${group(nonSurgicalProcedures)}
 
 ## Pages

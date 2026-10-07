@@ -69,7 +69,7 @@ export default function ProcedureList({ procedures }: ProcedureListProps) {
                 </ul>
               )}
 
-              <Link to="/book" className="inline-block border border-white/80 rounded-[2rem] text-white hover:bg-white hover:text-[#001d3d] transition-colors duration-300 px-10 py-3.5 text-[11px] font-semibold tracking-[0.2em] uppercase text-center w-max">
+              <Link to="/book/" className="inline-block border border-white/80 rounded-[2rem] text-white hover:bg-white hover:text-[#001d3d] transition-colors duration-300 px-10 py-3.5 text-[11px] font-semibold tracking-[0.2em] uppercase text-center w-max">
                 Book Consultation
               </Link>
             </motion.div>

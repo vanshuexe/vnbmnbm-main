@@ -127,29 +127,29 @@ return (
               <form className="flex flex-col space-y-6" onSubmit={(e) => e.preventDefault()}>
                 <div className="flex flex-col md:flex-row gap-6">
                   <div className="flex-1">
-                    <label className="block text-[10px] font-semibold tracking-[0.2em] uppercase mb-2 text-gray-500">First Name</label>
-                    <input type="text" className="w-full bg-transparent border-b border-gray-300 py-2 focus:outline-none focus:border-[#1a1a1a] transition-colors" placeholder="Enter your first name" />
+                    <label htmlFor="contact-first-name" className="block text-[10px] font-semibold tracking-[0.2em] uppercase mb-2 text-gray-500">First Name</label>
+                    <input type="text" id="contact-first-name" className="w-full bg-transparent border-b border-gray-300 py-2 focus:outline-none focus:border-[#1a1a1a] transition-colors" placeholder="Enter your first name" />
                   </div>
                   <div className="flex-1">
-                    <label className="block text-[10px] font-semibold tracking-[0.2em] uppercase mb-2 text-gray-500">Last Name</label>
-                    <input type="text" className="w-full bg-transparent border-b border-gray-300 py-2 focus:outline-none focus:border-[#1a1a1a] transition-colors" placeholder="Enter your last name" />
+                    <label htmlFor="contact-last-name" className="block text-[10px] font-semibold tracking-[0.2em] uppercase mb-2 text-gray-500">Last Name</label>
+                    <input type="text" id="contact-last-name" className="w-full bg-transparent border-b border-gray-300 py-2 focus:outline-none focus:border-[#1a1a1a] transition-colors" placeholder="Enter your last name" />
                   </div>
                 </div>
 
                 <div className="flex flex-col md:flex-row gap-6">
                   <div className="flex-1">
-                    <label className="block text-[10px] font-semibold tracking-[0.2em] uppercase mb-2 text-gray-500">Email Address</label>
-                    <input type="email" className="w-full bg-transparent border-b border-gray-300 py-2 focus:outline-none focus:border-[#1a1a1a] transition-colors" placeholder="Enter your email" />
+                    <label htmlFor="contact-email" className="block text-[10px] font-semibold tracking-[0.2em] uppercase mb-2 text-gray-500">Email Address</label>
+                    <input type="email" id="contact-email" className="w-full bg-transparent border-b border-gray-300 py-2 focus:outline-none focus:border-[#1a1a1a] transition-colors" placeholder="Enter your email" />
                   </div>
                   <div className="flex-1">
-                    <label className="block text-[10px] font-semibold tracking-[0.2em] uppercase mb-2 text-gray-500">Phone Number</label>
-                    <input type="tel" className="w-full bg-transparent border-b border-gray-300 py-2 focus:outline-none focus:border-[#1a1a1a] transition-colors" placeholder="Enter your phone number" />
+                    <label htmlFor="contact-phone" className="block text-[10px] font-semibold tracking-[0.2em] uppercase mb-2 text-gray-500">Phone Number</label>
+                    <input type="tel" id="contact-phone" className="w-full bg-transparent border-b border-gray-300 py-2 focus:outline-none focus:border-[#1a1a1a] transition-colors" placeholder="Enter your phone number" />
                   </div>
                 </div>
 
                 <div>
-                  <label className="block text-[10px] font-semibold tracking-[0.2em] uppercase mb-2 text-gray-500">Procedure of Interest</label>
-                  <select className="w-full bg-transparent border-b border-gray-300 py-2 focus:outline-none focus:border-[#1a1a1a] transition-colors appearance-none text-gray-500 font-light">
+                  <label htmlFor="contact-procedure" className="block text-[10px] font-semibold tracking-[0.2em] uppercase mb-2 text-gray-500">Procedure of Interest</label>
+                  <select id="contact-procedure" className="w-full bg-transparent border-b border-gray-300 py-2 focus:outline-none focus:border-[#1a1a1a] transition-colors appearance-none text-gray-500 font-light">
                     <option value="">Select a procedure</option>
                     <option value="surgical">Surgical Procedures</option>
                     <option value="non-surgical">Non-Surgical Procedures</option>
@@ -158,8 +158,8 @@ return (
                 </div>
 
                 <div>
-                  <label className="block text-[10px] font-semibold tracking-[0.2em] uppercase mb-2 text-gray-500">Message</label>
-                  <textarea rows={4} className="w-full bg-transparent border-b border-gray-300 py-2 focus:outline-none focus:border-[#1a1a1a] transition-colors resize-none" placeholder="How can we help you?"></textarea>
+                  <label htmlFor="contact-message" className="block text-[10px] font-semibold tracking-[0.2em] uppercase mb-2 text-gray-500">Message</label>
+                  <textarea id="contact-message" rows={4} className="w-full bg-transparent border-b border-gray-300 py-2 focus:outline-none focus:border-[#1a1a1a] transition-colors resize-none" placeholder="How can we help you?"></textarea>
                 </div>
 
                 <button type="submit" className="self-start mt-4 bg-[#1a1a1a] text-white rounded-full px-10 py-4 text-[10px] font-semibold tracking-[0.2em] uppercase hover:bg-gray-800 transition-colors">
@@ -174,7 +174,7 @@ return (
       {/* Clinic Maps */}
       <section className="relative z-10 w-full pb-24 px-4 md:px-12 lg:px-24 bg-[#f7f6f2] text-[#1a1a1a]">
         <div className="max-w-7xl mx-auto">
-          <h4 className="text-[10px] font-semibold tracking-[0.2em] uppercase mb-8 text-gray-500">Find Us</h4>
+          <h4 className="text-[10px] font-semibold tracking-[0.2em] uppercase mb-8 text-gray-600">Find Us</h4>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 lg:gap-10">
             {clinics.map((clinic) => (
               <div key={clinic.name} className="flex flex-col">
@@ -191,7 +191,7 @@ return (
                   />
                 </div>
                 <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
-                  <p className="text-gray-500 text-sm font-light leading-relaxed">
+                  <p className="text-gray-600 text-sm font-light leading-relaxed">
                     {clinic.hours.map((line, i) => (
                       <span key={line}>{i > 0 && <br />}{line}</span>
                     ))}

@@ -89,7 +89,7 @@ export default function FAQ() {
             <p className="text-gray-600 font-light mb-6 max-w-lg mx-auto">
               If you couldn't find the answer to your question, our dedicated patient coordination team is here to help.
             </p>
-            <a href="/contact" className="inline-block border border-[#1a1a1a] text-white bg-[#1a1a1a] hover:bg-transparent hover:text-[#1a1a1a] transition-colors duration-300 px-8 py-3.5 text-sm tracking-widest uppercase text-center w-max">
+            <a href="/contact/" className="inline-block border border-[#1a1a1a] text-white bg-[#1a1a1a] hover:bg-transparent hover:text-[#1a1a1a] transition-colors duration-300 px-8 py-3.5 text-sm tracking-widest uppercase text-center w-max">
               Contact Us
             </a>
           </div>

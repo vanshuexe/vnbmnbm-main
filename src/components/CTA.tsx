@@ -19,7 +19,7 @@ export default function CTA() {
           Schedule a private consultation with Dr. Shruthilaya Ganesan to discuss your aesthetic goals and discover a personalized treatment plan tailored to your unique facial structure.
         </p>
         <Link 
-          to="/contact"
+          to="/contact/"
           className="border border-white rounded-[2rem] px-10 py-4 text-[11px] md:text-xs font-semibold tracking-[0.2em] hover:bg-white hover:text-black transition-all duration-300 uppercase"
         >
           Book a Consultation

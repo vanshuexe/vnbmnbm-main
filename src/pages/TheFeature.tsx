@@ -13,7 +13,7 @@ export default function TheFeature() {
           
           {/* Feature 1 */}
           <div className="mb-12">
-            <span className="text-[10px] md:text-xs font-semibold tracking-[0.2em] uppercase text-gray-500 mb-6 block">
+            <span className="text-[10px] md:text-xs font-semibold tracking-[0.2em] uppercase text-gray-600 mb-6 block">
               Timely intervention makes a difference
             </span>
             <h1 className="text-3xl md:text-5xl lg:text-6xl font-light text-[#1a1a1a] leading-tight mb-8">
@@ -49,7 +49,7 @@ export default function TheFeature() {
 
           {/* Feature 2 */}
           <div className="mb-12">
-            <span className="text-[10px] md:text-xs font-semibold tracking-[0.2em] uppercase text-gray-500 mb-6 block">
+            <span className="text-[10px] md:text-xs font-semibold tracking-[0.2em] uppercase text-gray-600 mb-6 block">
               A refined approach
             </span>
             <h2 className="text-3xl md:text-5xl lg:text-6xl font-light text-[#1a1a1a] leading-tight mb-8">
@@ -82,7 +82,7 @@ export default function TheFeature() {
 
           {/* Feature 3 */}
           <div className="mb-12">
-            <span className="text-[10px] md:text-xs font-semibold tracking-[0.2em] uppercase text-gray-500 mb-6 block">
+            <span className="text-[10px] md:text-xs font-semibold tracking-[0.2em] uppercase text-gray-600 mb-6 block">
               A refined approach
             </span>
             <h2 className="text-3xl md:text-5xl lg:text-6xl font-light text-[#1a1a1a] leading-tight mb-8">
@@ -115,7 +115,7 @@ export default function TheFeature() {
 
           {/* Feature 4 */}
           <div className="mb-12">
-            <span className="text-[10px] md:text-xs font-semibold tracking-[0.2em] uppercase text-gray-500 mb-6 block">
+            <span className="text-[10px] md:text-xs font-semibold tracking-[0.2em] uppercase text-gray-600 mb-6 block">
               A subtle approach
             </span>
             <h2 className="text-3xl md:text-5xl lg:text-6xl font-light text-[#1a1a1a] leading-tight mb-8">
@@ -148,7 +148,7 @@ export default function TheFeature() {
 
           {/* Feature 5 */}
           <div className="mb-12">
-            <span className="text-[10px] md:text-xs font-semibold tracking-[0.2em] uppercase text-gray-500 mb-6 block">
+            <span className="text-[10px] md:text-xs font-semibold tracking-[0.2em] uppercase text-gray-600 mb-6 block">
               A natural approach
             </span>
             <h2 className="text-3xl md:text-5xl lg:text-6xl font-light text-[#1a1a1a] leading-tight mb-8">
@@ -181,7 +181,7 @@ export default function TheFeature() {
 
           {/* Feature 6 */}
           <div className="mb-12">
-            <span className="text-[10px] md:text-xs font-semibold tracking-[0.2em] uppercase text-gray-500 mb-6 block">
+            <span className="text-[10px] md:text-xs font-semibold tracking-[0.2em] uppercase text-gray-600 mb-6 block">
               A balanced approach
             </span>
             <h2 className="text-3xl md:text-5xl lg:text-6xl font-light text-[#1a1a1a] leading-tight mb-8">

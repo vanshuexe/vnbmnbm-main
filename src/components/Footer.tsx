@@ -20,7 +20,7 @@ export default function Footer({ white = false }: { white?: boolean }) {
         title: 'text-[#1a1a1a]',
         body: 'text-gray-700',
         strong: 'text-gray-900',
-        muted: 'text-gray-500',
+        muted: 'text-gray-600',
         link: 'hover:text-[#1a1a1a]',
         legal: 'text-gray-600',
       };
@@ -37,13 +37,13 @@ export default function Footer({ white = false }: { white?: boolean }) {
             
             {/* Social Icons */}
             <div className="flex space-x-6">
-              <a href="https://www.instagram.com/drshruthilayaganesan?igsi=bzdhMWN2YzlzZDJv&utm_source=qr" target="_blank" rel="noreferrer" className={`${c.icon} transition-colors`}>
+              <a href="https://www.instagram.com/drshruthilayaganesan?igsi=bzdhMWN2YzlzZDJv&utm_source=qr" target="_blank" rel="noreferrer" aria-label="Instagram" className={`${c.icon} transition-colors`}>
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
               </a>
-              <a href="https://wa.me/919444615554" target="_blank" rel="noreferrer" className={`${c.icon} transition-colors`}>
+              <a href="https://wa.me/919444615554" target="_blank" rel="noreferrer" aria-label="WhatsApp" className={`${c.icon} transition-colors`}>
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" /><path d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1" /></svg>
               </a>
-              <a href="https://www.linkedin.com/in/dr-shruthilaya-ganesan-23626821b?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank" rel="noreferrer" className={`${c.icon} transition-colors`}>
+              <a href="https://www.linkedin.com/in/dr-shruthilaya-ganesan-23626821b?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank" rel="noreferrer" aria-label="LinkedIn" className={`${c.icon} transition-colors`}>
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
               </a>
             </div>
@@ -76,7 +76,7 @@ export default function Footer({ white = false }: { white?: boolean }) {
             <Link to="/" className={`font-cormorant text-3xl font-semibold leading-tight ${c.title} mb-6`}>
               Dr. Shruthilaya Ganesan
             </Link>
-            <h4 className="font-semibold text-xs tracking-wider mb-6 uppercase">Locations</h4>
+            <p className="font-semibold text-xs tracking-wider mb-6 uppercase">Locations</p>
             <div className={`text-sm font-light ${c.body} space-y-4 mb-8`}>
               <div>
                 <p className={`font-medium ${c.strong}`}>Clinic 1: Skin Lab Studio</p>
@@ -104,10 +104,10 @@ export default function Footer({ white = false }: { white?: boolean }) {
 
           {/* Right Column: Links */}
           <div className="order-3 md:order-none w-full md:w-2/12 flex flex-col mt-2 md:mt-0">
-            <h4 className="font-semibold text-xs tracking-wider mb-6">Learn More</h4>
+            <p className="font-semibold text-xs tracking-wider mb-6">Learn More</p>
             <ul className={`text-sm font-light ${c.body} space-y-6`}>
-              <li><Link to="/faq" className={`${c.link} transition-colors`}>FAQ</Link></li>
-              <li><Link to="/sitemap" className={`${c.link} transition-colors`}>Sitemap</Link></li>
+              <li><Link to="/faq/" className={`${c.link} transition-colors`}>FAQ</Link></li>
+              <li><Link to="/sitemap/" className={`${c.link} transition-colors`}>Sitemap</Link></li>
             </ul>
           </div>
 

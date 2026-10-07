@@ -43,7 +43,7 @@ export default function Book() {
           
           {/* Left Column - Contact Info */}
           <div className="w-full lg:w-1/3 flex flex-col pt-8">
-            <span className="text-[10px] md:text-xs font-semibold tracking-[0.2em] uppercase text-gray-500 mb-6 block">
+            <span className="text-[10px] md:text-xs font-semibold tracking-[0.2em] uppercase text-gray-600 mb-6 block">
               Consultation
             </span>
             <h1 className="text-4xl md:text-5xl font-light text-[#1a1a1a] leading-tight mb-8">
@@ -55,7 +55,7 @@ export default function Book() {
 
             <div className="space-y-8">
               <div>
-                <h4 className="font-semibold text-xs tracking-wider mb-2 uppercase text-[#1a1a1a]">Locations</h4>
+                <h2 className="font-semibold text-xs tracking-wider mb-2 uppercase text-[#1a1a1a]">Locations</h2>
                 <p className="text-sm font-light text-gray-600 mb-2"><strong>Clinic 1: Skin Lab</strong><br />No. 166, Parijath, Sathyadev Enclave,<br />Race Course, Coimbatore, Tamil Nadu 641018</p>
                 <a href="https://share.google/X54rfKMZyTi7j0lSV" target="_blank" rel="noreferrer" className="inline-block text-sm font-light text-gray-600 underline underline-offset-4 hover:text-[#1a1a1a] transition-colors">Get directions</a>
                 <p className="text-sm font-light text-gray-600 mt-4 mb-2"><strong>Clinic 2: Rootwise Aesthetic Clinic</strong><br />31, E TV Swamy Rd, R.S. Puram,<br />Coimbatore, Tamil Nadu 641002</p>
@@ -63,13 +63,13 @@ export default function Book() {
               </div>
               
               <div>
-                <h4 className="font-semibold text-xs tracking-wider mb-2 uppercase text-[#1a1a1a]">Contact</h4>
+                <h2 className="font-semibold text-xs tracking-wider mb-2 uppercase text-[#1a1a1a]">Contact</h2>
                 <p className="text-sm font-light text-gray-600">+91 94446 15554</p>
                 <p className="text-sm font-light text-gray-600">dr.shruthilayaganesan@gmail.com</p>
               </div>
 
               <div>
-                <h4 className="font-semibold text-xs tracking-wider mb-2 uppercase text-[#1a1a1a]">Hours</h4>
+                <h2 className="font-semibold text-xs tracking-wider mb-2 uppercase text-[#1a1a1a]">Hours</h2>
                 <p className="text-sm font-light text-gray-600"><strong>Clinic 1:</strong> Monday – Sunday, 10:00 AM – 7:30 PM</p>
                 <p className="text-sm font-light text-gray-600 mt-3"><strong>Clinic 2:</strong> Monday – Saturday</p>
                 <p className="text-sm font-light text-gray-600">Morning: 9:30 AM – 10:30 AM</p>
@@ -84,7 +84,7 @@ export default function Book() {
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div className="flex flex-col">
-                  <label htmlFor="firstName" className="text-xs font-semibold tracking-wider uppercase text-gray-500 mb-2">First Name *</label>
+                  <label htmlFor="firstName" className="text-xs font-semibold tracking-wider uppercase text-gray-600 mb-2">First Name *</label>
                   <input 
                     type="text" 
                     id="firstName" 
@@ -96,7 +96,7 @@ export default function Book() {
                   />
                 </div>
                 <div className="flex flex-col">
-                  <label htmlFor="lastName" className="text-xs font-semibold tracking-wider uppercase text-gray-500 mb-2">Last Name *</label>
+                  <label htmlFor="lastName" className="text-xs font-semibold tracking-wider uppercase text-gray-600 mb-2">Last Name *</label>
                   <input 
                     type="text" 
                     id="lastName" 
@@ -111,7 +111,7 @@ export default function Book() {
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div className="flex flex-col">
-                  <label htmlFor="email" className="text-xs font-semibold tracking-wider uppercase text-gray-500 mb-2">Email Address *</label>
+                  <label htmlFor="email" className="text-xs font-semibold tracking-wider uppercase text-gray-600 mb-2">Email Address *</label>
                   <input 
                     type="email" 
                     id="email" 
@@ -123,7 +123,7 @@ export default function Book() {
                   />
                 </div>
                 <div className="flex flex-col">
-                  <label htmlFor="phone" className="text-xs font-semibold tracking-wider uppercase text-gray-500 mb-2">Phone Number *</label>
+                  <label htmlFor="phone" className="text-xs font-semibold tracking-wider uppercase text-gray-600 mb-2">Phone Number *</label>
                   <input 
                     type="tel" 
                     id="phone" 
@@ -137,7 +137,7 @@ export default function Book() {
               </div>
 
               <div className="flex flex-col">
-                <label htmlFor="procedure" className="text-xs font-semibold tracking-wider uppercase text-gray-500 mb-2">Procedure of Interest</label>
+                <label htmlFor="procedure" className="text-xs font-semibold tracking-wider uppercase text-gray-600 mb-2">Procedure of Interest</label>
                 <select 
                   id="procedure" 
                   name="procedure" 
@@ -155,7 +155,7 @@ export default function Book() {
               </div>
 
               <div className="flex flex-col">
-                <label htmlFor="message" className="text-xs font-semibold tracking-wider uppercase text-gray-500 mb-2">Message or Questions</label>
+                <label htmlFor="message" className="text-xs font-semibold tracking-wider uppercase text-gray-600 mb-2">Message or Questions</label>
                 <textarea 
                   id="message" 
                   name="message" 

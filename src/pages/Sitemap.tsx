@@ -8,17 +8,17 @@ export default function Sitemap() {
       title: "Main Pages",
       links: [
         { name: "Home", path: "/" },
-        { name: "The Feature", path: "/the-feature" },
-        { name: "Contact Us", path: "/contact" },
-        { name: "Book Consultation", path: "/book" },
-        { name: "FAQ", path: "/faq" },
+        { name: "The Feature", path: "/the-feature/" },
+        { name: "Contact Us", path: "/contact/" },
+        { name: "Book Consultation", path: "/book/" },
+        { name: "FAQ", path: "/faq/" },
       ]
     },
     {
       title: "Treatments",
       links: [
-        { name: "Surgical Procedures", path: "/surgical" },
-        { name: "Non-Surgical Procedures", path: "/non-surgical" },
+        { name: "Surgical Procedures", path: "/surgical/" },
+        { name: "Non-Surgical Procedures", path: "/non-surgical/" },
       ]
     },
     {
