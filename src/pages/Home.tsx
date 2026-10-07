@@ -143,7 +143,7 @@ return (
               <h2 className="relative font-cormorant text-4xl md:text-5xl font-medium mb-8">Qualifications & Experience</h2>
               <ul className="relative max-w-lg border-t border-white/15">
                 {[
-                  { title: 'Maxillofacial Surgeon', detail: 'MAHER University, Chennai' },
+                  { title: 'Maxillofacial Surgery', detail: 'MAHER University, Chennai' },
                   { title: 'Advanced Institutional Fellowship in Cosmetic Surgery', detail: 'AFCS, DY Patil University, Mumbai' },
                   { title: 'Member, American Academy of Cosmetic Surgery', detail: 'AACS' },
                   { title: 'Member, Society of Hair Transplant Surgeons', detail: 'SHTS' },
@@ -182,7 +182,7 @@ return (
               className="absolute inset-0 w-full h-full object-cover object-right transition-transform duration-1000 group-hover:scale-105"
             />
             {/* Tint overlay */}
-            <div className="absolute inset-0 bg-[#001d3d]/55 group-hover:bg-[#001d3d]/65 transition-colors duration-500"></div>
+            <div className="absolute inset-0 bg-black/35 group-hover:bg-black/45 transition-colors duration-500"></div>
             
             {/* Content */}
             <div className="absolute inset-0 flex flex-col items-center justify-center text-white p-8 text-center z-10">
@@ -202,7 +202,7 @@ return (
               className="absolute inset-0 w-full h-full object-cover object-[20%_center] transition-transform duration-1000 group-hover:scale-105"
             />
             {/* Tint overlay */}
-            <div className="absolute inset-0 bg-[#25211e]/55 group-hover:bg-[#25211e]/65 transition-colors duration-500"></div>
+            <div className="absolute inset-0 bg-black/35 group-hover:bg-black/45 transition-colors duration-500"></div>
             
             {/* Content */}
             <div className="absolute inset-0 flex flex-col items-center justify-center text-white p-8 text-center z-10">
@@ -368,8 +368,74 @@ return (
             <div className="w-full lg:w-1/2 flex items-center justify-center p-4 md:p-6">
               <img 
                 src="https://ik.imagekit.io/fdhgiehjz/8899.jpeg" 
-                alt="Restoring Under-Eye Volume & Harmony" 
+                alt="Restoring Under-Eye Volume & Harmony"
                 className="w-full h-auto object-contain object-center rounded-xl"
+              />
+            </div>
+          </div>
+
+          {/* Fifth Feature Block (Lip Fillers) */}
+          <div className="flex flex-col lg:flex-row bg-gradient-to-br from-[#25211e] via-[#0d1b2d] to-[#001d3d] rounded-[2rem] overflow-hidden shadow-xl ring-1 ring-black/10 mt-8">
+            {/* Left side text */}
+            <div className="w-full lg:w-1/2 p-7 sm:p-12 md:p-16 xl:p-20 flex flex-col justify-center">
+              <span className="text-[10px] md:text-xs font-semibold tracking-[0.2em] uppercase text-[#c9a98a] mb-6 block">
+                A natural approach
+              </span>
+              <h3 className="font-cormorant text-3xl md:text-4xl lg:text-[40px] font-medium leading-tight text-white mb-6">
+                Lip Fillers – Keeping It Natural
+              </h3>
+              <div className="text-white/70 text-sm md:text-[15px] leading-relaxed font-light max-w-lg space-y-4">
+                <p>
+                  Lip fillers can restore lost volume, improve definition and balance mild asymmetry while keeping the lips in proportion with the rest of the face.
+                </p>
+                <p>
+                  Hyaluronic acid filler is placed in small, measured amounts to refine the lip border, support the Cupid's bow and add soft fullness, without an overfilled appearance.
+                </p>
+                <p className="pt-2 font-medium text-white/90">
+                  Ideal for: Thin, asymmetrical or ageing lips that need subtle enhancement while still looking like your own.
+                </p>
+              </div>
+            </div>
+
+            {/* Right side image */}
+            <div className="w-full lg:w-1/2 flex items-center justify-center p-4 md:p-6">
+              <img
+                src="https://ik.imagekit.io/fdhgiehjz/IMG_1785.JPEG?tr=cm-extract,x-64,y-340,w-1792,h-470"
+                alt="Lip Fillers – Keeping It Natural"
+                className="w-full h-auto object-contain object-center rounded-xl bg-white"
+              />
+            </div>
+          </div>
+
+          {/* Sixth Feature Block (Lower Face Harmony) */}
+          <div className="flex flex-col lg:flex-row-reverse bg-gradient-to-br from-[#25211e] via-[#0d1b2d] to-[#001d3d] rounded-[2rem] overflow-hidden shadow-xl ring-1 ring-black/10 mt-8">
+            {/* Right side text (now on left visually due to row-reverse) */}
+            <div className="w-full lg:w-1/2 p-7 sm:p-12 md:p-16 xl:p-20 flex flex-col justify-center">
+              <span className="text-[10px] md:text-xs font-semibold tracking-[0.2em] uppercase text-[#c9a98a] mb-6 block">
+                A balanced approach
+              </span>
+              <h3 className="font-cormorant text-3xl md:text-4xl lg:text-[40px] font-medium leading-tight text-white mb-6">
+                Lower Face Harmony with Dermal Fillers
+              </h3>
+              <div className="text-white/70 text-sm md:text-[15px] leading-relaxed font-light max-w-lg space-y-4">
+                <p>
+                  Lower-face harmony comes from the relationship between the lips, chin and jawline.
+                </p>
+                <p>
+                  Carefully selected hyaluronic acid dermal fillers can refine lip proportions, support chin projection and soften uneven transitions to create a more balanced contour.
+                </p>
+                <p className="pt-2 font-medium text-white/90">
+                  Goal - Subtle refinement tailored to your facial structure that preserves your individual features.
+                </p>
+              </div>
+            </div>
+
+            {/* Left side image (now on right visually due to row-reverse) */}
+            <div className="w-full lg:w-1/2 flex items-center justify-center p-4 md:p-6">
+              <img
+                src="https://ik.imagekit.io/fdhgiehjz/IMG_1784.JPEG?tr=cm-extract,x-300,y-330,w-1320,h-470"
+                alt="Lower Face Harmony with Dermal Fillers"
+                className="w-full h-auto object-contain object-center rounded-xl bg-white"
               />
             </div>
           </div>

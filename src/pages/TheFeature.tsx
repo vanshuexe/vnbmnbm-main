@@ -143,6 +143,72 @@ export default function TheFeature() {
             </p>
           </div>
 
+          {/* Divider */}
+          <div className="w-full h-px bg-gray-300 my-24"></div>
+
+          {/* Feature 5 */}
+          <div className="mb-12">
+            <span className="text-[10px] md:text-xs font-semibold tracking-[0.2em] uppercase text-gray-500 mb-6 block">
+              A natural approach
+            </span>
+            <h2 className="text-3xl md:text-5xl lg:text-6xl font-light text-[#1a1a1a] leading-tight mb-8">
+              Lip Fillers – Keeping It Natural
+            </h2>
+          </div>
+
+          <div className="w-full rounded-[2rem] overflow-hidden mb-16 shadow-sm bg-white">
+            <img
+              src="https://ik.imagekit.io/fdhgiehjz/IMG_1785.JPEG?tr=cm-extract,x-64,y-340,w-1792,h-470"
+              alt="Lip Fillers – Keeping It Natural"
+              className="w-full h-auto max-h-[80vh] object-contain object-center"
+            />
+          </div>
+
+          <div className="prose prose-lg max-w-none font-light text-gray-800 leading-relaxed text-[15px] md:text-lg">
+            <p className="mb-6">
+              Lip fillers can restore lost volume, improve definition and balance mild asymmetry while keeping the lips in proportion with the rest of the face.
+            </p>
+            <p className="mb-6">
+              Hyaluronic acid filler is placed in small, measured amounts to refine the lip border, support the Cupid's bow and add soft fullness, without an overfilled appearance.
+            </p>
+            <p className="font-medium text-[#1a1a1a]">
+              Ideal for: Thin, asymmetrical or ageing lips that need subtle enhancement while still looking like your own.
+            </p>
+          </div>
+
+          {/* Divider */}
+          <div className="w-full h-px bg-gray-300 my-24"></div>
+
+          {/* Feature 6 */}
+          <div className="mb-12">
+            <span className="text-[10px] md:text-xs font-semibold tracking-[0.2em] uppercase text-gray-500 mb-6 block">
+              A balanced approach
+            </span>
+            <h2 className="text-3xl md:text-5xl lg:text-6xl font-light text-[#1a1a1a] leading-tight mb-8">
+              Lower Face Harmony with Dermal Fillers
+            </h2>
+          </div>
+
+          <div className="w-full rounded-[2rem] overflow-hidden mb-16 shadow-sm bg-white">
+            <img
+              src="https://ik.imagekit.io/fdhgiehjz/IMG_1784.JPEG?tr=cm-extract,x-300,y-330,w-1320,h-470"
+              alt="Lower Face Harmony with Dermal Fillers"
+              className="w-full h-auto max-h-[80vh] object-contain object-center"
+            />
+          </div>
+
+          <div className="prose prose-lg max-w-none font-light text-gray-800 leading-relaxed text-[15px] md:text-lg">
+            <p className="mb-6">
+              Lower-face harmony comes from the relationship between the lips, chin and jawline.
+            </p>
+            <p className="mb-6">
+              Carefully selected hyaluronic acid dermal fillers can refine lip proportions, support chin projection and soften uneven transitions to create a more balanced contour.
+            </p>
+            <p className="font-medium text-[#1a1a1a]">
+              Goal - Subtle refinement tailored to your facial structure that preserves your individual features.
+            </p>
+          </div>
+
         </div>
       </main>
 
