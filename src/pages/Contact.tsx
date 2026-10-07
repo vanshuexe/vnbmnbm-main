@@ -178,13 +178,8 @@ return (
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 lg:gap-10">
             {clinics.map((clinic) => (
               <div key={clinic.name} className="flex flex-col">
-                <h3 className="text-2xl md:text-3xl font-light tracking-wide mb-2">{clinic.name}</h3>
-                <p className="text-gray-700 font-light leading-relaxed">{clinic.address}</p>
-                <p className="text-gray-500 text-sm font-light leading-relaxed mt-1 mb-6">
-                  {clinic.hours.map((line, i) => (
-                    <span key={line}>{i > 0 && <br />}{line}</span>
-                  ))}
-                </p>
+                <h3 className="text-2xl md:text-3xl lg:text-2xl xl:text-3xl font-light tracking-wide mb-2">{clinic.name}</h3>
+                <p className="text-gray-700 font-light leading-relaxed mb-6 lg:min-h-[3.25rem]">{clinic.address}</p>
                 <div className="w-full h-[300px] sm:h-[360px] lg:h-[400px] rounded-2xl overflow-hidden shadow-sm border border-black/5 mb-6">
                   <iframe
                     title={`Map of ${clinic.name}`}
@@ -195,14 +190,21 @@ return (
                     allowFullScreen
                   />
                 </div>
-                <a
-                  href={clinic.directionsUrl}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="self-start border border-[#1a1a1a] rounded-full px-8 py-3 text-[10px] font-semibold tracking-[0.2em] uppercase hover:bg-[#1a1a1a] hover:text-white transition-colors"
-                >
-                  Get Directions
-                </a>
+                <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+                  <p className="text-gray-500 text-sm font-light leading-relaxed">
+                    {clinic.hours.map((line, i) => (
+                      <span key={line}>{i > 0 && <br />}{line}</span>
+                    ))}
+                  </p>
+                  <a
+                    href={clinic.directionsUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="self-start sm:self-auto shrink-0 border border-[#1a1a1a] rounded-full px-8 py-3 text-[10px] font-semibold tracking-[0.2em] uppercase hover:bg-[#1a1a1a] hover:text-white transition-colors"
+                  >
+                    Get Directions
+                  </a>
+                </div>
               </div>
             ))}
           </div>
