@@ -24,13 +24,12 @@
         "text": "Effects gradually appear over 2-4 weeks and typically last between 4 to 6 months."
       }
     ],
-    "imageCaption": "Treatment reference image",
     "imageWidth": 1096,
     "imageHeight": 1091
   },
   {
     "id": "pdrn-amp-nctf",
-    "category": "Skin Boosters",
+    "category": "Skin Refinement",
     "title": "PDRN & NCTF",
     "subtitle": "Cellular Renewal",
     "image": "/images/procedures/originals/pdrn-amp-nctf.jpeg",
@@ -53,7 +52,6 @@
         "text": "Smooths out fine lines, refines pores, and improves overall skin tone and luminosity."
       }
     ],
-    "imageCaption": "Treatment reference image",
     "imageWidth": 1231,
     "imageHeight": 1231
   },
@@ -82,7 +80,6 @@
         "text": "A fast, in-and-out procedure allowing you to immediately return to your normal routine."
       }
     ],
-    "imageCaption": "Treatment reference image",
     "imageWidth": 1233,
     "imageHeight": 1233
   },
@@ -111,7 +108,6 @@
         "text": "A comfortable, 10-minute procedure with zero downtime. Full results become visible within 3 to 14 days."
       }
     ],
-    "imageCaption": "Treatment reference image",
     "imageWidth": 1228,
     "imageHeight": 1228
   },
@@ -140,7 +136,6 @@
         "text": "A fast procedure with beautifully natural-looking results that become visible in just a few days."
       }
     ],
-    "imageCaption": "Treatment reference image",
     "imageWidth": 998,
     "imageHeight": 998
   },
@@ -169,13 +164,12 @@
         "text": "Achieves a beautiful, rested look without the incisions, scarring, or downtime of a traditional surgical brow lift."
       }
     ],
-    "imageCaption": "Treatment reference image",
     "imageWidth": 1150,
     "imageHeight": 1150
   },
   {
     "id": "keloid-management",
-    "category": "Skin Refinement",
+    "category": "Miscellaneous",
     "title": "Keloid Management",
     "subtitle": "Advanced Scar Reduction",
     "image": "/images/procedures/originals/keloid-management.png",
@@ -198,13 +192,12 @@
         "text": "Progressively fades striking redness and hyperpigmentation, blending the scar closer to your natural skin tone."
       }
     ],
-    "imageCaption": "Treatment reference image",
     "imageWidth": 381,
     "imageHeight": 381
   },
   {
     "id": "sculptra",
-    "category": "Skin Boosters",
+    "category": "Skin Refinement",
     "title": "Sculptra",
     "subtitle": "Advanced Biostimulation",
     "image": "/images/procedures/originals/sculptra.png",
@@ -227,17 +220,16 @@
         "text": "Highly effective for addressing deep facial wrinkles, prominent folds, and widespread global volume loss."
       }
     ],
-    "imageCaption": "Treatment reference image",
     "imageWidth": 1324,
     "imageHeight": 1321
   },
   {
     "id": "mid-face-thread-lift",
-    "category": "Skin Refinement",
-    "title": "Mid-Face Thread Lift",
+    "category": "Thread Lift",
+    "title": "Thread Lift",
     "subtitle": "Non-Surgical Facelift",
     "image": "/images/procedures/originals/mid-face-thread-lift.png",
-    "description": "Achieve a beautifully refreshed and youthful contour without surgery. The mid-face thread lift uses advanced, dissolvable threads to instantly lift and reposition sagging skin in the cheeks and mid-face, while simultaneously stimulating your body's natural collagen production for long-lasting firmness.",
+    "description": "Achieve a beautifully refreshed and youthful contour without surgery. A thread lift uses advanced, dissolvable threads to instantly lift and reposition sagging skin in the cheeks and mid-face, while simultaneously stimulating your body's natural collagen production for long-lasting firmness.",
     "bullets": [
       {
         "title": "Instant Elevation:",
@@ -256,7 +248,6 @@
         "text": "A fast and straightforward procedure that allows you to return to your normal daily activities almost immediately."
       }
     ],
-    "imageCaption": "Treatment reference image",
     "imageWidth": 1321,
     "imageHeight": 1319
   },
@@ -264,55 +255,105 @@
     "id": "lip-filler",
     "category": "Dermal Fillers",
     "title": "Lip Filler",
-    "subtitle": "Natural Shape & Balance",
-    "image": "/images/procedures/lip-filler-m-shape.png",
-    "description": "An M-shaped upper lip has a more prominent central curve with thinner or inward-turning areas on either side. Often called an M-shaped lip deformity, it is a natural variation in lip anatomy. Carefully placed hyaluronic acid dermal fillers can add support and volume to selected areas, soften the M-shaped contour and improve balance while preserving the Cupid's bow and your natural lip character.",
+    "subtitle": "Volume & Definition",
+    "image": "https://ik.imagekit.io/fdhgiehjz/IMG_6472.PNG",
+    "description": "Thin or flat lips, particularly a flat upper lip, can make the lower face look less balanced. Carefully placed hyaluronic acid dermal filler can add soft volume, gently support and define the upper lip, and improve the proportion between the upper and lower lips. Treatment is tailored to your facial features, with the aim of natural-looking enhancement rather than an overfilled appearance.",
     "bullets": [
       {
-        "text": "Targeted filler placement can soften uneven contours and improve upper-lip proportions, rather than simply increasing overall lip size.",
-        "title": "Shape Refinement:"
+        "title": "Enhanced Volume:",
+        "text": "Adds soft, natural-looking volume to thin or flat lips for a fuller, more balanced appearance."
       },
       {
-        "text": "The aim is a softer, more harmonious contour that complements your face and preserves your lip's individual features.",
-        "title": "Natural-Looking Balance:"
+        "title": "Upper-Lip Support:",
+        "text": "Gently supports a flat upper lip and refines the lip border and Cupid's bow."
       },
       {
-        "text": "The approach depends on your lip anatomy and goals. Improvement varies, and staged treatment may be recommended.",
-        "title": "Personalised Treatment:"
+        "title": "Personalised Treatment:",
+        "text": "The amount and placement are planned around your anatomy and goals. Fillers provide temporary enhancement, and results vary."
       }
     ],
-    "imageCaption": "Individual results vary",
-    "imageWidth": 1320,
-    "imageHeight": 655
+    "imageWidth": 998,
+    "imageHeight": 998
   },
   {
-    "id": "lower-face-harmony",
+    "id": "under-eye-filler",
     "category": "Dermal Fillers",
-    "title": "Lower Face Harmony",
-    "subtitle": "Balance with Dermal Fillers",
-    "image": "/images/procedures/lower-face-harmony.jpeg",
-    "description": "Lower-face harmony comes from the relationship between the lips, chin and jawline. Carefully selected hyaluronic acid dermal fillers can refine lip proportions, support chin projection and soften uneven transitions to create a more balanced contour. Treatment is tailored to your facial structure, with the aim of subtle refinement that preserves your individual features.",
+    "title": "Under Eye Filler",
+    "subtitle": "Tear Trough Rejuvenation",
+    "image": "https://ik.imagekit.io/fdhgiehjz/IMG_0955.JPG.jpeg",
+    "description": "Hollowness in the tear-trough area can make the eyes look tired or shadowed, even when you are well rested. Carefully placed hyaluronic acid dermal filler can soften the hollow between the lower eyelid and cheek, reduce the appearance of under-eye shadows and create a smoother, more refreshed transition. Treatment is planned around your anatomy, with the aim of subtle improvement that keeps your natural expression.",
     "bullets": [
       {
-        "text": "The lips, chin and surrounding contours are assessed together to plan changes that complement the whole face.",
-        "title": "Balanced Proportions:"
+        "title": "Refreshed Appearance:",
+        "text": "Softening tear-trough hollows can reduce the shadowed, tired look beneath the eyes."
       },
       {
-        "text": "Targeted volume and support can improve selected areas without aiming for an exaggerated appearance.",
-        "title": "Subtle Refinement:"
+        "title": "Smooth Transition:",
+        "text": "Filler is placed precisely to blend the lower eyelid into the cheek without looking overfilled."
       },
       {
-        "text": "The areas treated depend on your anatomy and goals. Fillers provide temporary enhancement, and results vary.",
-        "title": "Individual Approach:"
+        "title": "Careful Assessment:",
+        "text": "Not everyone is suited to under-eye filler; puffiness or excess skin may need a different approach. Fillers provide temporary enhancement, and results vary."
       }
     ],
-    "imageCaption": "Individual results vary",
-    "imageWidth": 1440,
-    "imageHeight": 809
+    "imageWidth": 1239,
+    "imageHeight": 1239
+  },
+  {
+    "id": "chin-filler",
+    "category": "Dermal Fillers",
+    "title": "Chin Filler",
+    "subtitle": "Chin Definition & Profile Balance",
+    "image": "https://ik.imagekit.io/fdhgiehjz/IMG_1708.PNG",
+    "description": "A small or recessed chin can make the lower face look less defined and affect the balance of the side profile. Carefully placed hyaluronic acid dermal filler can add projection and shape to the chin, improve the line from the lips to the chin and create a more defined, harmonious profile. Treatment is planned around your facial proportions, with the aim of subtle refinement that keeps your natural features.",
+    "bullets": [
+      {
+        "title": "Improved Projection:",
+        "text": "Adds forward projection to a small or recessed chin for a more balanced side profile."
+      },
+      {
+        "title": "Chin Definition:",
+        "text": "Refines the shape of the chin and supports a cleaner transition into the jawline."
+      },
+      {
+        "title": "Personalised Treatment:",
+        "text": "The amount and placement depend on your anatomy and goals. Fillers provide temporary enhancement, and results vary."
+      }
+    ],
+    "imageWidth": 1211,
+    "imageHeight": 1221
+  },
+  {
+    "id": "hair-gfc-exosomes-mesotherapy",
+    "category": "Hair",
+    "title": "GFC / Exosomes / Mesotherapy",
+    "subtitle": "Non-Surgical Hair Restoration",
+    "image": "/images/procedures/hair-gfc-exosomes-mesotherapy.jpg",
+    "description": "Hair thinning and early hair loss can often be supported without surgery. GFC (Growth Factor Concentrate), exosomes and mesotherapy deliver growth factors, peptides and nutrients directly into the scalp through fine injections, helping to nourish weakened follicles, support healthier growth and improve hair density over a course of sessions. Your treatment is chosen after a scalp assessment and tailored to the cause and pattern of your hair loss.",
+    "bullets": [
+      {
+        "title": "GFC Therapy:",
+        "text": "Growth factors concentrated from your own blood are injected into thinning areas to support follicle health."
+      },
+      {
+        "title": "Exosomes:",
+        "text": "Regenerative signalling particles may help calm scalp inflammation and support a healthier environment for growth."
+      },
+      {
+        "title": "Mesotherapy:",
+        "text": "Customised blends of vitamins, amino acids and peptides nourish the scalp and hair follicles."
+      },
+      {
+        "title": "Course of Treatment:",
+        "text": "Several sessions are usually recommended, and results build gradually. Response varies between individuals."
+      }
+    ],
+    "imageWidth": 1200,
+    "imageHeight": 1016
   },
   {
     "id": "profilo",
-    "category": "Skin Boosters",
+    "category": "Skin Refinement",
     "title": "PROFILO",
     "subtitle": "Bio-Remodeling",
     "image": "/images/procedures/originals/profilo.jpeg",
@@ -335,13 +376,12 @@
         "text": "Improves overall skin tone and texture, leaving a radiant, youthful glow."
       }
     ],
-    "imageCaption": "Treatment reference image",
     "imageWidth": 1231,
     "imageHeight": 1231
   },
   {
     "id": "exosomes-mesotherapy",
-    "category": "Skin Boosters",
+    "category": "Skin Refinement",
     "title": "Exosomes / Mesotherapy",
     "subtitle": "Cellular Rejuvenation",
     "image": "https://ik.imagekit.io/fdhgiehjz/IMG_1406.PNG",
@@ -364,16 +404,15 @@
         "text": "Restores a bright, healthy, and revitalized appearance to aging or stressed skin."
       }
     ],
-    "imageCaption": "Illustrative image",
     "imageWidth": 1122,
     "imageHeight": 1402
   },
   {
     "id": "non-surgical-scar-management",
-    "category": "Wellness",
+    "category": "Miscellaneous",
     "title": "Scar Management",
     "subtitle": "Non-Surgical Refinement",
-    "image": "/images/scar-revision-illustration.png",
+    "image": "/images/procedures/scar-management.jpg",
     "description": "Our non-surgical scar management combines advanced topical treatments, targeted injections, and minimally invasive resurfacing techniques to fade acne scars, surgical scars, and hyperpigmentation, restoring a smooth, even skin texture.",
     "bullets": [
       {
@@ -393,13 +432,12 @@
         "text": "Tailored treatment plans combining peels, microneedling, or injections based on scar type."
       }
     ],
-    "imageCaption": "Illustrative image",
-    "imageWidth": 1122,
-    "imageHeight": 1402
+    "imageWidth": 1200,
+    "imageHeight": 1163
   },
   {
     "id": "double-chin-reduction",
-    "category": "Wellness",
+    "category": "Double Chin Reduction",
     "title": "Double Chin Reduction",
     "subtitle": "Submental Contouring",
     "image": "/images/procedures/double-chin-reduction.png",
@@ -422,7 +460,6 @@
         "text": "Avoids the downtime, incisions, and risks associated with surgical liposuction."
       }
     ],
-    "imageCaption": "Treatment reference image",
     "imageWidth": 272,
     "imageHeight": 272
   },

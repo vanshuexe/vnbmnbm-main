@@ -18,18 +18,18 @@ export default function Testimonials() {
   ];
 
   return (
-    <section className="relative z-10 w-full py-24 px-6 md:px-12 lg:px-24 bg-[#1a1715] text-[#f7f6f2]">
+    <section className="relative z-10 w-full py-20 md:py-24 px-4 sm:px-8 lg:px-12 xl:px-24 bg-[#001d3d] text-[#f7f6f2]">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col items-center mb-16 text-center">
-          <span className="text-[10px] font-semibold tracking-[0.2em] uppercase mb-4 text-gray-400">Patient Experiences</span>
-          <h2 className="text-3xl md:text-5xl font-light tracking-wide">Words of Trust</h2>
+          <span className="text-[10px] font-semibold tracking-[0.2em] uppercase mb-4 text-[#c9a98a]">Patient Experiences</span>
+          <h2 className="font-cormorant text-4xl md:text-5xl font-medium">Words of Trust</h2>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-10 max-w-2xl lg:max-w-none mx-auto">
           {testimonials.map((t, i) => (
-            <div key={i} className="flex flex-col border border-gray-800 p-8 md:p-10 rounded-2xl hover:bg-[#25211e] transition-colors duration-500">
-              <div className="text-4xl text-gray-600 font-serif mb-6">"</div>
-              <p className="text-sm md:text-base font-light leading-relaxed mb-8 flex-grow">
+            <div key={i} className="flex flex-col border border-white/10 bg-white/[0.03] p-8 md:p-10 rounded-2xl hover:bg-white/[0.07] transition-colors duration-500">
+              <div className="font-cormorant text-6xl leading-none text-[#c9a98a] mb-4">"</div>
+              <p className="text-sm md:text-base font-light leading-relaxed mb-8 flex-grow text-white/80">
                 {t.quote}
               </p>
               <div>

@@ -40,12 +40,12 @@ function CategoryRow({ category, procedures }: { category: string, procedures: P
   return (
     <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-24 mt-12 mb-16">
       <div className="flex items-center justify-between mb-8">
-        <h2 className="text-3xl md:text-4xl font-light tracking-tight">{category}</h2>
+        <h2 className="font-cormorant text-4xl md:text-5xl font-medium text-[#001d3d]">{category}</h2>
         <div className="flex space-x-2">
-          <button aria-label={`Previous ${category} procedures`} onClick={() => scroll('left')} className="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center hover:bg-[#1a1a1a] hover:text-white hover:border-[#1a1a1a] transition-all">
+          <button aria-label={`Previous ${category} procedures`} onClick={() => scroll('left')} className="w-10 h-10 rounded-full border border-[#001d3d]/20 text-[#001d3d] flex items-center justify-center hover:bg-[#001d3d] hover:text-white hover:border-[#001d3d] transition-all">
             <ChevronLeft size={20} strokeWidth={1} />
           </button>
-          <button aria-label={`Next ${category} procedures`} onClick={() => scroll('right')} className="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center hover:bg-[#1a1a1a] hover:text-white hover:border-[#1a1a1a] transition-all">
+          <button aria-label={`Next ${category} procedures`} onClick={() => scroll('right')} className="w-10 h-10 rounded-full border border-[#001d3d]/20 text-[#001d3d] flex items-center justify-center hover:bg-[#001d3d] hover:text-white hover:border-[#001d3d] transition-all">
             <ChevronRight size={20} strokeWidth={1} />
           </button>
         </div>
@@ -63,23 +63,25 @@ function CategoryRow({ category, procedures }: { category: string, procedures: P
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: false, margin: "0px" }}
             transition={{ duration: 0.5, delay: index * 0.1 }}
-            className="flex-none w-[280px] md:w-[320px] snap-start cursor-pointer group"
+            className="flex-none w-[280px] md:w-[320px] snap-start cursor-pointer group rounded-2xl p-3 bg-gradient-to-br from-[#25211e] via-[#0d1b2d] to-[#001d3d] shadow-lg ring-1 ring-black/10"
             onClick={() => scrollToProcedure(proc.id)}
           >
-            <div className="relative w-full aspect-[4/5] rounded-2xl overflow-hidden mb-6 bg-gray-100">
+            <div className="relative w-full aspect-square rounded-xl overflow-hidden bg-[#0d1b2d]">
               <img 
                 src={proc.image} 
                 alt={proc.title}
                 width={proc.imageWidth}
                 height={proc.imageHeight}
-                className="w-full h-full object-contain object-center"
+                className="w-full h-full object-cover object-center"
                 loading="lazy"
                 decoding="async"
               />
               {proc.imageCaption && <span className="absolute bottom-3 left-3 rounded bg-white/90 px-2 py-1 text-[10px] text-gray-700">{proc.imageCaption}</span>}
             </div>
-            <h3 className="text-xl font-medium tracking-tight mb-2 group-hover:text-[#6e5038] transition-colors">{proc.title}</h3>
-            <p className="text-sm text-gray-500 font-light">{proc.subtitle}</p>
+            <div className="px-2 pt-5 pb-3">
+              <h3 className="font-cormorant text-2xl font-medium leading-tight text-white mb-1.5 group-hover:text-[#c9a98a] transition-colors">{proc.title}</h3>
+              <p className="text-[10px] tracking-[0.2em] uppercase text-white/55">{proc.subtitle}</p>
+            </div>
           </motion.div>
         ))}
       </div>
@@ -89,7 +91,7 @@ function CategoryRow({ category, procedures }: { category: string, procedures: P
 
 export default function ProcedureCarousel({ procedures, categories }: ProcedureCarouselProps) {
   return (
-    <div className="w-full bg-[#fcfbf9] pt-8 pb-12">
+    <div className="w-full bg-white pt-8 pb-12">
       {categories.map(cat => (
         <CategoryRow 
           key={cat} 

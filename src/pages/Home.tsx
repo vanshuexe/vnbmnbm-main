@@ -15,7 +15,7 @@ import Footer from '../components/Footer';
 import { motion } from 'framer-motion';
 export default function Home() {
 return (
-    <div className="relative min-h-screen bg-[#ebe9e4] font-sans overflow-x-hidden">
+    <div className="relative min-h-screen bg-white font-sans overflow-x-hidden">
       
       {/* Hero Wrapper - strictly contains the 100vh hero to prevent layout bleeding */}
       <div className="relative w-full h-screen text-white bg-[#25211e]">
@@ -26,7 +26,7 @@ return (
           src="/images/home-hero-banner.png"
           alt=""
           fetchPriority="high"
-          className="w-full h-full object-cover object-center opacity-85"
+          className="w-full h-full object-cover object-[82%_center] lg:object-center opacity-85"
         />
         {/* Gradient overlays to match the dark taupe moody lighting but lighter */}
         <div className="absolute inset-0 bg-gradient-to-r from-[#25211e]/80 via-[#25211e]/40 to-transparent"></div>
@@ -65,25 +65,53 @@ return (
       </div> {/* End of Hero Wrapper */}
 
       {/* Doctor Profile Section */}
-      <section id="doctor-profile" className="relative z-10 w-full py-12 md:py-24 px-4 md:px-12 lg:px-24 bg-[#ebe9e4]">
+      <section id="doctor-profile" className="relative z-10 w-full py-10 md:py-16 lg:py-24 px-4 sm:px-8 lg:px-12 xl:px-24 bg-white">
         <div className="max-w-7xl mx-auto">
-          <div className="bg-[#f7f6f2] rounded-3xl overflow-hidden flex flex-col-reverse md:flex-row shadow-sm text-[#1a1a1a]">
+          <div className="bg-[#001d3d] rounded-3xl overflow-hidden flex flex-col-reverse lg:flex-row shadow-xl ring-1 ring-black/10 text-white">
             {/* Left Content */}
-            <div className="w-full md:w-[55%] p-8 md:p-12 lg:p-20 xl:p-24 flex flex-col justify-center text-left">
-              <h2 className="font-cormorant text-4xl md:text-5xl font-medium mb-6 md:mb-8">Dr. Shruthilaya Ganesan</h2>
-              <p className="text-gray-700 text-sm leading-relaxed font-light mb-10 md:mb-12 max-w-lg">
-                I am a Maxillofacial surgeon specialised in Facial Aesthetics and Cosmetic Surgery. My primary background is in treating the complex structures of the face, jaw, and neck. Following that, I completed an advanced post-doctoral fellowship in Cosmetic Surgery at DY Patil University under the mentorship of the legendary pioneer Dr. Mohan Thomas.<br/><br/>This gives me a unique dual expertise. My practice bridges the gap between maxillofacial surgery and advanced aesthetic surgery. I specialize in full-face Cosmetic Surgery, rhinoplasty, and facial contouring.
-              </p>
+            <div className="relative w-full lg:w-[55%] p-7 sm:p-12 lg:p-14 xl:p-24 flex flex-col justify-center text-left bg-gradient-to-br from-[#25211e] via-[#0d1b2d] to-[#001d3d]">
+              {/* Warm light accent, echoing the hero */}
+              <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_left,rgba(110,80,56,0.25),transparent_60%)] pointer-events-none"></div>
+
+              <div className="relative max-w-lg">
+                <span className="block text-[10px] md:text-xs font-semibold tracking-[0.25em] uppercase text-[#c9a98a] mb-5">
+                  Maxillofacial &amp; Cosmetic Surgeon
+                </span>
+                <h2 className="font-cormorant text-4xl md:text-5xl font-medium mb-6">Dr. Shruthilaya Ganesan</h2>
+                <div className="w-12 h-px bg-[#c9a98a] mb-8"></div>
+
+                <p className="font-cormorant text-xl md:text-2xl font-medium leading-snug text-white/95 mb-5">
+                  I am a Maxillofacial surgeon specialised in Facial Aesthetics and Cosmetic Surgery.
+                </p>
+                <p className="text-white/65 text-sm md:text-[15px] leading-relaxed font-light mb-8">
+                  My primary background is in treating the complex structures of the face, jaw, and neck. Following that, I completed an advanced post-doctoral fellowship in Cosmetic Surgery at DY Patil University under the mentorship of the legendary pioneer Dr. Mohan Thomas.
+                </p>
+
+                <blockquote className="border-l border-[#c9a98a]/60 pl-5 mb-8">
+                  <p className="font-cormorant italic text-lg md:text-xl leading-snug text-white/85">
+                    This gives me a unique dual expertise. My practice bridges the gap between maxillofacial surgery and advanced aesthetic surgery.
+                  </p>
+                </blockquote>
+
+                <span className="block text-[10px] tracking-[0.25em] uppercase text-white/50 mb-3">I specialize in</span>
+                <ul className="flex flex-wrap gap-2">
+                  {['Full-face Cosmetic Surgery', 'Rhinoplasty', 'Facial Contouring'].map((s) => (
+                    <li key={s} className="rounded-full border border-white/20 bg-white/[0.04] px-4 py-1.5 text-[11px] tracking-[0.12em] uppercase text-white/85">
+                      {s}
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
 
             {/* Right Image */}
-            <div className="w-full md:w-[45%] h-[350px] md:h-auto md:min-h-[500px] bg-[#ebe7e0] flex justify-center items-center p-6 md:p-8 overflow-hidden">
+            <div className="relative w-full lg:w-[45%] h-[380px] sm:h-[480px] lg:h-auto lg:min-h-[500px] bg-white flex justify-end items-end overflow-hidden">
               <img
-                src="/images/doctor-profile.png"
+                src="/images/doctor-profile-hd.jpg"
                 alt="Dr. Shruthilaya Ganesan"
-                width={500}
-                height={500}
-                className="w-full h-auto max-w-[440px] max-h-[440px] object-contain object-center"
+                width={1200}
+                height={1200}
+                className="h-full w-auto max-w-full object-contain object-right-bottom lg:absolute lg:bottom-0 lg:inset-x-0 lg:h-[92%] lg:w-full lg:max-w-none lg:object-cover lg:object-[42%_center]"
               />
             </div>
           </div>
@@ -91,33 +119,45 @@ return (
       </section>
 
       {/* Qualifications & Experience Section */}
-      <section id="qualifications" className="relative z-10 w-full py-12 md:py-24 px-4 md:px-12 lg:px-24 bg-[#ebe9e4]">
+      <section id="qualifications" className="relative z-10 w-full py-10 md:py-16 lg:py-24 px-4 sm:px-8 lg:px-12 xl:px-24 bg-white">
         <div className="max-w-7xl mx-auto">
-          <div className="bg-[#f7f6f2] rounded-3xl overflow-hidden flex flex-col md:flex-row shadow-sm text-[#1a1a1a]">
-            
+          <div className="bg-[#001d3d] rounded-3xl overflow-hidden flex flex-col lg:flex-row shadow-xl ring-1 ring-black/10 text-white">
+
             {/* Left Image */}
-            <div className="w-full md:w-[50%] flex items-center justify-center bg-white overflow-hidden">
+            <div className="relative w-full lg:w-[50%] h-[420px] sm:h-[520px] lg:h-auto overflow-hidden">
               <img 
-                src="/images/qualifications-experience.png" 
-                alt="Qualifications and Experience" 
-                width={1023}
-                height={1279}
+                src="https://ik.imagekit.io/fdhgiehjz/IMG_1116.JPG.jpeg"
+                alt="Qualifications and Experience"
+                width={1080}
+                height={1350}
                 loading="lazy"
                 decoding="async"
-                className="w-full h-auto max-h-[700px] object-contain object-center"
+                className="absolute inset-0 w-full h-full object-cover object-[0%_25%] lg:object-left"
               />
             </div>
 
             {/* Right Content */}
-            <div className="w-full md:w-[50%] p-10 md:p-12 lg:p-16 xl:p-20 flex flex-col justify-center">
-              <h2 className="text-3xl md:text-4xl font-light mb-8">Qualifications & Experience</h2>
-              <ul className="text-gray-700 text-sm leading-relaxed font-light mb-12 max-w-lg space-y-3 list-disc pl-4">
-                <li>Maxillofacial surgeon (MAHER University, Chennai)</li>
-                <li>Advanced institutional fellowship training in Cosmetic surgery (AFCS, DY Patil University, Mumbai)</li>
-                <li>Member of American Academy of Cosmetic Surgery (AACS)</li>
-                <li>Member of Society of Hair Transplant Surgeons (SHTS)</li>
-                <li>Association of Oral and Maxillofacial Surgeons of India (AOMSI)</li>
-                <li>Specialised in Surgical and Non-surgical Facial Aesthetics</li>
+            <div className="relative w-full lg:w-[50%] p-7 sm:p-12 lg:p-14 xl:p-20 flex flex-col justify-center bg-gradient-to-br from-[#25211e] via-[#0d1b2d] to-[#001d3d]">
+              {/* Warm light accent, echoing the hero */}
+              <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(110,80,56,0.25),transparent_60%)] pointer-events-none"></div>
+              <h2 className="relative font-cormorant text-4xl md:text-5xl font-medium mb-8">Qualifications & Experience</h2>
+              <ul className="relative max-w-lg border-t border-white/15">
+                {[
+                  { title: 'Maxillofacial Surgeon', detail: 'MAHER University, Chennai' },
+                  { title: 'Advanced Institutional Fellowship in Cosmetic Surgery', detail: 'AFCS, DY Patil University, Mumbai' },
+                  { title: 'Member, American Academy of Cosmetic Surgery', detail: 'AACS' },
+                  { title: 'Member, Society of Hair Transplant Surgeons', detail: 'SHTS' },
+                  { title: 'Association of Oral and Maxillofacial Surgeons of India', detail: 'AOMSI' },
+                  { title: 'Specialised in Facial Aesthetics', detail: 'Surgical & Non-surgical' },
+                ].map((item, i) => (
+                  <li key={item.title} className="flex items-baseline gap-5 py-4 border-b border-white/15">
+                    <span className="font-cormorant text-lg text-[#c9a98a] w-6 shrink-0">{String(i + 1).padStart(2, '0')}</span>
+                    <div>
+                      <p className="font-cormorant text-[19px] md:text-xl font-medium leading-snug text-white/95">{item.title}</p>
+                      <p className="mt-1 text-[10px] tracking-[0.2em] uppercase text-white/50">{item.detail}</p>
+                    </div>
+                  </li>
+                ))}
               </ul>
             </div>
             
@@ -126,10 +166,10 @@ return (
       </section>
 
       {/* Procedures Split Section */}
-      <section className="relative z-10 w-full pt-16 pb-0 bg-[#ebe9e4] flex flex-col">
+      <section className="relative z-10 w-full pt-16 pb-16 md:pb-24 bg-white flex flex-col">
         {/* Section Heading */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-light text-[#1a1a1a]">Procedures</h2>
+          <h2 className="font-cormorant text-4xl md:text-5xl font-medium text-[#001d3d]">Procedures</h2>
         </div>
 
         {/* 50/50 Split Images */}
@@ -137,16 +177,16 @@ return (
           {/* Surgical Block */}
           <div className="relative w-full md:w-1/2 h-[500px] md:h-[650px] group overflow-hidden cursor-pointer">
             <img 
-              src="/images/surgical-male-face-closeup.png"
-              alt="Close-up male face with facial surgery planning marks"
-              className="absolute inset-0 w-full h-full object-cover object-[center_30%] transition-transform duration-1000 group-hover:scale-105"
+              src="/images/surgical-profile.jpg"
+              alt="Side profile of a man's face and jawline"
+              className="absolute inset-0 w-full h-full object-cover object-right transition-transform duration-1000 group-hover:scale-105"
             />
             {/* Tint overlay */}
-            <div className="absolute inset-0 bg-[#3a281c]/50 group-hover:bg-[#3a281c]/60 transition-colors duration-500"></div>
+            <div className="absolute inset-0 bg-[#001d3d]/55 group-hover:bg-[#001d3d]/65 transition-colors duration-500"></div>
             
             {/* Content */}
             <div className="absolute inset-0 flex flex-col items-center justify-center text-white p-8 text-center z-10">
-              <h3 className="text-4xl md:text-5xl font-light mb-4">Surgical</h3>
+              <h3 className="font-cormorant text-5xl lg:text-6xl font-medium mb-4">Surgical</h3>
               <p className="text-sm font-light tracking-wide mb-10">The Complete Aesthetic Transformation.</p>
               <Link to="/surgical" className="border border-white rounded-[2rem] px-12 py-3 text-[10px] font-semibold tracking-[0.2em] hover:bg-white hover:text-[#1a1a1a] transition-all duration-300 uppercase inline-block">
                 LEARN MORE
@@ -157,16 +197,16 @@ return (
           {/* Non-Surgical Block */}
           <div className="relative w-full md:w-1/2 h-[500px] md:h-[650px] group overflow-hidden cursor-pointer">
             <img 
-              src="/images/non-surgical-female-face-closeup.png"
-              alt="Close-up female face with non-surgical treatment mapping dots"
-              className="absolute inset-0 w-full h-full object-cover object-[center_30%] transition-transform duration-1000 group-hover:scale-105"
+              src="/images/non-surgical-profile.jpg"
+              alt="Side profile of a woman's face and jawline"
+              className="absolute inset-0 w-full h-full object-cover object-[20%_center] transition-transform duration-1000 group-hover:scale-105"
             />
             {/* Tint overlay */}
-            <div className="absolute inset-0 bg-[#4a4642]/50 group-hover:bg-[#4a4642]/60 transition-colors duration-500"></div>
+            <div className="absolute inset-0 bg-[#25211e]/55 group-hover:bg-[#25211e]/65 transition-colors duration-500"></div>
             
             {/* Content */}
             <div className="absolute inset-0 flex flex-col items-center justify-center text-white p-8 text-center z-10">
-              <h3 className="text-4xl md:text-5xl font-light mb-4">Non-Surgical</h3>
+              <h3 className="font-cormorant text-5xl lg:text-6xl font-medium mb-4">Non-Surgical</h3>
               <p className="text-sm font-light tracking-wide mb-10">Noninvasive Methods. Transformative Results.</p>
               <Link to="/non-surgical" className="border border-white rounded-[2rem] px-12 py-3 text-[10px] font-semibold tracking-[0.2em] hover:bg-white hover:text-[#1a1a1a] transition-all duration-300 uppercase inline-block">
                 LEARN MORE
@@ -182,22 +222,22 @@ return (
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: false, margin: "-100px" }}
         transition={{ duration: 0.8 }}
-        className="relative z-10 w-full flex flex-col md:flex-row min-h-[500px] md:h-[600px] bg-[#f4f3ef]"
+        className="relative z-10 w-full flex flex-col lg:flex-row lg:min-h-[500px] lg:h-[600px] bg-gradient-to-r from-[#25211e] via-[#0d1b2d] to-[#001d3d]"
       >
         {/* Left Content */}
-        <div className="w-full md:w-1/2 h-full flex flex-col items-center justify-center p-12 md:p-24 text-left">
-          <div className="max-w-md w-full mx-auto md:mr-12 xl:mr-24">
-            <h3 className="text-xl md:text-2xl font-light italic text-[#1a1a1a] mb-6 leading-[1.6]">
+        <div className="w-full lg:w-1/2 h-full flex flex-col items-center justify-center px-7 py-14 sm:p-16 lg:p-20 xl:p-24 text-left">
+          <div className="max-w-md w-full mx-auto lg:mr-12 xl:mr-24">
+            <h3 className="font-cormorant text-2xl md:text-[28px] font-medium italic text-white/90 mb-6 leading-[1.5]">
               "I don't just look at the surface of your skin, I deeply understand the underlying facial bone and muscle architecture to ensure your cosmetic transformation is structurally safe, functional, and completely natural-looking."
             </h3>
-            <p className="text-[13px] tracking-wide text-gray-800 uppercase font-medium">
+            <p className="text-[12px] tracking-[0.2em] text-[#c9a98a] uppercase font-medium">
               — Dr. Shruthilaya Ganesan
             </p>
           </div>
         </div>
         
         {/* Right Image */}
-        <div className="w-full md:w-1/2 h-[400px] md:h-full">
+        <div className="w-full lg:w-1/2 h-[400px] sm:h-[480px] lg:h-full">
           <img 
             src="https://ik.imagekit.io/fdhgiehjz/123.jpeg?updatedAt=1789497477610" 
             alt="Dr. Shruthilaya Ganesan Quote Image" 
@@ -207,47 +247,47 @@ return (
       </motion.section>
 
       {/* The Feature Section */}
-      <section className="relative z-10 w-full py-24 bg-[#f7f6f2] flex flex-col">
-        <div className="max-w-7xl mx-auto w-full px-6 md:px-12 lg:px-24">
+      <section className="relative z-10 w-full py-24 bg-white flex flex-col">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-8 lg:px-12 xl:px-24">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-light text-[#1a1a1a]">The Feature</h2>
+            <h2 className="font-cormorant text-4xl md:text-5xl font-medium text-[#001d3d]">The Feature</h2>
           </div>
 
-          <div className="flex flex-col lg:flex-row bg-[#e8e6e1] rounded-[2rem] overflow-hidden shadow-sm">
+          <div className="flex flex-col lg:flex-row bg-gradient-to-br from-[#25211e] via-[#0d1b2d] to-[#001d3d] rounded-[2rem] overflow-hidden shadow-xl ring-1 ring-black/10">
             {/* Left side text */}
-            <div className="w-full lg:w-1/2 p-12 md:p-16 xl:p-20 flex flex-col justify-center">
-              <span className="text-[10px] md:text-xs font-semibold tracking-[0.2em] uppercase text-gray-600 mb-6 block">
+            <div className="w-full lg:w-1/2 p-7 sm:p-12 md:p-16 xl:p-20 flex flex-col justify-center">
+              <span className="text-[10px] md:text-xs font-semibold tracking-[0.2em] uppercase text-[#c9a98a] mb-6 block">
                 Timely intervention makes a difference
               </span>
-              <h3 className="text-2xl md:text-3xl lg:text-[32px] font-light leading-tight text-[#1a1a1a] mb-6">
+              <h3 className="font-cormorant text-3xl md:text-4xl lg:text-[40px] font-medium leading-tight text-white mb-6">
                 Filler Complication Management
               </h3>
-              <p className="text-gray-800 text-sm md:text-[15px] leading-relaxed font-light max-w-lg">
+              <p className="text-white/70 text-sm md:text-[15px] leading-relaxed font-light max-w-lg">
                 A time-sensitive vascular complication following dermal filler injection was referred promptly for emergency care. Early recognition and decisive intervention allowed successful management and preservation of tissue viability.
               </p>
             </div>
             
             {/* Right side image */}
-            <div className="w-full lg:w-1/2 flex items-center justify-center p-4 md:p-6 bg-[#f7f6f2]">
+            <div className="w-full lg:w-1/2 flex items-center justify-center p-4 md:p-6">
               <img 
                 src="https://ik.imagekit.io/fdhgiehjz/WhatsApp%20Image%202026-09-12%20at%207.52.38%20PM.jpeg" 
                 alt="Filler Complication Management" 
-                className="w-full h-auto object-contain object-center"
+                className="w-full h-auto object-contain object-center rounded-xl"
               />
             </div>
           </div>
 
           {/* Second Feature Block (Chin & Jawline) */}
-          <div className="flex flex-col lg:flex-row-reverse bg-[#e8e6e1] rounded-[2rem] overflow-hidden shadow-sm mt-8">
+          <div className="flex flex-col lg:flex-row-reverse bg-gradient-to-br from-[#25211e] via-[#0d1b2d] to-[#001d3d] rounded-[2rem] overflow-hidden shadow-xl ring-1 ring-black/10 mt-8">
             {/* Right side text (now on left visually due to row-reverse) */}
-            <div className="w-full lg:w-1/2 p-12 md:p-16 xl:p-20 flex flex-col justify-center">
-              <span className="text-[10px] md:text-xs font-semibold tracking-[0.2em] uppercase text-gray-600 mb-6 block">
+            <div className="w-full lg:w-1/2 p-7 sm:p-12 md:p-16 xl:p-20 flex flex-col justify-center">
+              <span className="text-[10px] md:text-xs font-semibold tracking-[0.2em] uppercase text-[#c9a98a] mb-6 block">
                 A refined approach
               </span>
-              <h3 className="text-2xl md:text-3xl lg:text-[32px] font-light leading-tight text-[#1a1a1a] mb-6">
+              <h3 className="font-cormorant text-3xl md:text-4xl lg:text-[40px] font-medium leading-tight text-white mb-6">
                 Define Your Chin, Refine Your Jawline
               </h3>
-              <div className="text-gray-800 text-sm md:text-[15px] leading-relaxed font-light max-w-lg space-y-4">
+              <div className="text-white/70 text-sm md:text-[15px] leading-relaxed font-light max-w-lg space-y-4">
                 <p>
                   Double chin reduction helps improve fullness beneath the chin, while a customised silicone chin implant enhances chin projection and definition. When combined, these procedures can create a sharper jawline, improve the facial profile, and restore better harmony between the chin, jaw, and surrounding facial features.
                 </p>
@@ -258,78 +298,78 @@ return (
             </div>
             
             {/* Left side image (now on right visually due to row-reverse) */}
-            <div className="w-full lg:w-1/2 flex items-center justify-center p-4 md:p-6 bg-[#f7f6f2]">
+            <div className="w-full lg:w-1/2 flex items-center justify-center p-4 md:p-6">
               <img 
                 src="https://ik.imagekit.io/fdhgiehjz/bg.jpeg" 
                 alt="Define Your Chin, Refine Your Jawline" 
-                className="w-full h-auto object-contain object-center"
+                className="w-full h-auto object-contain object-center rounded-xl"
               />
             </div>
           </div>
         
           {/* Third Feature Block (Facial Slimming) */}
-          <div className="flex flex-col lg:flex-row bg-[#e8e6e1] rounded-[2rem] overflow-hidden shadow-sm mt-8">
+          <div className="flex flex-col lg:flex-row bg-gradient-to-br from-[#25211e] via-[#0d1b2d] to-[#001d3d] rounded-[2rem] overflow-hidden shadow-xl ring-1 ring-black/10 mt-8">
             {/* Left side text */}
-            <div className="w-full lg:w-1/2 p-12 md:p-16 xl:p-20 flex flex-col justify-center">
-              <span className="text-[10px] md:text-xs font-semibold tracking-[0.2em] uppercase text-gray-600 mb-6 block">
+            <div className="w-full lg:w-1/2 p-7 sm:p-12 md:p-16 xl:p-20 flex flex-col justify-center">
+              <span className="text-[10px] md:text-xs font-semibold tracking-[0.2em] uppercase text-[#c9a98a] mb-6 block">
                 A refined approach
               </span>
-              <h3 className="text-2xl md:text-3xl lg:text-[32px] font-light leading-tight text-[#1a1a1a] mb-6">
+              <h3 className="font-cormorant text-3xl md:text-4xl lg:text-[40px] font-medium leading-tight text-white mb-6">
                 Facial Slimming & Contouring
               </h3>
-              <div className="text-gray-800 text-sm md:text-[15px] leading-relaxed font-light max-w-lg space-y-4">
+              <div className="text-white/70 text-sm md:text-[15px] leading-relaxed font-light max-w-lg space-y-4">
                 <p>
                   A refined approach to creating a more defined and sculpted facial profile. Buccal fat pad reduction is a minimally invasive procedure that reduces excess fullness in the lower cheeks, enhancing facial contours and bringing greater definition to the cheekbones and jawline.
                 </p>
                 <p>
                   The procedure is carefully tailored to each face to maintain natural proportions and avoid an over-hollowed appearance.
                 </p>
-                <p className="pt-2 font-medium">
+                <p className="pt-2 font-medium text-white/90">
                   Ideal for: Individuals with naturally fuller cheeks who desire a more defined, contoured facial appearance.
                 </p>
               </div>
             </div>
             
             {/* Right side image */}
-            <div className="w-full lg:w-1/2 flex items-center justify-center p-4 md:p-6 bg-[#f7f6f2]">
+            <div className="w-full lg:w-1/2 flex items-center justify-center p-4 md:p-6">
               <img 
                 src="https://ik.imagekit.io/fdhgiehjz/888.jpeg" 
                 alt="Facial Slimming & Contouring" 
-                className="w-full h-auto object-contain object-center"
+                className="w-full h-auto object-contain object-center rounded-xl"
               />
             </div>
           </div>
 
         
           {/* Fourth Feature Block (Under-Eye Volume) */}
-          <div className="flex flex-col lg:flex-row-reverse bg-[#e8e6e1] rounded-[2rem] overflow-hidden shadow-sm mt-8">
+          <div className="flex flex-col lg:flex-row-reverse bg-gradient-to-br from-[#25211e] via-[#0d1b2d] to-[#001d3d] rounded-[2rem] overflow-hidden shadow-xl ring-1 ring-black/10 mt-8">
             {/* Right side text (now on left visually due to row-reverse) */}
-            <div className="w-full lg:w-1/2 p-12 md:p-16 xl:p-20 flex flex-col justify-center">
-              <span className="text-[10px] md:text-xs font-semibold tracking-[0.2em] uppercase text-gray-600 mb-6 block">
+            <div className="w-full lg:w-1/2 p-7 sm:p-12 md:p-16 xl:p-20 flex flex-col justify-center">
+              <span className="text-[10px] md:text-xs font-semibold tracking-[0.2em] uppercase text-[#c9a98a] mb-6 block">
                 A subtle approach
               </span>
-              <h3 className="text-2xl md:text-3xl lg:text-[32px] font-light leading-tight text-[#1a1a1a] mb-6">
+              <h3 className="font-cormorant text-3xl md:text-4xl lg:text-[40px] font-medium leading-tight text-white mb-6">
                 Restoring Under-Eye Volume & Harmony
               </h3>
-              <div className="text-gray-800 text-sm md:text-[15px] leading-relaxed font-light max-w-lg space-y-4">
+              <div className="text-white/70 text-sm md:text-[15px] leading-relaxed font-light max-w-lg space-y-4">
                 <p>
                   A subtle approach to restoring volume and creating a more rested, rejuvenated appearance.
                 </p>
                 <p>
                   Under-eye fat augmentation helps address tear-trough hollowness and volume loss by carefully restoring soft-tissue volume using the patient's own fat.
                 </p>
-                <p className="pt-2 font-medium">
+                <p className="pt-2 font-medium text-white/90">
                   Goal - To soften the transition between the lower eyelid and cheek while maintaining natural facial contours and expression.
                 </p>
               </div>
             </div>
             
             {/* Left side image (now on right visually due to row-reverse) */}
-            <div className="w-full lg:w-1/2 flex items-center justify-center p-4 md:p-6 bg-[#f7f6f2]">
+            <div className="w-full lg:w-1/2 flex items-center justify-center p-4 md:p-6">
               <img 
                 src="https://ik.imagekit.io/fdhgiehjz/8899.jpeg" 
                 alt="Restoring Under-Eye Volume & Harmony" 
-                className="w-full h-auto object-contain object-center"
+                className="w-full h-auto object-contain object-center rounded-xl"
               />
             </div>
           </div>
@@ -340,7 +380,7 @@ return (
       <Testimonials />
       <InstagramFeed />
       <CTA />
-      <Footer />
+      <Footer white />
     </div>
   );
 }

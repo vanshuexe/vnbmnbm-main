@@ -8,7 +8,7 @@ export default function TheFeature() {
       <div className="bg-[#25211e]"><Navbar /></div>
 
       {/* Main Content */}
-      <main className="relative z-10 w-full pt-32 pb-24 px-6 md:px-12 lg:px-24">
+      <main className="relative z-10 w-full pt-16 md:pt-32 pb-24 px-6 md:px-12 lg:px-24">
         <div className="max-w-4xl mx-auto">
           
           {/* Feature 1 */}

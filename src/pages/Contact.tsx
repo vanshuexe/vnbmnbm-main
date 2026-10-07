@@ -14,7 +14,7 @@ return (
         {/* Background Image & Overlays for Hero */}
         <div className="absolute inset-0 z-0 overflow-hidden">
         <img 
-          src="https://ik.imagekit.io/fdhgiehjz/IMG_9914.HEIC" 
+          src="https://ik.imagekit.io/fdhgiehjz/IMG_9914.HEIC?tr=w-1600" 
           alt="Clinic Environment"
           className="w-full h-full object-cover object-center opacity-70 scale-105"
         />
@@ -60,7 +60,7 @@ return (
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col lg:flex-row bg-[#e8e6e1] rounded-2xl overflow-hidden shadow-sm">
             {/* Left Content (Contact Info) */}
-            <div className="w-full lg:w-5/12 p-10 md:p-16 lg:p-20 flex flex-col justify-center bg-[#d5cfc5] text-[#1a1a1a]">
+            <div className="w-full lg:w-5/12 p-7 sm:p-10 md:p-16 lg:p-20 flex flex-col justify-center bg-[#d5cfc5] text-[#1a1a1a]">
               <h3 className="text-3xl md:text-4xl font-light mb-12 tracking-wide">
                 Get in Touch
               </h3>
@@ -70,7 +70,9 @@ return (
                   <h4 className="text-[10px] font-semibold tracking-[0.2em] uppercase mb-2">Locations</h4>
                   <p className="text-gray-800 leading-relaxed mb-4">
                     <strong>Clinic 1: Skin Lab Studio</strong><br />
-                    Coimbatore, Tamil Nadu
+                    No. 166, Parijath, Sathyadev Enclave,<br />
+                    Race Course, Coimbatore, Tamil Nadu 641018<br />
+                    <a href="https://share.google/X54rfKMZyTi7j0lSV" target="_blank" rel="noreferrer" className="inline-block mt-1 text-sm underline underline-offset-4 hover:text-black transition-colors">Get directions</a>
                   </p>
                   <p className="text-gray-800 leading-relaxed mb-4">
                     <strong>Clinic 2: Rootwise Aesthetic Clinic</strong><br />
@@ -90,8 +92,10 @@ return (
                 <div>
                   <h4 className="text-[10px] font-semibold tracking-[0.2em] uppercase mb-2">Hours</h4>
                   <p className="text-gray-800 leading-relaxed mb-4">
-                    <strong>Clinic 1:</strong> 11:00 am - 7:00 pm<br />
-                    <strong>Clinic 2:</strong> 9:30 AM - 10:30 AM &amp; 7:30 PM - 8:30 PM
+                    <strong>Clinic 1:</strong> Mon - Sun, 10:00 am - 7:30 pm<br />
+                    <strong>Clinic 2:</strong> Mon - Sat<br />
+                    Morning: 9:30 am - 10:30 am<br />
+                    Evening: 7:30 pm - 8:30 pm
                   </p>
 
                 </div>
@@ -99,7 +103,7 @@ return (
             </div>
             
             {/* Right Content (Form) */}
-            <div className="w-full lg:w-7/12 p-10 md:p-16 lg:p-20 flex flex-col justify-center bg-[#fcfbf9]">
+            <div className="w-full lg:w-7/12 p-7 sm:p-10 md:p-16 lg:p-20 flex flex-col justify-center bg-[#fcfbf9]">
               <h3 className="text-2xl font-light mb-8 tracking-wide">Send a Message</h3>
               <form className="flex flex-col space-y-6" onSubmit={(e) => e.preventDefault()}>
                 <div className="flex flex-col md:flex-row gap-6">
@@ -148,7 +152,39 @@ return (
         </div>
       </section>
 
-      
+      {/* Clinic 1 Map */}
+      <section className="relative z-10 w-full pb-24 px-4 md:px-12 lg:px-24 bg-[#f7f6f2] text-[#1a1a1a]">
+        <div className="max-w-7xl mx-auto">
+          <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-8">
+            <div>
+              <h4 className="text-[10px] font-semibold tracking-[0.2em] uppercase mb-3 text-gray-500">Find Us</h4>
+              <h3 className="text-2xl md:text-3xl font-light tracking-wide mb-2">Clinic 1: Skin Lab Studio</h3>
+              <p className="text-gray-700 font-light leading-relaxed">
+                No. 166, Parijath, Sathyadev Enclave, Race Course, Coimbatore, Tamil Nadu 641018
+              </p>
+              <p className="text-gray-500 text-sm font-light mt-1">Mon - Sun, 10:00 am - 7:30 pm</p>
+            </div>
+            <a
+              href="https://share.google/X54rfKMZyTi7j0lSV"
+              target="_blank"
+              rel="noreferrer"
+              className="self-start md:self-auto shrink-0 border border-[#1a1a1a] rounded-full px-8 py-3 text-[10px] font-semibold tracking-[0.2em] uppercase hover:bg-[#1a1a1a] hover:text-white transition-colors"
+            >
+              Get Directions
+            </a>
+          </div>
+          <div className="w-full h-[320px] sm:h-[400px] lg:h-[460px] rounded-2xl overflow-hidden shadow-sm border border-black/5">
+            <iframe
+              title="Map of Skin Lab Studio, Race Course, Coimbatore"
+              src="https://www.google.com/maps?q=SkinLab+by+Dr.+Jamuna+Pai,+Sathyadev+Enclave,+Race+Course,+Coimbatore+641018&z=16&output=embed"
+              className="w-full h-full border-0"
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              allowFullScreen
+            />
+          </div>
+        </div>
+      </section>
 
       {/* Global styles for hiding scrollbar in the carousel */}
       <style>{`

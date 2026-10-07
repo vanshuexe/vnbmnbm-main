@@ -38,8 +38,8 @@ export default function Book() {
     <div className="relative min-h-screen bg-[#ebe9e4] font-sans overflow-x-hidden">
       <div className="bg-[#25211e]"><Navbar /></div>
 
-      <main className="relative z-10 w-full pt-32 pb-24 px-6 md:px-12 lg:px-24">
-        <div className="max-w-6xl mx-auto flex flex-col lg:flex-row gap-16">
+      <main className="relative z-10 w-full pt-16 md:pt-32 pb-24 px-6 md:px-12 lg:px-24">
+        <div className="max-w-6xl mx-auto flex flex-col lg:flex-row gap-10 lg:gap-16">
           
           {/* Left Column - Contact Info */}
           <div className="w-full lg:w-1/3 flex flex-col pt-8">
@@ -56,8 +56,9 @@ export default function Book() {
             <div className="space-y-8">
               <div>
                 <h4 className="font-semibold text-xs tracking-wider mb-2 uppercase text-[#1a1a1a]">Locations</h4>
-                <p className="text-sm font-light text-gray-600 mb-2"><strong>Clinic 1: Skin Lab</strong><br />Coimbatore, Tamil Nadu</p>
-
+                <p className="text-sm font-light text-gray-600 mb-2"><strong>Clinic 1: Skin Lab</strong><br />No. 166, Parijath, Sathyadev Enclave,<br />Race Course, Coimbatore, Tamil Nadu 641018</p>
+                <a href="https://share.google/X54rfKMZyTi7j0lSV" target="_blank" rel="noreferrer" className="inline-block text-sm font-light text-gray-600 underline underline-offset-4 hover:text-[#1a1a1a] transition-colors">Get directions</a>
+                <p className="text-sm font-light text-gray-600 mt-4"><strong>Clinic 2: Rootwise Aesthetic Clinic</strong><br />Coimbatore, Tamil Nadu</p>
               </div>
               
               <div>
@@ -68,14 +69,16 @@ export default function Book() {
 
               <div>
                 <h4 className="font-semibold text-xs tracking-wider mb-2 uppercase text-[#1a1a1a]">Hours</h4>
-                <p className="text-sm font-light text-gray-600">Monday – Saturday</p>
-                <p className="text-sm font-light text-gray-600">10:00 AM – 7:00 PM</p>
+                <p className="text-sm font-light text-gray-600"><strong>Clinic 1:</strong> Monday – Sunday, 10:00 AM – 7:30 PM</p>
+                <p className="text-sm font-light text-gray-600 mt-3"><strong>Clinic 2:</strong> Monday – Saturday</p>
+                <p className="text-sm font-light text-gray-600">Morning: 9:30 AM – 10:30 AM</p>
+                <p className="text-sm font-light text-gray-600">Evening: 7:30 PM – 8:30 PM</p>
               </div>
             </div>
           </div>
 
           {/* Right Column - Booking Form */}
-          <div className="w-full lg:w-2/3 bg-white/50 backdrop-blur-sm p-8 md:p-12 rounded-[2rem] shadow-sm border border-white">
+          <div className="w-full lg:w-2/3 bg-white/50 backdrop-blur-sm p-6 sm:p-8 md:p-12 rounded-[2rem] shadow-sm border border-white">
             <form onSubmit={handleSubmit} className="space-y-8">
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

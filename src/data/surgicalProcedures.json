@@ -24,7 +24,6 @@
         "text": "Provides a permanent solution to under-eye bags with a high satisfaction rate and natural-looking outcome."
       }
     ],
-    "imageCaption": "Treatment reference image",
     "imageWidth": 1206,
     "imageHeight": 1206
   },
@@ -53,7 +52,6 @@
         "text": "Incisions are meticulously placed in the natural crease behind the ear, keeping any scarring completely concealed."
       }
     ],
-    "imageCaption": "Treatment reference image",
     "imageWidth": 1221,
     "imageHeight": 1220
   },
@@ -82,7 +80,6 @@
         "text": "Patients can typically resume their normal daily activities much faster than with extensive surgical procedures."
       }
     ],
-    "imageCaption": "Treatment reference image",
     "imageWidth": 1321,
     "imageHeight": 1319
   },
@@ -91,7 +88,7 @@
     "category": "Eyes",
     "title": "Ptosis Correction",
     "subtitle": "Eyelid Lifting Surgery",
-    "image": "/images/procedures/ptosis.jpg",
+    "image": "https://ik.imagekit.io/fdhgiehjz/IMG_6494.PNG",
     "description": "Ptosis correction is a highly specialized surgical procedure that lifts drooping upper eyelids caused by weakened muscles. By tightening the levator muscle, this procedure not only restores a wide, awake, and refreshed appearance, but it can also significantly improve obstructed upper field vision.",
     "bullets": [
       {
@@ -111,9 +108,8 @@
         "text": "The very fine incisions are typically hidden precisely within the natural crease of the upper eyelid, resulting in virtually undetectable scars once healed."
       }
     ],
-    "imageCaption": "Illustrative image",
-    "imageWidth": 1122,
-    "imageHeight": 1402
+    "imageWidth": 1316,
+    "imageHeight": 1322
   },
   {
     "id": "mole-removal",
@@ -140,7 +136,6 @@
         "text": "Extracted tissue can be sent for professional pathological screening to verify your dermatological health and safety."
       }
     ],
-    "imageCaption": "Treatment reference image",
     "imageWidth": 1216,
     "imageHeight": 1213
   },
@@ -169,7 +164,6 @@
         "text": "Effectively reverses the visible signs of hair thinning or baldness, giving you a dense, thick head of hair and renewed self-assurance."
       }
     ],
-    "imageCaption": "Treatment reference image",
     "imageWidth": 1226,
     "imageHeight": 1226
   },
@@ -198,9 +192,36 @@
         "text": "Every procedure is meticulously tailored to respect your unique ethnic features and natural aesthetic goals."
       }
     ],
-    "imageCaption": "Treatment reference image",
     "imageWidth": 1237,
     "imageHeight": 1240
+  },
+  {
+    "id": "alarplasty",
+    "category": "Nose",
+    "title": "Alarplasty",
+    "subtitle": "Nostril Reduction",
+    "image": "https://ik.imagekit.io/fdhgiehjz/IMG_1745.PNG",
+    "description": "Alarplasty (alar base reduction) refines wide or flared nostrils to bring the base of the nose into better proportion with the rest of the face. A small wedge of tissue is carefully removed where the nostril meets the cheek, with incisions placed in the natural crease so they heal discreetly. It can be performed on its own or combined with rhinoplasty.",
+    "bullets": [
+      {
+        "title": "Narrower Nostrils:",
+        "text": "Reduces the width or flare of the nostrils for a more refined nasal base."
+      },
+      {
+        "title": "Facial Balance:",
+        "text": "Brings the nose into proportion with the cheeks, lips and overall facial features."
+      },
+      {
+        "title": "Discreet Incisions:",
+        "text": "Incisions are hidden in the natural crease at the base of the nostril and typically fade well."
+      },
+      {
+        "title": "Quick Recovery:",
+        "text": "Often a short procedure under local anaesthesia, with a relatively quick return to normal activities."
+      }
+    ],
+    "imageWidth": 1210,
+    "imageHeight": 1211
   },
   {
     "id": "face-lift",
@@ -227,7 +248,6 @@
         "text": "Expertly tightens the neck and lower face to recreate a sharp, elegant, and refined jawline profile."
       }
     ],
-    "imageCaption": "Treatment reference image",
     "imageWidth": 1234,
     "imageHeight": 1234
   },
@@ -256,7 +276,6 @@
         "text": "The procedure is typically performed entirely through small incisions inside the mouth, leaving absolutely no external scarring."
       }
     ],
-    "imageCaption": "Treatment reference image",
     "imageWidth": 1321,
     "imageHeight": 1318
   },
@@ -285,7 +304,6 @@
         "text": "Incisions are meticulously hidden within the natural creases of the upper eyelids and just below the lower lash line."
       }
     ],
-    "imageCaption": "Treatment reference image",
     "imageWidth": 1206,
     "imageHeight": 1206
   },
@@ -314,7 +332,6 @@
         "text": "Frequently and harmoniously combined with a deep-plane facelift for a seamless transformation of the lower face and neck."
       }
     ],
-    "imageCaption": "Treatment reference image",
     "imageWidth": 1004,
     "imageHeight": 1004
   },
@@ -323,7 +340,7 @@
     "category": "Face",
     "title": "Buccal Fat Reduction",
     "subtitle": "Cheek Slimming",
-    "image": "/images/procedures/originals/buccal-fat-reduction.jpeg",
+    "image": "https://ik.imagekit.io/fdhgiehjz/IMG_0956.JPG.jpeg",
     "description": "Refine your facial silhouette with a buccal fat pad reduction. This brief, elegant surgical procedure removes the deep fat pads in the lower cheeks, transforming a round or \"chubby\" face into a highly sculpted, naturally contoured V-shape profile.",
     "bullets": [
       {
@@ -343,7 +360,6 @@
         "text": "The straightforward procedure is performed entirely through small incisions inside the mouth, leaving no visible scarring."
       }
     ],
-    "imageCaption": "Treatment reference image",
     "imageWidth": 1240,
     "imageHeight": 1239
   },
@@ -372,7 +388,6 @@
         "text": "Once fully healed, the flawlessly repaired earlobe can safely be re-pierced for your favorite earrings."
       }
     ],
-    "imageCaption": "Treatment reference image",
     "imageWidth": 1228,
     "imageHeight": 1216
   },
@@ -401,7 +416,6 @@
         "text": "Advanced liposuction techniques naturally encourage the overlying skin to contract and tighten, enhancing the smooth contour."
       }
     ],
-    "imageCaption": "Treatment reference image",
     "imageWidth": 1004,
     "imageHeight": 1004
   },
@@ -410,7 +424,7 @@
     "category": "Face",
     "title": "Forehead Lift",
     "subtitle": "Upper Face Rejuvenation",
-    "image": "/images/procedures/forehead-lift.jpg",
+    "image": "https://ik.imagekit.io/fdhgiehjz/WhatsApp%20Image%202026-10-06%20at%209.59.19%20PM.jpeg",
     "description": "A surgical forehead lift addresses deep horizontal wrinkles and significant sagging in the upper face. By lifting the skin and repositioning underlying muscles, this procedure restores a smooth, serene, and youthful appearance to the forehead.",
     "bullets": [
       {
@@ -426,9 +440,8 @@
         "text": "Alleviates a heavy or 'angry' appearance, making you look approachable and rested."
       }
     ],
-    "imageCaption": "Illustrative image",
-    "imageWidth": 1122,
-    "imageHeight": 1402
+    "imageWidth": 1218,
+    "imageHeight": 1210
   },
   {
     "id": "surgical-brow-lift",
@@ -451,7 +464,6 @@
         "text": "Tailors the shape and peak of the brow to perfectly suit your facial structure."
       }
     ],
-    "imageCaption": "Treatment reference image",
     "imageWidth": 1150,
     "imageHeight": 1150
   },
@@ -476,9 +488,64 @@
         "text": "Avoids a 'pulled' look by lifting vertically rather than horizontally."
       }
     ],
-    "imageCaption": "Treatment reference image",
     "imageWidth": 1234,
     "imageHeight": 1234
+  },
+  {
+    "id": "fat-augmentation",
+    "category": "Face",
+    "title": "Fat Augmentation",
+    "subtitle": "Macro, Micro & Nano Fat Grafting",
+    "image": "https://ik.imagekit.io/fdhgiehjz/IMG_6485.PNG",
+    "description": "Fat augmentation (fat grafting) uses your own fat to restore lost volume and soften hollows in the face. A small amount of fat is gently harvested, purified and re-injected as macro, micro or nano fat depending on the area, from deep-set eyes and under-eye hollows to the cheeks and temples. Because it uses your own tissue, the result blends naturally and can improve both volume and skin quality.",
+    "bullets": [
+      {
+        "title": "Natural Volume:",
+        "text": "Your own fat restores soft-tissue volume to hollow areas such as deep-set eyes, tear troughs, temples and cheeks."
+      },
+      {
+        "title": "Macro, Micro & Nano Fat:",
+        "text": "Different fat preparations are chosen for structural volume, fine contouring or skin-quality improvement."
+      },
+      {
+        "title": "Under-Eye Rejuvenation:",
+        "text": "Softens the transition between the lower eyelid and cheek for a more rested, refreshed appearance."
+      },
+      {
+        "title": "Long-Lasting Results:",
+        "text": "Fat that establishes a blood supply can last long term; some is naturally reabsorbed, so a touch-up may be recommended."
+      }
+    ],
+    "imageWidth": 1229,
+    "imageHeight": 1229
+  },
+  {
+    "id": "chin-implants",
+    "category": "Face",
+    "title": "Chin Implants",
+    "subtitle": "Chin Augmentation",
+    "image": "https://ik.imagekit.io/fdhgiehjz/IMG_6471.PNG",
+    "description": "A small or recessed chin can make the nose appear larger, soften the jawline and leave the side profile looking out of balance. A customised silicone chin implant adds lasting projection and definition, creating a stronger chin and a sharper, more harmonious profile. The implant is placed through a small, discreet incision and chosen to suit your facial proportions.",
+    "bullets": [
+      {
+        "title": "Profile Balance:",
+        "text": "Adds forward projection to a small or recessed chin, improving harmony between the nose, lips and chin."
+      },
+      {
+        "title": "Sharper Jawline:",
+        "text": "Defines the chin and its transition into the jawline for a more sculpted lower face."
+      },
+      {
+        "title": "Customised Implant:",
+        "text": "The size and shape of the silicone implant are selected for your anatomy for a natural-looking result."
+      },
+      {
+        "title": "Long-Term Result:",
+        "text": "Unlike fillers, a chin implant provides a lasting change that does not need repeat treatments."
+      }
+    ],
+    "imageWidth": 1002,
+    "imageHeight": 1002
   },
   {
     "id": "dimple-creation",
@@ -501,7 +568,6 @@
         "text": "Typically performed under local anesthesia in under an hour."
       }
     ],
-    "imageCaption": "Illustrative image",
     "imageWidth": 1122,
     "imageHeight": 1402
   },
@@ -526,7 +592,6 @@
         "text": "Adds an elegant, exotic, and youthful contour to the eyes."
       }
     ],
-    "imageCaption": "Illustrative image",
     "imageWidth": 1122,
     "imageHeight": 1402
   },
@@ -551,7 +616,6 @@
         "text": "Utilizes multi-layered suturing to minimize tension and optimize healing."
       }
     ],
-    "imageCaption": "Illustrative image",
     "imageWidth": 1122,
     "imageHeight": 1402
   }

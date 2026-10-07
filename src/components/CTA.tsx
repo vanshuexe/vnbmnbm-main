@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 export default function CTA() {
   return (
-    <section className="relative z-10 w-full py-24 px-6 md:px-12 lg:px-24 bg-[#25211e] text-white">
+    <section className="relative z-10 w-full py-24 px-6 md:px-12 lg:px-24 bg-gradient-to-r from-[#25211e] via-[#0d1b2d] to-[#001d3d] text-white">
       <motion.div 
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -11,8 +11,8 @@ export default function CTA() {
         transition={{ duration: 0.8 }}
         className="max-w-4xl mx-auto text-center flex flex-col items-center"
       >
-        <span className="text-[10px] font-semibold tracking-[0.2em] uppercase mb-4 text-gray-400">Take the Next Step</span>
-        <h2 className="text-3xl md:text-5xl font-light mb-6 tracking-wide leading-tight">
+        <span className="text-[10px] font-semibold tracking-[0.2em] uppercase mb-4 text-[#c9a98a]">Take the Next Step</span>
+        <h2 className="font-cormorant text-4xl md:text-6xl font-medium mb-6 leading-tight">
           Begin Your Transformation
         </h2>
         <p className="text-gray-300 text-sm md:text-base font-light mb-10 max-w-xl leading-relaxed">
