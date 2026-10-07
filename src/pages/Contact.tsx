@@ -4,6 +4,23 @@ import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 
 import Footer from '../components/Footer';
+const clinics = [
+  {
+    name: 'Clinic 1: Skin Lab Studio',
+    address: 'No. 166, Parijath, Sathyadev Enclave, Race Course, Coimbatore, Tamil Nadu 641018',
+    hours: ['Mon - Sun, 10:00 am - 7:30 pm'],
+    directionsUrl: 'https://share.google/X54rfKMZyTi7j0lSV',
+    mapEmbedUrl: 'https://www.google.com/maps?q=SkinLab+by+Dr.+Jamuna+Pai,+Sathyadev+Enclave,+Race+Course,+Coimbatore+641018&z=16&output=embed',
+  },
+  {
+    name: 'Clinic 2: Rootwise Aesthetic Clinic',
+    address: '31, E TV Swamy Rd, R.S. Puram, Coimbatore, Tamil Nadu 641002',
+    hours: ['Mon - Sat', 'Morning: 9:30 am - 10:30 am', 'Evening: 7:30 pm - 8:30 pm'],
+    directionsUrl: 'https://share.google/4zPrH7dKJrDc9syyg',
+    mapEmbedUrl: 'https://www.google.com/maps?q=Rootwise+Aesthetics,+31+E+TV+Swamy+Rd,+R.S.+Puram,+Coimbatore+641002&z=16&output=embed',
+  },
+];
+
 export default function Contact() {
 return (
     <div className="relative min-h-screen bg-[#ebe9e4] font-sans overflow-x-hidden">
@@ -76,7 +93,9 @@ return (
                   </p>
                   <p className="text-gray-800 leading-relaxed mb-4">
                     <strong>Clinic 2: Rootwise Aesthetic Clinic</strong><br />
-                    Coimbatore, Tamil Nadu
+                    31, E TV Swamy Rd, R.S. Puram,<br />
+                    Coimbatore, Tamil Nadu 641002<br />
+                    <a href="https://share.google/4zPrH7dKJrDc9syyg" target="_blank" rel="noreferrer" className="inline-block mt-1 text-sm underline underline-offset-4 hover:text-black transition-colors">Get directions</a>
                   </p>
 
                 </div>
@@ -152,36 +171,40 @@ return (
         </div>
       </section>
 
-      {/* Clinic 1 Map */}
+      {/* Clinic Maps */}
       <section className="relative z-10 w-full pb-24 px-4 md:px-12 lg:px-24 bg-[#f7f6f2] text-[#1a1a1a]">
         <div className="max-w-7xl mx-auto">
-          <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-8">
-            <div>
-              <h4 className="text-[10px] font-semibold tracking-[0.2em] uppercase mb-3 text-gray-500">Find Us</h4>
-              <h3 className="text-2xl md:text-3xl font-light tracking-wide mb-2">Clinic 1: Skin Lab Studio</h3>
-              <p className="text-gray-700 font-light leading-relaxed">
-                No. 166, Parijath, Sathyadev Enclave, Race Course, Coimbatore, Tamil Nadu 641018
-              </p>
-              <p className="text-gray-500 text-sm font-light mt-1">Mon - Sun, 10:00 am - 7:30 pm</p>
-            </div>
-            <a
-              href="https://share.google/X54rfKMZyTi7j0lSV"
-              target="_blank"
-              rel="noreferrer"
-              className="self-start md:self-auto shrink-0 border border-[#1a1a1a] rounded-full px-8 py-3 text-[10px] font-semibold tracking-[0.2em] uppercase hover:bg-[#1a1a1a] hover:text-white transition-colors"
-            >
-              Get Directions
-            </a>
-          </div>
-          <div className="w-full h-[320px] sm:h-[400px] lg:h-[460px] rounded-2xl overflow-hidden shadow-sm border border-black/5">
-            <iframe
-              title="Map of Skin Lab Studio, Race Course, Coimbatore"
-              src="https://www.google.com/maps?q=SkinLab+by+Dr.+Jamuna+Pai,+Sathyadev+Enclave,+Race+Course,+Coimbatore+641018&z=16&output=embed"
-              className="w-full h-full border-0"
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              allowFullScreen
-            />
+          <h4 className="text-[10px] font-semibold tracking-[0.2em] uppercase mb-8 text-gray-500">Find Us</h4>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 lg:gap-10">
+            {clinics.map((clinic) => (
+              <div key={clinic.name} className="flex flex-col">
+                <h3 className="text-2xl md:text-3xl font-light tracking-wide mb-2">{clinic.name}</h3>
+                <p className="text-gray-700 font-light leading-relaxed">{clinic.address}</p>
+                <p className="text-gray-500 text-sm font-light leading-relaxed mt-1 mb-6">
+                  {clinic.hours.map((line, i) => (
+                    <span key={line}>{i > 0 && <br />}{line}</span>
+                  ))}
+                </p>
+                <div className="w-full h-[300px] sm:h-[360px] lg:h-[400px] rounded-2xl overflow-hidden shadow-sm border border-black/5 mb-6">
+                  <iframe
+                    title={`Map of ${clinic.name}`}
+                    src={clinic.mapEmbedUrl}
+                    className="w-full h-full border-0"
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    allowFullScreen
+                  />
+                </div>
+                <a
+                  href={clinic.directionsUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="self-start border border-[#1a1a1a] rounded-full px-8 py-3 text-[10px] font-semibold tracking-[0.2em] uppercase hover:bg-[#1a1a1a] hover:text-white transition-colors"
+                >
+                  Get Directions
+                </a>
+              </div>
+            ))}
           </div>
         </div>
       </section>

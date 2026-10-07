@@ -58,7 +58,8 @@ export default function Book() {
                 <h4 className="font-semibold text-xs tracking-wider mb-2 uppercase text-[#1a1a1a]">Locations</h4>
                 <p className="text-sm font-light text-gray-600 mb-2"><strong>Clinic 1: Skin Lab</strong><br />No. 166, Parijath, Sathyadev Enclave,<br />Race Course, Coimbatore, Tamil Nadu 641018</p>
                 <a href="https://share.google/X54rfKMZyTi7j0lSV" target="_blank" rel="noreferrer" className="inline-block text-sm font-light text-gray-600 underline underline-offset-4 hover:text-[#1a1a1a] transition-colors">Get directions</a>
-                <p className="text-sm font-light text-gray-600 mt-4"><strong>Clinic 2: Rootwise Aesthetic Clinic</strong><br />Coimbatore, Tamil Nadu</p>
+                <p className="text-sm font-light text-gray-600 mt-4 mb-2"><strong>Clinic 2: Rootwise Aesthetic Clinic</strong><br />31, E TV Swamy Rd, R.S. Puram,<br />Coimbatore, Tamil Nadu 641002</p>
+                <a href="https://share.google/4zPrH7dKJrDc9syyg" target="_blank" rel="noreferrer" className="inline-block text-sm font-light text-gray-600 underline underline-offset-4 hover:text-[#1a1a1a] transition-colors">Get directions</a>
               </div>
               
               <div>
