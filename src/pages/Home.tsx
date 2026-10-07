@@ -106,7 +106,7 @@ return (
 
             {/* Right Image */}
             <div className="relative w-full lg:w-[45%] h-[380px] sm:h-[480px] lg:h-auto lg:min-h-[500px] bg-white flex justify-end items-end overflow-hidden">
-              <img
+              <img loading="lazy" decoding="async"
                 src="/images/doctor-profile-hd.jpg"
                 alt="Dr. Shruthilaya Ganesan"
                 width={1200}
@@ -176,7 +176,7 @@ return (
         <div className="flex flex-col md:flex-row w-full">
           {/* Surgical Block */}
           <div className="relative w-full md:w-1/2 h-[500px] md:h-[650px] group overflow-hidden cursor-pointer">
-            <img 
+            <img loading="lazy" decoding="async" 
               src="/images/surgical-profile.jpg"
               alt="Side profile of a man's face and jawline"
               className="absolute inset-0 w-full h-full object-cover object-right transition-transform duration-1000 group-hover:scale-105"
@@ -196,7 +196,7 @@ return (
 
           {/* Non-Surgical Block */}
           <div className="relative w-full md:w-1/2 h-[500px] md:h-[650px] group overflow-hidden cursor-pointer">
-            <img 
+            <img loading="lazy" decoding="async" 
               src="/images/non-surgical-profile.jpg"
               alt="Side profile of a woman's face and jawline"
               className="absolute inset-0 w-full h-full object-cover object-[20%_center] transition-transform duration-1000 group-hover:scale-105"
@@ -238,7 +238,7 @@ return (
         
         {/* Right Image */}
         <div className="w-full lg:w-1/2 h-[400px] sm:h-[480px] lg:h-full">
-          <img 
+          <img loading="lazy" decoding="async" 
             src="https://ik.imagekit.io/fdhgiehjz/123.jpeg?updatedAt=1789497477610" 
             alt="Dr. Shruthilaya Ganesan Quote Image" 
             className="w-full h-full object-cover object-center"
@@ -269,7 +269,7 @@ return (
             
             {/* Right side image */}
             <div className="w-full lg:w-1/2 flex items-center justify-center p-4 md:p-6">
-              <img 
+              <img loading="lazy" decoding="async" 
                 src="https://ik.imagekit.io/fdhgiehjz/WhatsApp%20Image%202026-09-12%20at%207.52.38%20PM.jpeg" 
                 alt="Filler Complication Management" 
                 className="w-full h-auto object-contain object-center rounded-xl"
@@ -299,7 +299,7 @@ return (
             
             {/* Left side image (now on right visually due to row-reverse) */}
             <div className="w-full lg:w-1/2 flex items-center justify-center p-4 md:p-6">
-              <img 
+              <img loading="lazy" decoding="async" 
                 src="https://ik.imagekit.io/fdhgiehjz/bg.jpeg" 
                 alt="Define Your Chin, Refine Your Jawline" 
                 className="w-full h-auto object-contain object-center rounded-xl"
@@ -332,7 +332,7 @@ return (
             
             {/* Right side image */}
             <div className="w-full lg:w-1/2 flex items-center justify-center p-4 md:p-6">
-              <img 
+              <img loading="lazy" decoding="async" 
                 src="https://ik.imagekit.io/fdhgiehjz/888.jpeg" 
                 alt="Facial Slimming & Contouring" 
                 className="w-full h-auto object-contain object-center rounded-xl"
@@ -366,7 +366,7 @@ return (
             
             {/* Left side image (now on right visually due to row-reverse) */}
             <div className="w-full lg:w-1/2 flex items-center justify-center p-4 md:p-6">
-              <img 
+              <img loading="lazy" decoding="async" 
                 src="https://ik.imagekit.io/fdhgiehjz/8899.jpeg" 
                 alt="Restoring Under-Eye Volume & Harmony"
                 className="w-full h-auto object-contain object-center rounded-xl"
@@ -399,7 +399,7 @@ return (
 
             {/* Right side image */}
             <div className="w-full lg:w-1/2 flex items-center justify-center p-4 md:p-6">
-              <img
+              <img loading="lazy" decoding="async"
                 src="https://ik.imagekit.io/fdhgiehjz/IMG_1785.JPEG?tr=cm-extract,x-64,y-340,w-1792,h-470"
                 alt="Lip Fillers – Keeping It Natural"
                 className="w-full h-auto object-contain object-center rounded-xl bg-white"
@@ -432,7 +432,7 @@ return (
 
             {/* Left side image (now on right visually due to row-reverse) */}
             <div className="w-full lg:w-1/2 flex items-center justify-center p-4 md:p-6">
-              <img
+              <img loading="lazy" decoding="async"
                 src="https://ik.imagekit.io/fdhgiehjz/IMG_1784.JPEG?tr=cm-extract,x-300,y-330,w-1320,h-470"
                 alt="Lower Face Harmony with Dermal Fillers"
                 className="w-full h-auto object-contain object-center rounded-xl bg-white"

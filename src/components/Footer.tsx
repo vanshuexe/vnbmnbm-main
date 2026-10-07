@@ -115,7 +115,7 @@ export default function Footer({ white = false }: { white?: boolean }) {
 
         {/* Bottom Footer */}
         <div className={`max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center text-center md:text-left text-[11px] md:text-[10px] ${c.legal} pt-8 font-light`}>
-          <p>© {new Date().getFullYear()} Dr. Shruthilaya Ganesan. All Rights Reserved.</p>
+          <p suppressHydrationWarning>© {new Date().getFullYear()} Dr. Shruthilaya Ganesan. All Rights Reserved.</p>
           <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 md:gap-x-12 mt-4 md:mt-0">
             <a href="#" className={`${c.link} transition-colors`}>Terms of Use</a>
             <a href="#" className={`${c.link} transition-colors`}>Cookies</a>

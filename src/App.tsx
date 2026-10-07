@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Surgical from './pages/Surgical';
 import NonSurgical from './pages/NonSurgical';
@@ -8,12 +8,16 @@ import Sitemap from './pages/Sitemap';
 
 import TheFeature from './pages/TheFeature';
 import Book from './pages/Book';
+import NotFound from './pages/NotFound';
 import ScrollToTop from './components/ScrollToTop';
+import SeoManager from './components/SeoManager';
 
-export default function App() {
+// Shared by the browser entry (BrowserRouter) and the prerender entry (StaticRouter).
+export function AppRoutes() {
   return (
-    <Router>
+    <>
       <ScrollToTop />
+      <SeoManager />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/surgical" element={<Surgical />} />
@@ -24,8 +28,16 @@ export default function App() {
 
         <Route path="/the-feature" element={<TheFeature />} />
         <Route path="/book" element={<Book />} />
-        <Route path="*" element={<Navigate to="/" replace />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
+    </>
+  );
+}
+
+export default function App() {
+  return (
+    <Router>
+      <AppRoutes />
     </Router>
   );
 }

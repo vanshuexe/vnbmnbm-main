@@ -58,7 +58,7 @@ export default function TheFeature() {
           </div>
 
           <div className="w-full rounded-[2rem] overflow-hidden mb-16 shadow-sm">
-            <img 
+            <img loading="lazy" decoding="async" 
               src="https://ik.imagekit.io/fdhgiehjz/bg.jpeg" 
               alt="Define Your Chin, Refine Your Jawline" 
               className="w-full h-auto max-h-[80vh] object-contain object-center"
@@ -91,7 +91,7 @@ export default function TheFeature() {
           </div>
 
           <div className="w-full rounded-[2rem] overflow-hidden mb-16 shadow-sm">
-            <img 
+            <img loading="lazy" decoding="async" 
               src="https://ik.imagekit.io/fdhgiehjz/888.jpeg" 
               alt="Facial Slimming & Contouring" 
               className="w-full h-auto max-h-[80vh] object-contain object-center"
@@ -124,7 +124,7 @@ export default function TheFeature() {
           </div>
 
           <div className="w-full rounded-[2rem] overflow-hidden mb-16 shadow-sm">
-            <img 
+            <img loading="lazy" decoding="async" 
               src="https://ik.imagekit.io/fdhgiehjz/8899.jpeg" 
               alt="Restoring Under-Eye Volume & Harmony" 
               className="w-full h-auto max-h-[80vh] object-contain object-center"
@@ -157,7 +157,7 @@ export default function TheFeature() {
           </div>
 
           <div className="w-full rounded-[2rem] overflow-hidden mb-16 shadow-sm bg-white">
-            <img
+            <img loading="lazy" decoding="async"
               src="https://ik.imagekit.io/fdhgiehjz/IMG_1785.JPEG?tr=cm-extract,x-64,y-340,w-1792,h-470"
               alt="Lip Fillers – Keeping It Natural"
               className="w-full h-auto max-h-[80vh] object-contain object-center"
@@ -190,7 +190,7 @@ export default function TheFeature() {
           </div>
 
           <div className="w-full rounded-[2rem] overflow-hidden mb-16 shadow-sm bg-white">
-            <img
+            <img loading="lazy" decoding="async"
               src="https://ik.imagekit.io/fdhgiehjz/IMG_1784.JPEG?tr=cm-extract,x-300,y-330,w-1320,h-470"
               alt="Lower Face Harmony with Dermal Fillers"
               className="w-full h-auto max-h-[80vh] object-contain object-center"

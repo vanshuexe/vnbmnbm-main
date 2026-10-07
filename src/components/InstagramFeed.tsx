@@ -23,7 +23,7 @@ export default function InstagramFeed() {
           {/* Instagram Posts Screenshot */}
           <div className="max-w-4xl mx-auto rounded-2xl overflow-hidden shadow-xl ring-1 ring-black/5">
             <a href="https://www.instagram.com/drshruthilayaganesan" target="_blank" rel="noreferrer" className="block relative group cursor-pointer">
-              <img 
+              <img loading="lazy" decoding="async" 
                 src="/Screenshot 2026-09-21 185113.png" 
                 alt="Dr. Shruthilaya Ganesan Instagram Posts" 
                 className="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-[1.02]"
