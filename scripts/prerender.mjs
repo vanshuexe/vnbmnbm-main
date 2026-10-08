@@ -9,7 +9,7 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const dist = path.join(root, 'dist');
 const ssrDir = path.join(root, 'dist-ssr');
 
-const { render, ROUTES, headHtml, sitemapXml, llmsTxt } = await import(pathToFileURL(path.join(ssrDir, 'entry-server.js')).href);
+const { render, ROUTES, headHtml, sitemapXml, llmsTxt, LEGACY_REDIRECTS, SITE_URL } = await import(pathToFileURL(path.join(ssrDir, 'entry-server.js')).href);
 const template = fs.readFileSync(path.join(dist, 'index.html'), 'utf8');
 
 if (!template.includes('<!--seo-head-->') || !template.includes('<div id="root"></div>')) {
@@ -40,6 +40,28 @@ for (const url of ROUTES) {
     write(path.join(dist, name, 'index.html'), html);
   }
   console.log(`prerendered ${url}`);
+}
+
+// Old addresses from the previous website: instant redirect + canonical to the new page.
+for (const [from, to] of Object.entries(LEGACY_REDIRECTS)) {
+  const canonical = SITE_URL + to.replace(/#.*$/, '');
+  const html = `<!doctype html>
+<html lang="en-IN">
+<head>
+<meta charset="UTF-8" />
+<title>Redirecting…</title>
+<meta name="robots" content="noindex, follow" />
+<link rel="canonical" href="${canonical}" />
+<meta http-equiv="refresh" content="0; url=${to}" />
+<script>location.replace(${JSON.stringify(to)});</script>
+</head>
+<body><p>This page has moved. <a href="${to}">Continue to the new page</a>.</p></body>
+</html>
+`;
+  const name = from.slice(1);
+  write(path.join(dist, `${name}.html`), html);
+  write(path.join(dist, name, 'index.html'), html);
+  console.log(`redirect ${from} -> ${to}`);
 }
 
 write(path.join(dist, '404.html'), pageHtml('/404'));

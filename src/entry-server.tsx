@@ -4,7 +4,7 @@ import { renderToString } from 'react-dom/server';
 import { StaticRouter } from 'react-router-dom';
 import { AppRoutes } from './App';
 
-export { ROUTES, headHtml, sitemapXml, llmsTxt } from './seo';
+export { ROUTES, headHtml, sitemapXml, llmsTxt, LEGACY_REDIRECTS, SITE_URL } from './seo';
 
 export function render(url: string) {
   return renderToString(

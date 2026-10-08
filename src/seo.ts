@@ -7,7 +7,7 @@ import { faqs } from './data/faqs';
 
 export const SITE_URL = 'https://drshruthilayaganesan.com';
 const DOCTOR = 'Dr. Shruthilaya Ganesan';
-const SOCIAL_IMAGE = `${SITE_URL}/images/doctor-profile-hd.jpg`;
+const SOCIAL_IMAGE = `${SITE_URL}/images/dr-shruthilaya-ganesan.jpg`;
 const PHONE = '+91-94446-15554';
 const EMAIL = 'dr.shruthilayaganesan@gmail.com';
 const SAME_AS = [
@@ -65,7 +65,7 @@ export const PAGES: PageSeo[] = [
     breadcrumb: 'Home',
     priority: 1.0,
     changefreq: 'weekly',
-    images: ['/images/doctor-profile-hd.jpg', 'https://ik.imagekit.io/fdhgiehjz/IMG_1116.JPG.jpeg', '/images/surgical-profile.jpg', '/images/non-surgical-profile.jpg'],
+    images: ['/images/dr-shruthilaya-ganesan.jpg', 'https://ik.imagekit.io/fdhgiehjz/IMG_1116.JPG.jpeg', '/images/surgical-profile.jpg', '/images/non-surgical-profile.jpg'],
   },
   {
     path: '/surgical',
@@ -133,6 +133,17 @@ export const PAGES: PageSeo[] = [
 
 export const ROUTES = PAGES.map((p) => p.path);
 
+// Addresses from the previous website on this domain that Google still lists.
+// They redirect to the matching new page instead of showing "Page Not Found".
+export const LEGACY_REDIRECTS: Record<string, string> = {
+  '/about-us': '/#doctor-profile',
+  '/about': '/#doctor-profile',
+  '/non-surgical-2': '/non-surgical/',
+  '/surgical-2': '/surgical/',
+  '/contact-us': '/contact/',
+  '/home': '/',
+};
+
 const NOT_FOUND = {
   title: `Page Not Found | ${DOCTOR}`,
   description: 'The page you are looking for could not be found.',
@@ -190,6 +201,7 @@ const siteGraph = () => [
     name: DOCTOR,
     url: `${SITE_URL}/`,
     image: SOCIAL_IMAGE,
+    logo: `${SITE_URL}/icon-512x512.png`,
     description: 'Maxillofacial surgeon specialised in facial aesthetics and cosmetic surgery in Coimbatore, Tamil Nadu.',
     medicalSpecialty: 'PlasticSurgery',
     telephone: PHONE,

@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Home from './pages/Home';
 import Surgical from './pages/Surgical';
 import NonSurgical from './pages/NonSurgical';
@@ -11,6 +11,7 @@ import Book from './pages/Book';
 import NotFound from './pages/NotFound';
 import ScrollToTop from './components/ScrollToTop';
 import SeoManager from './components/SeoManager';
+import { LEGACY_REDIRECTS } from './seo';
 
 // Shared by the browser entry (BrowserRouter) and the prerender entry (StaticRouter).
 export function AppRoutes() {
@@ -28,6 +29,9 @@ export function AppRoutes() {
 
         <Route path="/the-feature" element={<TheFeature />} />
         <Route path="/book" element={<Book />} />
+        {Object.entries(LEGACY_REDIRECTS).map(([from, to]) => (
+          <Route key={from} path={from} element={<Navigate to={to} replace />} />
+        ))}
         <Route path="*" element={<NotFound />} />
       </Routes>
     </>

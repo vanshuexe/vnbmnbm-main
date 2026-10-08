@@ -5,19 +5,94 @@
   "redirects": [
     {
       "source": "/:path*",
-      "has": [{ "type": "host", "value": "www.drshruthilayaganesan.com" }],
+      "has": [
+        {
+          "type": "host",
+          "value": "www.drshruthilayaganesan.com"
+        }
+      ],
       "destination": "https://drshruthilayaganesan.com/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/about-us",
+      "destination": "/#doctor-profile",
+      "permanent": true
+    },
+    {
+      "source": "/about-us/",
+      "destination": "/#doctor-profile",
+      "permanent": true
+    },
+    {
+      "source": "/about",
+      "destination": "/#doctor-profile",
+      "permanent": true
+    },
+    {
+      "source": "/about/",
+      "destination": "/#doctor-profile",
+      "permanent": true
+    },
+    {
+      "source": "/non-surgical-2",
+      "destination": "/non-surgical/",
+      "permanent": true
+    },
+    {
+      "source": "/non-surgical-2/",
+      "destination": "/non-surgical/",
+      "permanent": true
+    },
+    {
+      "source": "/surgical-2",
+      "destination": "/surgical/",
+      "permanent": true
+    },
+    {
+      "source": "/surgical-2/",
+      "destination": "/surgical/",
+      "permanent": true
+    },
+    {
+      "source": "/contact-us",
+      "destination": "/contact/",
+      "permanent": true
+    },
+    {
+      "source": "/contact-us/",
+      "destination": "/contact/",
+      "permanent": true
+    },
+    {
+      "source": "/home",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/home/",
+      "destination": "/",
       "permanent": true
     }
   ],
   "headers": [
     {
       "source": "/assets/(.*)",
-      "headers": [{ "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }]
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
     },
     {
       "source": "/images/(.*)",
-      "headers": [{ "key": "Cache-Control", "value": "public, max-age=2592000" }]
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=2592000"
+        }
+      ]
     }
   ]
 }

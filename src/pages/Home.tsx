@@ -107,7 +107,7 @@ return (
             {/* Right Image */}
             <div className="relative w-full lg:w-[45%] h-[380px] sm:h-[480px] lg:h-auto lg:min-h-[500px] bg-white flex justify-end items-end overflow-hidden">
               <img loading="lazy" decoding="async"
-                src="/images/doctor-profile-hd.jpg"
+                src="/images/dr-shruthilaya-ganesan.jpg"
                 alt="Dr. Shruthilaya Ganesan"
                 width={1200}
                 height={1200}

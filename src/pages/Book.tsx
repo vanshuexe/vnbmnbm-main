@@ -3,12 +3,18 @@ import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
+const clinics = [
+  { value: 'Clinic 1: Skin Lab Studio', name: 'Skin Lab Studio', area: 'Race Course, Coimbatore', hours: 'Mon – Sun, 10:00 AM – 7:30 PM' },
+  { value: 'Clinic 2: Rootwise Aesthetic Clinic', name: 'Rootwise Aesthetic Clinic', area: 'R.S. Puram, Coimbatore', hours: 'Mon – Sat, 9:30 – 10:30 AM & 7:30 – 8:30 PM' },
+];
+
 export default function Book() {
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
     email: '',
     phone: '',
+    clinic: '',
     procedure: '',
     message: ''
   });
@@ -29,6 +35,7 @@ export default function Book() {
       lastName: '',
       email: '',
       phone: '',
+      clinic: '',
       procedure: '',
       message: ''
     });
@@ -135,6 +142,33 @@ export default function Book() {
                   />
                 </div>
               </div>
+
+              <fieldset className="flex flex-col">
+                <legend className="text-xs font-semibold tracking-wider uppercase text-gray-600 mb-3">Preferred Clinic *</legend>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  {clinics.map((clinic) => (
+                    <label
+                      key={clinic.value}
+                      className={`flex items-start gap-3 rounded-2xl border p-4 cursor-pointer transition-colors ${formData.clinic === clinic.value ? 'border-[#1a1a1a] bg-white' : 'border-gray-300 hover:border-gray-400'}`}
+                    >
+                      <input
+                        type="radio"
+                        name="clinic"
+                        value={clinic.value}
+                        required
+                        checked={formData.clinic === clinic.value}
+                        onChange={handleChange}
+                        className="mt-1 accent-[#1a1a1a]"
+                      />
+                      <span>
+                        <span className="block text-sm font-medium text-[#1a1a1a]">{clinic.name}</span>
+                        <span className="block text-xs font-light text-gray-600 mt-1">{clinic.area}</span>
+                        <span className="block text-xs font-light text-gray-600">{clinic.hours}</span>
+                      </span>
+                    </label>
+                  ))}
+                </div>
+              </fieldset>
 
               <div className="flex flex-col">
                 <label htmlFor="procedure" className="text-xs font-semibold tracking-wider uppercase text-gray-600 mb-2">Procedure of Interest</label>
