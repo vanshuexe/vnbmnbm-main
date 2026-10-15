@@ -1,32 +1,23 @@
-import { useState, useRef } from 'react';
 
-import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
+import { useState } from 'react';
+import BookingCard, { clinicOptions } from '../components/BookingCard';
+import ClinicsSection from '../components/ClinicsSection';
 
 import Footer from '../components/Footer';
-const clinics = [
-  {
-    name: 'Clinic 1: Skin Lab Studio',
-    address: 'No. 166, Parijath, Sathyadev Enclave, Race Course, Coimbatore, Tamil Nadu 641018',
-    hours: ['Mon - Sun, 10:00 am - 7:30 pm'],
-    directionsUrl: 'https://share.google/X54rfKMZyTi7j0lSV',
-    mapEmbedUrl: 'https://www.google.com/maps?q=SkinLab+by+Dr.+Jamuna+Pai,+Sathyadev+Enclave,+Race+Course,+Coimbatore+641018&z=16&output=embed',
-  },
-  {
-    name: 'Clinic 2: Rootwise Aesthetic Clinic',
-    address: '31, E TV Swamy Rd, R.S. Puram, Coimbatore, Tamil Nadu 641002',
-    hours: ['Mon - Sat', 'Morning: 9:30 am - 10:30 am', 'Evening: 7:30 pm - 8:30 pm'],
-    directionsUrl: 'https://share.google/4zPrH7dKJrDc9syyg',
-    mapEmbedUrl: 'https://www.google.com/maps?q=Rootwise+Aesthetics,+31+E+TV+Swamy+Rd,+R.S.+Puram,+Coimbatore+641002&z=16&output=embed',
-  },
-];
-
 export default function Contact() {
+  const [clinic, setClinic] = useState(clinicOptions[0].value);
+  // "Book here" picks the clinic and scrolls up to the booking card.
+  const bookAt = (value: string) => {
+    setClinic(value);
+    document.getElementById("book")?.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+
 return (
-    <div className="relative min-h-screen bg-[#ebe9e4] font-sans overflow-x-hidden">
+    <div className="relative min-h-screen bg-[#f7f6f2] font-sans overflow-x-hidden">
           
       {/* Hero Wrapper - strictly contains the 100vh hero to prevent layout bleeding */}
-      <div className="relative w-full h-screen text-white bg-[#25211e]">
+      <div className="relative w-full h-[100svh] min-h-[560px] text-white bg-[#25211e]">
             
         {/* Background Image & Overlays for Hero */}
         <div className="absolute inset-0 z-0 overflow-hidden">
@@ -46,7 +37,7 @@ return (
       <Navbar />
 
       {/* Main Hero Content for Contact Page */}
-      <main className="relative z-10 flex flex-col justify-end min-h-[calc(100vh-80px)] px-6 md:px-12 lg:px-24 w-full text-left pb-24">
+      <div className="relative z-10 flex flex-col justify-end min-h-[calc(100svh-80px)] px-6 md:px-12 lg:px-24 w-full text-left pb-16 md:pb-24">
         <div className="max-w-xl">
           {/* Heading */}
           <h1 className="text-[40px] leading-[1.1] md:text-5xl lg:text-7xl mb-4 md:mb-6 font-light tracking-tight">
@@ -58,158 +49,46 @@ return (
             Begin your aesthetic journey with us.
           </p>
         </div>
-      </main>
+      </div>
       
       </div> {/* End of Hero Wrapper */}
 
-      {/* Intro Banner Section */}
-      <section className="relative z-10 w-full py-16 md:py-24 px-8 md:px-12 lg:px-24 bg-[#f7f6f2] text-[#1a1a1a]">
-        <div className="max-w-5xl mx-auto text-center flex flex-col items-center">
-           <div className="h-[2px] w-[24px] bg-[#1a1a1a] mb-6"></div>
-           <h2 className="text-2xl md:text-3xl lg:text-4xl font-light leading-relaxed tracking-wide">
-             We'd love to hear from you. Get in touch to schedule your consultation or ask any questions.
-           </h2>
-        </div>
-      </section>
 
-      {/* Contact Form & Info Section */}
-      <section className="relative z-10 w-full pb-24 px-4 md:px-12 lg:px-24 bg-[#f7f6f2] text-[#1a1a1a]">
-        <div className="max-w-7xl mx-auto">
-          <div className="flex flex-col lg:flex-row bg-[#e8e6e1] rounded-2xl overflow-hidden shadow-sm">
-            {/* Left Content (Contact Info) */}
-            <div className="w-full lg:w-5/12 p-7 sm:p-10 md:p-16 lg:p-20 flex flex-col justify-center bg-[#d5cfc5] text-[#1a1a1a]">
-              <h3 className="text-3xl md:text-4xl font-light mb-12 tracking-wide">
-                Get in Touch
-              </h3>
-              
-              <div className="space-y-8 font-light">
-                <div>
-                  <h4 className="text-[10px] font-semibold tracking-[0.2em] uppercase mb-2">Locations</h4>
-                  <p className="text-gray-800 leading-relaxed mb-4">
-                    <strong>Clinic 1: Skin Lab Studio</strong><br />
-                    No. 166, Parijath, Sathyadev Enclave,<br />
-                    Race Course, Coimbatore, Tamil Nadu 641018<br />
-                    <a href="https://share.google/X54rfKMZyTi7j0lSV" target="_blank" rel="noreferrer" className="inline-block mt-1 text-sm underline underline-offset-4 hover:text-black transition-colors">Get directions</a>
-                  </p>
-                  <p className="text-gray-800 leading-relaxed mb-4">
-                    <strong>Clinic 2: Rootwise Aesthetic Clinic</strong><br />
-                    31, E TV Swamy Rd, R.S. Puram,<br />
-                    Coimbatore, Tamil Nadu 641002<br />
-                    <a href="https://share.google/4zPrH7dKJrDc9syyg" target="_blank" rel="noreferrer" className="inline-block mt-1 text-sm underline underline-offset-4 hover:text-black transition-colors">Get directions</a>
-                  </p>
-
-                </div>
-                
-                <div>
-                  <h4 className="text-[10px] font-semibold tracking-[0.2em] uppercase mb-2">Contact</h4>
-                  <p className="text-gray-800 leading-relaxed">
-                    <a href="tel:+919444615554" className="hover:text-black transition-colors">+91 94446 15554</a><br />
-                    <a href="mailto:dr.shruthilayaganesan@gmail.com" className="hover:text-black transition-colors">dr.shruthilayaganesan@gmail.com</a>
-                  </p>
-                </div>
-
-                <div>
-                  <h4 className="text-[10px] font-semibold tracking-[0.2em] uppercase mb-2">Hours</h4>
-                  <p className="text-gray-800 leading-relaxed mb-4">
-                    <strong>Clinic 1:</strong> Mon - Sun, 10:00 am - 7:30 pm<br />
-                    <strong>Clinic 2:</strong> Mon - Sat<br />
-                    Morning: 9:30 am - 10:30 am<br />
-                    Evening: 7:30 pm - 8:30 pm
-                  </p>
-
-                </div>
-              </div>
+      {/* Hero: doctor + booking card */}
+      <section className="relative w-full bg-[#f2e2dc] px-4 sm:px-8 lg:px-12 xl:px-24 pt-10 lg:pt-16">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-end">
+          {/* Photo in arch */}
+          <div className="relative order-2 lg:order-1 flex justify-center lg:justify-start">
+            <div className="relative w-full max-w-[440px] aspect-[4/5] rounded-t-full bg-[#dfe7f0] overflow-hidden">
+              <img
+                src="/images/dr-shruthilaya-ganesan.jpg"
+                alt="Dr. Shruthilaya Ganesan, maxillofacial and cosmetic surgeon in Coimbatore"
+                width={1200}
+                height={1200}
+                className="absolute inset-x-0 bottom-0 w-full h-[92%] object-cover object-[45%_top] mix-blend-multiply"
+              />
             </div>
-            
-            {/* Right Content (Form) */}
-            <div className="w-full lg:w-7/12 p-7 sm:p-10 md:p-16 lg:p-20 flex flex-col justify-center bg-[#fcfbf9]">
-              <h3 className="text-2xl font-light mb-8 tracking-wide">Send a Message</h3>
-              <form className="flex flex-col space-y-6" onSubmit={(e) => e.preventDefault()}>
-                <div className="flex flex-col md:flex-row gap-6">
-                  <div className="flex-1">
-                    <label htmlFor="contact-first-name" className="block text-[10px] font-semibold tracking-[0.2em] uppercase mb-2 text-gray-500">First Name</label>
-                    <input type="text" id="contact-first-name" className="w-full bg-transparent border-b border-gray-300 py-2 focus:outline-none focus:border-[#1a1a1a] transition-colors" placeholder="Enter your first name" />
-                  </div>
-                  <div className="flex-1">
-                    <label htmlFor="contact-last-name" className="block text-[10px] font-semibold tracking-[0.2em] uppercase mb-2 text-gray-500">Last Name</label>
-                    <input type="text" id="contact-last-name" className="w-full bg-transparent border-b border-gray-300 py-2 focus:outline-none focus:border-[#1a1a1a] transition-colors" placeholder="Enter your last name" />
-                  </div>
-                </div>
-
-                <div className="flex flex-col md:flex-row gap-6">
-                  <div className="flex-1">
-                    <label htmlFor="contact-email" className="block text-[10px] font-semibold tracking-[0.2em] uppercase mb-2 text-gray-500">Email Address</label>
-                    <input type="email" id="contact-email" className="w-full bg-transparent border-b border-gray-300 py-2 focus:outline-none focus:border-[#1a1a1a] transition-colors" placeholder="Enter your email" />
-                  </div>
-                  <div className="flex-1">
-                    <label htmlFor="contact-phone" className="block text-[10px] font-semibold tracking-[0.2em] uppercase mb-2 text-gray-500">Phone Number</label>
-                    <input type="tel" id="contact-phone" className="w-full bg-transparent border-b border-gray-300 py-2 focus:outline-none focus:border-[#1a1a1a] transition-colors" placeholder="Enter your phone number" />
-                  </div>
-                </div>
-
-                <div>
-                  <label htmlFor="contact-procedure" className="block text-[10px] font-semibold tracking-[0.2em] uppercase mb-2 text-gray-500">Procedure of Interest</label>
-                  <select id="contact-procedure" className="w-full bg-transparent border-b border-gray-300 py-2 focus:outline-none focus:border-[#1a1a1a] transition-colors appearance-none text-gray-500 font-light">
-                    <option value="">Select a procedure</option>
-                    <option value="surgical">Surgical Procedures</option>
-                    <option value="non-surgical">Non-Surgical Procedures</option>
-                    <option value="consultation">General Consultation</option>
-                  </select>
-                </div>
-
-                <div>
-                  <label htmlFor="contact-message" className="block text-[10px] font-semibold tracking-[0.2em] uppercase mb-2 text-gray-500">Message</label>
-                  <textarea id="contact-message" rows={4} className="w-full bg-transparent border-b border-gray-300 py-2 focus:outline-none focus:border-[#1a1a1a] transition-colors resize-none" placeholder="How can we help you?"></textarea>
-                </div>
-
-                <button type="submit" className="self-start mt-4 bg-[#1a1a1a] text-white rounded-full px-10 py-4 text-[10px] font-semibold tracking-[0.2em] uppercase hover:bg-gray-800 transition-colors">
-                  SUBMIT REQUEST
-                </button>
-              </form>
+            <div className="absolute left-0 sm:left-4 lg:-left-6 bottom-10 bg-[#faf6f3] border-l-2 border-[#a07c5a] px-5 py-4 shadow-lg">
+              <p className="font-cormorant text-xl text-[#12284a]">Maxillofacial + Cosmetic</p>
+              <p className="text-xs text-gray-600 mt-1">Dual training, one surgeon</p>
             </div>
+          </div>
+
+          {/* Name + booking card */}
+          <div className="order-1 lg:order-2 w-full max-w-xl mx-auto lg:max-w-none lg:mx-0 pb-4 lg:pb-16">
+            <p className="text-[10px] md:text-xs tracking-[0.25em] font-semibold uppercase text-[#8a6d52] mb-4">Maxillofacial &amp; Cosmetic Surgeon · Coimbatore</p>
+            <h2 className="font-cormorant font-medium leading-[0.95] text-[#12284a] text-5xl sm:text-6xl xl:text-7xl mb-6">
+              Dr. Shruthilaya<br /><em className="text-[#a07c5a] font-normal">Ganesan</em>
+            </h2>
+            <p className="text-[#3c4a5c] text-base leading-relaxed max-w-md mb-8">
+              Facial aesthetics planned from the bone outwards — so every change is structurally safe, functional and still unmistakably you.
+            </p>
+            <BookingCard clinic={clinic} onClinicChange={setClinic} />
           </div>
         </div>
       </section>
 
-      {/* Clinic Maps */}
-      <section className="relative z-10 w-full pb-24 px-4 md:px-12 lg:px-24 bg-[#f7f6f2] text-[#1a1a1a]">
-        <div className="max-w-7xl mx-auto">
-          <h4 className="text-[10px] font-semibold tracking-[0.2em] uppercase mb-8 text-gray-600">Find Us</h4>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 lg:gap-10">
-            {clinics.map((clinic) => (
-              <div key={clinic.name} className="flex flex-col">
-                <h3 className="text-2xl md:text-3xl lg:text-2xl xl:text-3xl font-light tracking-wide mb-2">{clinic.name}</h3>
-                <p className="text-gray-700 font-light leading-relaxed mb-6 lg:min-h-[3.25rem]">{clinic.address}</p>
-                <div className="w-full h-[300px] sm:h-[360px] lg:h-[400px] rounded-2xl overflow-hidden shadow-sm border border-black/5 mb-6">
-                  <iframe
-                    title={`Map of ${clinic.name}`}
-                    src={clinic.mapEmbedUrl}
-                    className="w-full h-full border-0"
-                    loading="lazy"
-                    referrerPolicy="no-referrer-when-downgrade"
-                    allowFullScreen
-                  />
-                </div>
-                <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
-                  <p className="text-gray-600 text-sm font-light leading-relaxed">
-                    {clinic.hours.map((line, i) => (
-                      <span key={line}>{i > 0 && <br />}{line}</span>
-                    ))}
-                  </p>
-                  <a
-                    href={clinic.directionsUrl}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="self-start sm:self-auto shrink-0 border border-[#1a1a1a] rounded-full px-8 py-3 text-[10px] font-semibold tracking-[0.2em] uppercase hover:bg-[#1a1a1a] hover:text-white transition-colors"
-                  >
-                    Get Directions
-                  </a>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <ClinicsSection onBook={bookAt} />
 
       {/* Global styles for hiding scrollbar in the carousel */}
       <style>{`
