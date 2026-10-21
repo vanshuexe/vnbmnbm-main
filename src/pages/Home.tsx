@@ -121,27 +121,13 @@ return (
       {/* Qualifications & Experience Section */}
       <section id="qualifications" className="relative z-10 w-full py-10 md:py-16 lg:py-24 px-4 sm:px-8 lg:px-12 xl:px-24 bg-white">
         <div className="max-w-7xl mx-auto">
-          <div className="bg-[#001d3d] rounded-3xl overflow-hidden flex flex-col lg:flex-row shadow-xl ring-1 ring-black/10 text-white">
-
-            {/* Left Image */}
-            <div className="relative w-full lg:w-[50%] h-[420px] sm:h-[520px] lg:h-auto overflow-hidden">
-              <img 
-                src="https://ik.imagekit.io/fdhgiehjz/IMG_1116.JPG.jpeg"
-                alt="Qualifications and Experience"
-                width={1080}
-                height={1350}
-                loading="lazy"
-                decoding="async"
-                className="absolute inset-0 w-full h-full object-cover object-[0%_25%] lg:object-left"
-              />
-            </div>
-
-            {/* Right Content */}
-            <div className="relative w-full lg:w-[50%] p-7 sm:p-12 lg:p-14 xl:p-20 flex flex-col justify-center bg-gradient-to-br from-[#25211e] via-[#0d1b2d] to-[#001d3d]">
+          <div className="bg-[#001d3d] rounded-3xl overflow-hidden shadow-xl ring-1 ring-black/10 text-white">
+            {/* Content */}
+            <div className="relative w-full p-7 sm:p-12 lg:p-16 xl:p-20 flex flex-col justify-center bg-gradient-to-br from-[#25211e] via-[#0d1b2d] to-[#001d3d]">
               {/* Warm light accent, echoing the hero */}
               <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(110,80,56,0.25),transparent_60%)] pointer-events-none"></div>
               <h2 className="relative font-cormorant text-4xl md:text-5xl font-medium mb-8">Qualifications & Experience</h2>
-              <ul className="relative max-w-lg border-t border-white/15">
+              <ul className="relative grid grid-cols-1 lg:grid-cols-2 lg:gap-x-14 border-t border-white/15">
                 {[
                   { title: 'Maxillofacial Surgery', detail: 'MAHER University, Chennai' },
                   { title: 'Advanced Institutional Fellowship in Cosmetic Surgery', detail: 'AFCS, DY Patil University, Mumbai' },
@@ -250,7 +236,7 @@ return (
       <section className="relative z-10 w-full py-24 bg-white flex flex-col">
         <div className="max-w-7xl mx-auto w-full px-4 sm:px-8 lg:px-12 xl:px-24">
           <div className="text-center mb-16">
-            <h2 className="font-cormorant text-4xl md:text-5xl font-medium text-[#001d3d]">The Feature</h2>
+            <h2 className="font-cormorant text-4xl md:text-5xl font-medium text-[#001d3d]">Results <span className="whitespace-nowrap">(Before and After)</span></h2>
           </div>
 
           <div className="flex flex-col lg:flex-row bg-gradient-to-br from-[#25211e] via-[#0d1b2d] to-[#001d3d] rounded-[2rem] overflow-hidden shadow-xl ring-1 ring-black/10">

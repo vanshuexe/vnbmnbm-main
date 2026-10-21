@@ -7,7 +7,6 @@ const clinics = [
     days: 'Mon – Sun',
     hours: '10:00 AM – 7:30 PM',
     directions: 'https://share.google/X54rfKMZyTi7j0lSV',
-    bg: 'bg-[#f2e2dc]',
   },
   {
     label: 'Clinic 02',
@@ -17,7 +16,6 @@ const clinics = [
     days: 'Mon – Sat',
     hours: '9:30 – 10:30 AM · 7:30 – 8:30 PM',
     directions: 'https://share.google/4zPrH7dKJrDc9syyg',
-    bg: 'bg-[#dfe7f0]',
   },
 ];
 
@@ -30,33 +28,33 @@ const contacts = [
 // "Two clinics, one surgeon": both locations with booking + directions.
 export default function ClinicsSection({ onBook }: { onBook: (clinic: string) => void }) {
   return (
-    <section className="w-full bg-[#f9f6f2] px-4 sm:px-8 lg:px-12 xl:px-24 py-16 md:py-24">
-      <div className="max-w-6xl mx-auto">
+    <section className="w-full bg-white px-4 sm:px-8 lg:px-12 xl:px-24 pb-16 md:pb-24 pt-4 md:pt-8">
+      <div className="max-w-7xl mx-auto">
         <div className="text-center mb-10 md:mb-14">
-          <p className="text-[10px] tracking-[0.3em] uppercase text-gray-600 mb-4">Visit</p>
-          <h2 className="font-cormorant text-4xl sm:text-5xl md:text-6xl text-[#12284a] leading-tight">
-            Two clinics, <em className="text-[#a07c5a]">one surgeon.</em>
+          <p className="text-[10px] md:text-xs tracking-[0.25em] font-semibold uppercase text-[#8a6d52] mb-4">Visit</p>
+          <h2 className="font-cormorant text-4xl sm:text-5xl font-medium text-[#001d3d] leading-tight">
+            Two clinics, <em className="text-[#8a6d52] font-normal">one surgeon.</em>
           </h2>
           <p className="text-sm text-gray-600 mt-4">Dr. Shruthilaya consults at both — choose whichever is closer.</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
           {clinics.map((c) => (
-            <article key={c.name} className={`${c.bg} p-7 sm:p-9 flex flex-col`}>
-              <p className="text-[10px] tracking-[0.25em] uppercase font-semibold text-[#8a6d52] mb-4">{c.label}</p>
-              <h3 className="font-cormorant text-3xl text-[#12284a] mb-4">{c.name}</h3>
-              <p className="text-sm text-[#3c4a5c] leading-relaxed mb-6">
+            <article key={c.name} className="relative rounded-[2rem] overflow-hidden bg-gradient-to-br from-[#25211e] via-[#0d1b2d] to-[#001d3d] ring-1 ring-black/10 shadow-xl text-white p-7 sm:p-10 flex flex-col">
+              <p className="text-[10px] tracking-[0.25em] uppercase font-semibold text-[#c9a98a] mb-4">{c.label}</p>
+              <h3 className="font-cormorant text-3xl md:text-4xl font-medium mb-4">{c.name}</h3>
+              <p className="text-sm text-white/70 font-light leading-relaxed mb-6">
                 {c.address[0]}<br />{c.address[1]}
               </p>
-              <div className="flex flex-wrap gap-x-10 gap-y-1 border-t border-black/10 pt-5 mb-7 text-sm mt-auto">
-                <span className="text-gray-600">{c.days}</span>
-                <span className="text-[#12284a]">{c.hours}</span>
+              <div className="flex flex-wrap gap-x-10 gap-y-1 border-t border-white/15 pt-5 mb-7 text-sm mt-auto">
+                <span className="text-white/55">{c.days}</span>
+                <span className="text-white">{c.hours}</span>
               </div>
               <div className="flex flex-wrap gap-3">
                 <button
                   type="button"
                   onClick={() => onBook(c.bookingValue)}
-                  className="bg-[#12284a] text-white px-6 py-3.5 text-[11px] tracking-[0.2em] uppercase hover:bg-[#001d3d] transition-colors"
+                  className="rounded-full bg-white text-[#001d3d] px-7 py-3 text-[11px] font-semibold tracking-[0.2em] uppercase hover:bg-[#c9a98a] hover:text-white transition-colors"
                 >
                   Book here
                 </button>
@@ -64,7 +62,7 @@ export default function ClinicsSection({ onBook }: { onBook: (clinic: string) =>
                   href={c.directions}
                   target="_blank"
                   rel="noreferrer"
-                  className="border border-[#12284a]/60 text-[#12284a] px-6 py-3.5 text-[11px] tracking-[0.2em] uppercase hover:bg-[#12284a] hover:text-white transition-colors"
+                  className="rounded-full border border-white/70 text-white px-7 py-3 text-[11px] font-semibold tracking-[0.2em] uppercase hover:bg-white hover:text-[#001d3d] transition-colors"
                 >
                   Directions
                 </a>
@@ -73,11 +71,11 @@ export default function ClinicsSection({ onBook }: { onBook: (clinic: string) =>
           ))}
         </div>
 
-        <div className="flex flex-wrap justify-center gap-x-12 gap-y-5 mt-12">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 max-w-2xl mx-auto text-center mt-12">
           {contacts.map((c) => (
             <a key={c.label} href={c.href} target={c.href.startsWith('http') ? '_blank' : undefined} rel="noreferrer" className="group">
-              <span className="block text-[10px] tracking-[0.2em] uppercase text-gray-600 mb-1">{c.label}</span>
-              <span className="block text-sm text-[#12284a] group-hover:text-[#a07c5a] transition-colors">{c.value}</span>
+              <span className="block text-[10px] tracking-[0.2em] uppercase font-semibold text-[#8a6d52] mb-1">{c.label}</span>
+              <span className="block text-sm text-[#001d3d] group-hover:text-[#8a6d52] transition-colors">{c.value}</span>
             </a>
           ))}
         </div>

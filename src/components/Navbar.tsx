@@ -42,6 +42,7 @@ export default function Navbar({ forceDark = false }: { forceDark?: boolean }) {
       <button aria-label="Open menu" className="md:hidden" onClick={() => setMobileOpen(true)}><Menu size={24} strokeWidth={1.5} /></button>
       <nav aria-label="Main navigation" className="hidden md:flex gap-8 text-sm">
         {['Procedures', 'Discover'].map(label => <button key={label} aria-expanded={activeMenu === label} onMouseEnter={() => setActiveMenu(label)} onClick={() => setActiveMenu(label)} className="pb-1 hover:opacity-70">{label}</button>)}
+        <Link to="/the-feature/" onClick={close} onMouseEnter={() => setActiveMenu(null)} className="pb-1 hover:opacity-70">The Feature</Link>
       </nav>
       <Link to="/" onClick={close} aria-label="For Advanced Maxillofacial and Cosmetic Surgery, home" className="flex flex-col items-center text-center"><CenterBrand /></Link>
       <Link to="/contact/" onClick={close} className="justify-self-end rounded-full border border-current px-3 md:px-8 py-2 md:py-3 text-[10px] tracking-[0.2em] hover:opacity-70">BOOK</Link>

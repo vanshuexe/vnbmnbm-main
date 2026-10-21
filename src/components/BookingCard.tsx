@@ -42,17 +42,27 @@ export default function BookingCard({ clinic: controlledClinic, onClinicChange }
       `Clinic: ${clinic}`,
       date ? `Preferred date: ${new Date(date + 'T00:00').toLocaleDateString('en-IN', { day: 'numeric', month: 'long', year: 'numeric' })}` : '',
     ].filter(Boolean);
-    window.open(`https://wa.me/${WHATSAPP}?text=${encodeURIComponent(lines.join('\n'))}`, '_blank', 'noopener');
+    const url = `https://wa.me/${WHATSAPP}?text=${encodeURIComponent(lines.join('\n'))}`;
+    // Phones: go straight to the WhatsApp app in this tab (pop-ups are often blocked there).
+    // Desktop: open WhatsApp Web in a new tab, falling back to this tab if the pop-up is blocked.
+    const isPhone = window.matchMedia('(pointer: coarse)').matches || /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+    if (isPhone) {
+      window.location.href = url;
+      return;
+    }
+    const tab = window.open(url, '_blank');
+    if (tab) tab.opener = null;
+    else window.location.href = url;
   };
 
-  const field = 'w-full bg-white border border-black/10 px-3 py-2.5 text-sm text-[#12284a] focus:outline-none focus:border-[#12284a]';
-  const label = 'block text-[10px] tracking-[0.2em] uppercase text-gray-600 mb-2';
+  const field = 'w-full bg-white rounded-lg border border-white/20 px-3 py-2.5 text-sm text-[#001d3d] focus:outline-none focus:ring-2 focus:ring-[#c9a98a]';
+  const label = 'block text-[10px] tracking-[0.2em] uppercase text-white/60 mb-2';
 
   return (
-    <form id="book" onSubmit={submit} className="scroll-mt-24 bg-[#faf6f3] border border-black/5 shadow-xl p-6 sm:p-7 max-w-xl">
+    <form id="book" onSubmit={submit} className="scroll-mt-24 rounded-2xl bg-white/[0.04] border border-white/15 p-4 sm:p-7 w-full">
       <div className="flex items-baseline justify-between mb-5">
-        <h2 className="font-cormorant text-2xl text-[#12284a]">Book a consultation</h2>
-        <a href="tel:+919444615554" className="text-xs text-gray-600 border-b border-[#a07c5a]/50 hover:text-[#12284a]">or call us</a>
+        <h3 className="font-cormorant text-2xl text-white">Book a consultation</h3>
+        <a href="tel:+919444615554" className="text-xs text-[#c9a98a] border-b border-[#c9a98a]/50 hover:text-white">or call us</a>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
@@ -75,12 +85,12 @@ export default function BookingCard({ clinic: controlledClinic, onClinicChange }
 
       <fieldset className="mb-4">
         <legend className={label}>Clinic</legend>
-        <div className="grid grid-cols-2 border border-black/10">
-          {clinicOptions.map((c, i) => (
-            <label key={c.value} className={`cursor-pointer px-3 py-2.5 transition-colors ${i ? 'border-l border-black/10' : ''} ${clinic === c.value ? 'bg-[#dfe7f0]' : 'bg-white hover:bg-[#f4f6f9]'}`}>
+        <div className="grid grid-cols-2 gap-2">
+          {clinicOptions.map((c) => (
+            <label key={c.value} className={`cursor-pointer rounded-lg border px-3 py-2.5 transition-colors ${clinic === c.value ? 'bg-white border-white' : 'border-white/20 hover:border-white/50'}`}>
               <input type="radio" name="bk-clinic" value={c.value} checked={clinic === c.value} onChange={() => setClinic(c.value)} className="sr-only" />
-              <span className="block text-sm text-[#12284a]">{c.value}</span>
-              <span className="block text-[11px] text-gray-600">{c.note}</span>
+              <span className={`block text-sm ${clinic === c.value ? 'text-[#001d3d] font-medium' : 'text-white'}`}>{c.value}</span>
+              <span className={`block text-[11px] ${clinic === c.value ? 'text-gray-600' : 'text-white/55'}`}>{c.note}</span>
             </label>
           ))}
         </div>
@@ -91,10 +101,10 @@ export default function BookingCard({ clinic: controlledClinic, onClinicChange }
         <input id="bk-date" type="date" min={today} value={date} onChange={(e) => setDate(e.target.value)} className={field} />
       </div>
 
-      <button type="submit" className="w-full bg-[#12284a] text-white py-3.5 text-[11px] font-semibold tracking-[0.2em] uppercase hover:bg-[#001d3d] transition-colors">
+      <button type="submit" className="w-full rounded-full bg-white text-[#001d3d] py-3.5 text-[11px] font-semibold tracking-[0.2em] uppercase hover:bg-[#c9a98a] hover:text-white transition-colors">
         Request appointment
       </button>
-      <p className="text-center text-[11px] text-gray-600 mt-3">Opens WhatsApp with your details — the clinic confirms your slot.</p>
+      <p className="text-center text-[11px] text-white/55 mt-3">Opens WhatsApp with your details — the clinic confirms your slot.</p>
     </form>
   );
 }

@@ -65,7 +65,7 @@ export const PAGES: PageSeo[] = [
     breadcrumb: 'Home',
     priority: 1.0,
     changefreq: 'weekly',
-    images: ['/images/dr-shruthilaya-ganesan.jpg', 'https://ik.imagekit.io/fdhgiehjz/IMG_1116.JPG.jpeg', '/images/surgical-profile.jpg', '/images/non-surgical-profile.jpg'],
+    images: ['/images/dr-shruthilaya-ganesan.jpg', '/images/surgical-profile.jpg', '/images/non-surgical-profile.jpg'],
   },
   {
     path: '/surgical',
