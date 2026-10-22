@@ -21,24 +21,24 @@ const MON_SAT = ALL_WEEK.slice(0, 6);
 export const CLINICS = [
   {
     id: 'clinic-skin-lab',
-    name: 'Skin Lab Studio (SkinLab by Dr. Jamuna Pai)',
+    name: 'Skin Lab Studio by Jamuna Pai',
     streetAddress: 'No. 166, Parijath, Sathyadev Enclave, Race Course',
     postalCode: '641018',
     latitude: 11.0042565,
     longitude: 76.9750023,
     hasMap: 'https://share.google/X54rfKMZyTi7j0lSV',
-    hours: [{ days: ALL_WEEK, opens: '10:00', closes: '19:30' }],
+    hours: [{ days: ALL_WEEK, opens: '11:00', closes: '19:00' }],
   },
   {
     id: 'clinic-rootwise',
-    name: 'Rootwise Aesthetic Clinic',
+    name: 'Rootwise Aesthetics',
     streetAddress: '31, E TV Swamy Rd, R.S. Puram',
     postalCode: '641002',
     latitude: 11.0102364,
     longitude: 76.9518072,
     hasMap: 'https://share.google/4zPrH7dKJrDc9syyg',
     hours: [
-      { days: MON_SAT, opens: '09:30', closes: '10:30' },
+      { days: MON_SAT, opens: '09:00', closes: '10:30' },
       { days: MON_SAT, opens: '19:30', closes: '20:30' },
     ],
   },
@@ -107,7 +107,7 @@ export const PAGES: PageSeo[] = [
   {
     path: '/contact',
     title: 'Contact & Clinics in Coimbatore | Dr. Shruthilaya Ganesan',
-    description: 'Visit Dr. Shruthilaya Ganesan at Skin Lab Studio, Race Course, or Rootwise Aesthetic Clinic, R.S. Puram, Coimbatore. Call +91 94446 15554 to book.',
+    description: 'Visit Dr. Shruthilaya Ganesan at Skin Lab Studio by Jamuna Pai, Race Course, or Rootwise Aesthetics, R.S. Puram, Coimbatore. Call +91 94446 15554 to book.',
     breadcrumb: 'Contact',
     pageType: 'ContactPage',
     priority: 0.8,

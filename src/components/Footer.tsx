@@ -51,8 +51,8 @@ export default function Footer({ white = false }: { white?: boolean }) {
             {/* Clinic maps */}
             <div className="mt-8 w-full max-w-md space-y-6">
               {[
-                { label: 'Clinic 1 · Skin Lab Studio', src: 'https://www.google.com/maps?q=SkinLab+by+Dr.+Jamuna+Pai,+Sathyadev+Enclave,+Race+Course,+Coimbatore+641018&z=15&output=embed' },
-                { label: 'Clinic 2 · Rootwise Aesthetic Clinic', src: 'https://www.google.com/maps?q=Rootwise+Aesthetics,+31+E+TV+Swamy+Rd,+R.S.+Puram,+Coimbatore+641002&z=15&output=embed' },
+                { label: 'Clinic 1 · Skin Lab Studio by Jamuna Pai', src: 'https://www.google.com/maps?q=SkinLab+by+Dr.+Jamuna+Pai,+Sathyadev+Enclave,+Race+Course,+Coimbatore+641018&z=15&output=embed' },
+                { label: 'Clinic 2 · Rootwise Aesthetics', src: 'https://www.google.com/maps?q=Rootwise+Aesthetics,+31+E+TV+Swamy+Rd,+R.S.+Puram,+Coimbatore+641002&z=15&output=embed' },
               ].map((map) => (
                 <div key={map.label}>
                   <p className={`text-[10px] font-semibold tracking-[0.15em] uppercase mb-2 ${c.muted}`}>{map.label}</p>
@@ -79,17 +79,17 @@ export default function Footer({ white = false }: { white?: boolean }) {
             <p className="font-semibold text-xs tracking-wider mb-6 uppercase">Locations</p>
             <div className={`text-sm font-light ${c.body} space-y-4 mb-8`}>
               <div>
-                <p className={`font-medium ${c.strong}`}>Clinic 1: Skin Lab Studio</p>
+                <p className={`font-medium ${c.strong}`}>Clinic 1: Skin Lab Studio by Jamuna Pai</p>
                 <p>No. 166, Parijath, Sathyadev Enclave,<br />Race Course, Coimbatore 641018</p>
-                <p className={`mt-1 ${c.muted} text-xs`}>Mon - Sun: 10:00 AM - 7:30 PM</p>
+                <p className={`mt-1 ${c.muted} text-xs`}>Mon - Sun: 11:00 AM - 7:00 PM</p>
                 <a href="https://share.google/X54rfKMZyTi7j0lSV" target="_blank" rel="noreferrer" className={`inline-block mt-2 text-xs underline underline-offset-4 ${c.link} transition-colors`}>Get directions</a>
               </div>
               <div className="pt-2">
-                <p className={`font-medium ${c.strong}`}>Clinic 2: Rootwise Aesthetic Clinic</p>
+                <p className={`font-medium ${c.strong}`}>Clinic 2: Rootwise Aesthetics</p>
                 <p>31, E TV Swamy Rd,<br />R.S. Puram, Coimbatore 641002</p>
                 <p className={`mt-1 ${c.muted} text-xs leading-relaxed`}>
                   Mon - Sat<br />
-                  Morning: 9:30 AM - 10:30 AM<br />
+                  Morning: 9:00 AM - 10:30 AM<br />
                   Evening: 7:30 PM - 8:30 PM
                 </p>
                 <a href="https://share.google/4zPrH7dKJrDc9syyg" target="_blank" rel="noreferrer" className={`inline-block mt-2 text-xs underline underline-offset-4 ${c.link} transition-colors`}>Get directions</a>

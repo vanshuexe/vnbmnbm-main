@@ -12,8 +12,8 @@ const interests = [
 ];
 
 export const clinicOptions = [
-  { value: 'Skin Lab Studio', note: 'Race Course · daily' },
-  { value: 'Rootwise Aesthetic', note: 'R.S. Puram · Mon–Sat' },
+  { value: 'Skin Lab Studio by Jamuna Pai', note: 'Race Course' },
+  { value: 'Rootwise Aesthetics', note: 'R.S. Puram' },
 ];
 
 type Props = { clinic?: string; onClinicChange?: (clinic: string) => void };

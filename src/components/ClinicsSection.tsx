@@ -1,20 +1,20 @@
 const clinics = [
   {
     label: 'Clinic 01',
-    name: 'Skin Lab Studio',
-    bookingValue: 'Skin Lab Studio',
+    name: 'Skin Lab Studio by Jamuna Pai',
+    bookingValue: 'Skin Lab Studio by Jamuna Pai',
     address: ['No. 166, Parijath, Sathyadev Enclave,', 'Race Course, Coimbatore 641018'],
     days: 'Mon – Sun',
-    hours: '10:00 AM – 7:30 PM',
+    hours: '11:00 AM – 7:00 PM',
     directions: 'https://share.google/X54rfKMZyTi7j0lSV',
   },
   {
     label: 'Clinic 02',
-    name: 'Rootwise Aesthetic Clinic',
-    bookingValue: 'Rootwise Aesthetic',
+    name: 'Rootwise Aesthetics',
+    bookingValue: 'Rootwise Aesthetics',
     address: ['31, E TV Swamy Rd,', 'R.S. Puram, Coimbatore 641002'],
     days: 'Mon – Sat',
-    hours: '9:30 – 10:30 AM · 7:30 – 8:30 PM',
+    hours: '9:00 – 10:30 AM · 7:30 – 8:30 PM',
     directions: 'https://share.google/4zPrH7dKJrDc9syyg',
   },
 ];

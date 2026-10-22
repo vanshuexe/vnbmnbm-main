@@ -4,8 +4,8 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
 const clinics = [
-  { value: 'Clinic 1: Skin Lab Studio', name: 'Skin Lab Studio', area: 'Race Course, Coimbatore', hours: 'Mon – Sun, 10:00 AM – 7:30 PM' },
-  { value: 'Clinic 2: Rootwise Aesthetic Clinic', name: 'Rootwise Aesthetic Clinic', area: 'R.S. Puram, Coimbatore', hours: 'Mon – Sat, 9:30 – 10:30 AM & 7:30 – 8:30 PM' },
+  { value: 'Clinic 1: Skin Lab Studio by Jamuna Pai', name: 'Skin Lab Studio by Jamuna Pai', area: 'Race Course, Coimbatore', hours: 'Mon – Sun, 11:00 AM – 7:00 PM' },
+  { value: 'Clinic 2: Rootwise Aesthetics', name: 'Rootwise Aesthetics', area: 'R.S. Puram, Coimbatore', hours: 'Mon – Sat, 9:00 – 10:30 AM & 7:30 – 8:30 PM' },
 ];
 
 export default function Book() {
@@ -63,9 +63,9 @@ export default function Book() {
             <div className="space-y-8">
               <div>
                 <h2 className="font-semibold text-xs tracking-wider mb-2 uppercase text-[#1a1a1a]">Locations</h2>
-                <p className="text-sm font-light text-gray-600 mb-2"><strong>Clinic 1: Skin Lab</strong><br />No. 166, Parijath, Sathyadev Enclave,<br />Race Course, Coimbatore, Tamil Nadu 641018</p>
+                <p className="text-sm font-light text-gray-600 mb-2"><strong>Clinic 1: Skin Lab Studio by Jamuna Pai</strong><br />No. 166, Parijath, Sathyadev Enclave,<br />Race Course, Coimbatore, Tamil Nadu 641018</p>
                 <a href="https://share.google/X54rfKMZyTi7j0lSV" target="_blank" rel="noreferrer" className="inline-block text-sm font-light text-gray-600 underline underline-offset-4 hover:text-[#1a1a1a] transition-colors">Get directions</a>
-                <p className="text-sm font-light text-gray-600 mt-4 mb-2"><strong>Clinic 2: Rootwise Aesthetic Clinic</strong><br />31, E TV Swamy Rd, R.S. Puram,<br />Coimbatore, Tamil Nadu 641002</p>
+                <p className="text-sm font-light text-gray-600 mt-4 mb-2"><strong>Clinic 2: Rootwise Aesthetics</strong><br />31, E TV Swamy Rd, R.S. Puram,<br />Coimbatore, Tamil Nadu 641002</p>
                 <a href="https://share.google/4zPrH7dKJrDc9syyg" target="_blank" rel="noreferrer" className="inline-block text-sm font-light text-gray-600 underline underline-offset-4 hover:text-[#1a1a1a] transition-colors">Get directions</a>
               </div>
               
@@ -77,9 +77,9 @@ export default function Book() {
 
               <div>
                 <h2 className="font-semibold text-xs tracking-wider mb-2 uppercase text-[#1a1a1a]">Hours</h2>
-                <p className="text-sm font-light text-gray-600"><strong>Clinic 1:</strong> Monday – Sunday, 10:00 AM – 7:30 PM</p>
+                <p className="text-sm font-light text-gray-600"><strong>Clinic 1:</strong> Monday – Sunday, 11:00 AM – 7:00 PM</p>
                 <p className="text-sm font-light text-gray-600 mt-3"><strong>Clinic 2:</strong> Monday – Saturday</p>
-                <p className="text-sm font-light text-gray-600">Morning: 9:30 AM – 10:30 AM</p>
+                <p className="text-sm font-light text-gray-600">Morning: 9:00 AM – 10:30 AM</p>
                 <p className="text-sm font-light text-gray-600">Evening: 7:30 PM – 8:30 PM</p>
               </div>
             </div>
